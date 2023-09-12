@@ -1,0 +1,16 @@
+/* About Cards */
+.about {
+    margin: 3vh 2vw;
+}
+.about div {
+    width: 40vw;
+    height: 75vh;
+    background-color: blue;
+    border-radius: 1vw;
+}
+.about-goal {
+    transform: translateY(-5vh);
+}
+.about-contribute {
+    transform: translateY(5vh);
+}

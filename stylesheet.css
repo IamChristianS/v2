@@ -1,6 +1,6 @@
 body, html {
     margin: 0;
-    background-image:url(img/pageBackground.png);
+    background-image: url(img/pageBackground.png);
     background-repeat: repeat;
     font-family: 'Montserrat', Courier, monospace;
     color: #fff;
@@ -12,6 +12,8 @@ body, html {
     justify-content: center;
     width: 100vw;
     font-size: 1vw;
+    background-color: #000;
+    opacity: .3;
 }
 .nav-logo p {
     font-weight: 200;
