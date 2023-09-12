@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    background-image:url(img/pageBackground.png);
+    background-repeat: repeat;
+    font-family: 'Montserrat', Courier, monospace;
+    color: #fff;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-size: 1vw;
+}
+.nav-logo p {
+    font-weight: 200;
+}
+.nav-logo span {
+    font-weight: 500;
+}
+.nav-links button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.nav-tools i {
+    opacity: .75;
+}
+.nav-tools i:hover {
+    opacity: 1;
+    transition: ease-in-out;
+}

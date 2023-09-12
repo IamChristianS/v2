@@ -1,18 +1,5 @@
 <!--
- ▄▀▀▄▀▀▀▄  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄         ▄█  ▄▀▀█▄▄▄▄  ▄▀▄▄▄▄   ▄▀▀▀█▀▀▄ 
-█   █   █ █   █   █ █      █  ▄▀▀▀█▀ ▐ ▐  ▄▀   ▐ █ █    ▌ █    █  ▐ 
-▐  █▀▀▀▀  ▐  █▀▀█▀  █      █ █    █      █▄▄▄▄▄  ▐ █      ▐   █     
-   █       ▄▀    █  ▀▄    ▄▀ ▐    █      █    ▌    █         █      
- ▄▀       █     █     ▀▀▀▀     ▄   ▀▄   ▄▀▄▄▄▄    ▄▀▄▄▄▄▀  ▄▀       
-█         ▐     ▐               ▀▀▀▀    █    ▐   █     ▐  █         
-▐                                       ▐        ▐        ▐         
- ▄▀▀▄ ▄▄   ▄▀▀▄ ▄▀▀▄  ▄▀▀█▄▄                                        
-█  █   ▄▀ █   █    █ ▐ ▄▀   █                                       
-▐  █▄▄▄█  ▐  █    █    █▄▄▄▀                                        
-   █   █    █    █     █   █                                        
-  ▄▀  ▄▀     ▀▄▄▄▄▀   ▄▀▄▄▄▀                                        
- █   █               █    ▐                                         
- ▐   ▐               ▐                                              
+Put Fancy Watermark Thing Here
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -33,9 +20,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--AOS Library-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
+        <!--<script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>-->
 
-        <meta property="og:title" content="Project Hub">
+        <meta property="og:title" content="Project Hub V2">
         <meta property="og:description" content="">
         <meta property="og:image" content="">
         <meta property="og:url" content="https://unbl0ck.github.io/v2">
@@ -49,65 +36,57 @@
     <body>
           <!--Navbar-->
           <div class="nav">
-            <button class="nav-links-active"
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="1100"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"
-                onclick="window.location.href='index.html'"
-                style="cursor:pointer"><a>Home</a></button>
-            <button
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"
-                onclick="window.location.href='games.html'"
-                style="cursor:pointer"><a>Games</a></button>
-            <button
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="900"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"
-                onclick="window.location.href='apps.html'"
-                style="cursor:pointer"><a>Apps</a></button>
-            <button
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="800"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"
-                onclick="window.location.href='contact.html'"
-                style="cursor:pointer"><a>Contact</a></button>
-            <button
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="700"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"
-                onclick="window.location.href='settings.html'"
-                style="cursor:pointer"><a>Settings</a></button>
-            <button
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="600"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"
-                onclick="window.location.href='https://github.com/unbl0ck/v2'"
-                style="cursor:pointer"><a>GitHub</a></button>
+            <div class="nav-logo">
+                <p>Project-<span>Hub</span></p>
+            </div>
+            <div class="nav-links">
+                <button class="nav-links-active"
+                    data-aos="fade-down" data-aos-delay="450"
+                    onclick="window.location.href='index.html'">Home</button>
+                <button
+                    data-aos="fade-down" data-aos-delay="350"
+                    onclick="window.location.href='games.html'">Games</button>
+                <button
+                    data-aos="fade-down" data-aos-delay="250"
+                    onclick="window.location.href='apps.html'">Apps</button>
+                <button
+                    data-aos="fade-down" data-aos-delay="150"
+                    onclick="window.location.href='settings.html'">Settings</button>
+                <button
+                    data-aos="fade-down" data-aos-delay="50"
+                    onclick="window.location.href='https://github.com/unbl0ck/v2'">GitHub</button>
+            </div>
+            <div class="nav-tools">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
         </div>
         <!--Navbar-->
 
         <!--Content-->
-        
+        <div class="about">
+
+        </div>
+        <div class="popular-games">
+
+        </div>
+        <div class="faq">
+
+        </div>
+        <div class="reviews">
+
+        </div>
         <!--Content-->
         
         <!--AOS Library-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
+            AOS.init({
+                duration: 600,
+                easing: 'ease-in-out',
+                once: true,
+            });
         </script>
         <!--AOS Library-->
     </body>
