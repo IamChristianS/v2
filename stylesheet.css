@@ -24,29 +24,29 @@ p,a,h1,h2,h3,h4,h5,h6,span,button,i {
     padding: 0 1.5vw;
     background: rgba(0,0,0,0.25);
 }
-.nav p {
+.nav-logo p {
     float: left;
     cursor: pointer;
     font-size: 1.75vw;
 }
-.nav span {
+.nav-logo span {
     font-weight: bold;
 }
-.nav button {
+.nav-links button {
     justify-content: center;
     cursor: pointer;
     border: none;
     background: none;
     font-size: 1.5vw;
 }
-.nav button:hover {
+.nav-links button:hover {
     text-shadow: 0px 0px var(--nav-shadow-size) rgba(0,0,0,var(--nav-shadow-opacity));
 }
-.nav i {
+.nav-tools i {
     float: right;
     font-size: 1.5vw;
     cursor: pointer;
 }
-.nav i:hover {
+.nav-tools i:hover {
     text-shadow: 0px 0px var(--nav-shadow-size) rgba(0,0,0,var(--nav-shadow-opacity));
 }
