@@ -1,9 +1,15 @@
+/* General */
 body, html {
     margin: 0;
     background-image: url(img/pageBackground.png);
     background-repeat: repeat;
+}
+p,a,h1,h2,h3,h4,h5,h6,span,button,i {
     font-family: 'Montserrat', Courier, monospace;
     color: #fff;
+}
+#incomplete {
+    display: none;
 }
 
 /* Navbar */
@@ -11,25 +17,24 @@ body, html {
     display: flex;
     justify-content: center;
     width: 100vw;
-    font-size: 1vw;
-    background-color: #000;
-    opacity: .3;
 }
 .nav-logo p {
-    font-weight: 200;
+    font-size: 1.5vw;
 }
 .nav-logo span {
-    font-weight: 500;
+    font-weight: bold;
 }
 .nav-links button {
     cursor: pointer;
     border: none;
     background: none;
 }
+.nav-links button:hover {
+    color: #bbb;
+}
 .nav-tools i {
-    opacity: .75;
+
 }
 .nav-tools i:hover {
-    opacity: 1;
-    transition: ease-in-out;
+    color: #bbb;
 }

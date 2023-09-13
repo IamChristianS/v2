@@ -1,5 +1,16 @@
 <!--
-Put Fancy Watermark Thing Here
+██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗
+██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝
+██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   
+██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   
+██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   
+╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   
+██╗  ██╗██╗   ██╗██████╗ 
+██║  ██║██║   ██║██╔══██╗
+███████║██║   ██║██████╔╝
+██╔══██║██║   ██║██╔══██╗
+██║  ██║╚██████╔╝██████╔╝
+╚═╝  ╚═╝ ╚═════╝ ╚═════╝ 
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +27,7 @@ Put Fancy Watermark Thing Here
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="stylesheet.css">
-        <!--<link rel="stylesheet" href="page_styles/index.css"> <--Page-Specific-->
+        <link rel="stylesheet" href="page_styles/index.css"> <!--Page-Specific-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--AOS Library-->
         <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
@@ -40,19 +51,19 @@ Put Fancy Watermark Thing Here
             </div>
             <div class="nav-links">
                 <button class="nav-links-active"
-                    data-aos="fade-down" data-aos-delay="450"
+                    data-aos="fade-down" data-aos-delay="400"
                     onclick="window.location.href='index.html'">Home</button>
                 <button
-                    data-aos="fade-down" data-aos-delay="350"
+                    data-aos="fade-down" data-aos-delay="300"
                     onclick="window.location.href='games.html'">Games</button>
                 <button
-                    data-aos="fade-down" data-aos-delay="250"
+                    data-aos="fade-down" data-aos-delay="200"
                     onclick="window.location.href='apps.html'">Apps</button>
                 <button
-                    data-aos="fade-down" data-aos-delay="150"
+                    data-aos="fade-down" data-aos-delay="100"
                     onclick="window.location.href='settings.html'">Settings</button>
                 <button
-                    data-aos="fade-down" data-aos-delay="50"
+                    data-aos="fade-down" data-aos-delay="0"
                     onclick="window.location.href='https://github.com/unbl0ck/v2'">GitHub</button>
             </div>
             <div class="nav-tools">
@@ -67,7 +78,7 @@ Put Fancy Watermark Thing Here
         <!--Navbar-->
 
         <!--Content-->
-        <div class="about">
+        <div class="about" id="incomplete">
             <div class="about-goal">
                 <h2>Site's Goal</h2>
                 <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
@@ -93,7 +104,7 @@ Put Fancy Watermark Thing Here
         <script>
             AOS.init();
             AOS.init({
-                duration: 600,
+                duration: 800,
                 easing: 'ease-in-out',
                 once: true,
             });
