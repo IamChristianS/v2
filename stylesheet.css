@@ -13,27 +13,44 @@ p,a,h1,h2,h3,h4,h5,h6,span,button,i {
 }
 
 /* Navbar */
+:root {
+    --nav-shadow-size: 5px;
+    --nav-shadow-opacity: .25;
+}
 .nav {
     display: flex;
     justify-content: center;
     width: 100vw;
+    padding: 0 1vw;
+    background: #eee;
+}
+.nav-logos {
+    text-align: center;
 }
 .nav-logo p {
     font-size: 1.5vw;
+    text-shadow: 0px 0px var(--nav-shadow-size) rgba(0,0,0,var(--nav-shadow-opacity));
 }
 .nav-logo span {
     font-weight: bold;
+}
+.nav-links {
+    text-align: center;
 }
 .nav-links button {
     cursor: pointer;
     border: none;
     background: none;
+    text-shadow: 0px 0px var(--nav-shadow-size) rgba(0,0,0,var(--nav-shadow-opacity));
 }
 .nav-links button:hover {
     color: #bbb;
 }
+.nav-tools {
+    text-align: center;
+}
 .nav-tools i {
-
+    text-shadow: 0px 0px var(--nav-shadow-size) rgba(0,0,0,var(--nav-shadow-opacity));
 }
 .nav-tools i:hover {
     color: #bbb;
