@@ -18,7 +18,7 @@ p,a,h1,h2,h3,h4,h5,h6,span,button,i {
     --nav-shadow-size: 4px;
     --nav-shadow-opacity: .1;
 }
-.nav {
+nav {
     vertical-align: middle;
     width: 100vw;
     padding: 0 1.5vw;
