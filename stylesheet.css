@@ -1,6 +1,7 @@
 /* General */
 body, html {
     margin: 0;
+    background-color: rgba(0,0,0,0.1);
     background-image: url(img/pageBackground.png);
     background-repeat: repeat;
 }
@@ -26,7 +27,7 @@ p,a,h1,h2,h3,h4,h5,h6,span,button,i {
 }
 .nav-logo {
     vertical-align: middle;
-    float: left;
+    text-align: left;
     width: 15vw;
 }
 .nav-logo p {
@@ -37,7 +38,7 @@ p,a,h1,h2,h3,h4,h5,h6,span,button,i {
     font-weight: bold;
 }
 .nav-links {
-    justify-content: center;
+    text-align: center;
 }
 .nav-links button {
     vertical-align: middle;
@@ -51,7 +52,7 @@ p,a,h1,h2,h3,h4,h5,h6,span,button,i {
 }
 .nav-tools {
     vertical-align: middle;
-    float: right;
+    text-align: right;
 }
 .nav-tools i {
     font-size: 1.5vw;
