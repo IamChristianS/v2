@@ -76,10 +76,11 @@ body::before {
     left: 0;
     right: 0;
 }
-.nav-links-active {
+.nav-links-active:before {
     content: "";
     left: 0;
     right: 0;
+    bottom: 0;
     background: #ffffff;
     height: 2px;
 }
