@@ -58,7 +58,6 @@ body::before {
     padding: .5vw;
     display: inline-block;
     vertical-align: middle;
-    position: relative;
 }
 .nav-links-button:before {
     content: "";
