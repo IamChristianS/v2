@@ -78,10 +78,8 @@ body::before {
 }
 .nav-links-active {
     content: "";
-    z-index: 1;
     left: 0;
     right: 0;
-    bottom: 0;
     background: #ffffff;
     height: 2px;
 }
