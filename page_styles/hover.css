@@ -2183,7 +2183,7 @@
   z-index: 1;
   left: 51%;
   right: 51%;
-  bottom: 1px;
+  bottom: -1px;
   background: #ffffff;
   height: 3px;
   transition-property: left, right;
