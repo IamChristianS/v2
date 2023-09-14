@@ -2183,14 +2183,12 @@
   z-index: 1;
   left: 51%;
   right: 51%;
-  bottom: -1px;
+  bottom: 0;
+  transform: translateY(-1);
   background: #ffffff;
   height: 2px;
-  -webkit-transition-property: left, right;
   transition-property: left, right;
-  -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
