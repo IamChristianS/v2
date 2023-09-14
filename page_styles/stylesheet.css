@@ -34,8 +34,8 @@ body::before {
     justify-content: space-between;
     align-items: center;
     cursor: default;
-    background-color: #5FAFDC;
-    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.5) inset;
+    background-color: #3982ac;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.35) inset;
 }
 .nav a {
     font-size: 1.75vw;
