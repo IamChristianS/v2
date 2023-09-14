@@ -73,9 +73,19 @@ body::before {
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
-.nav-links button:hover:before, .nav-links-active {
+.nav-links button:hover:before {
     left: 0;
     right: 0;
+}
+.nav-links-active:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    height: 2px;
 }
 .nav-tools i {
     padding: 0 .5vw;
