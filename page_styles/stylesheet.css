@@ -60,7 +60,7 @@ body::before {
     position: relative;
     overflow: hidden;
 }
-.nav-links-active:before {
+.nav-links button:before {
     content: "";
     position: absolute;
     z-index: 1;
