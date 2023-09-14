@@ -93,3 +93,9 @@ body::before {
 .nav-tools i:hover {
     text-shadow: 0px 0px var(--nav-shadow-size) rgba(0,0,0,var(--nav-shadow-opacity));
 }
+
+/* Footer */
+
+.footer {
+    
+}
