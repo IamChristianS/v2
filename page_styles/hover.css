@@ -2183,10 +2183,9 @@
   z-index: 1;
   left: 51%;
   right: 51%;
-  bottom: 0;
-  transform: translateY(-1);
+  bottom: 1px;
   background: #ffffff;
-  height: 2px;
+  height: 3px;
   transition-property: left, right;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
