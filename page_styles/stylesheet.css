@@ -60,10 +60,9 @@ body::before {
     position: relative;
     overflow: hidden;
 }
-.nav-links button:before {
+.nav-links-active:before {
     content: "";
     position: absolute;
-    z-index: 1;
     left: 51%;
     right: 51%;
     bottom: 0;
@@ -77,7 +76,7 @@ body::before {
     left: 0;
     right: 0;
 }
-.nav-links-active {
+.nav-links-active:before {
     content: "";
     left: 0;
     right: 0;
