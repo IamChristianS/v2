@@ -30,13 +30,13 @@ body::before {
 }
 .nav {
     width: 100vw;
-    padding: 3vh 6vw;
+    padding: 3.5vh 6vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: default;
-    background-color: #3982ac;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.35) inset;
+    background-color: #447896;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
 }
 .nav a {
     font-size: 1.75vw;
@@ -56,7 +56,7 @@ body::before {
 }
 .nav-tools i {
     padding: 0 .5vw;
-    font-size: 1.35vw;
+    font-size: 1.4vw;
     cursor: pointer;
 }
 .nav-tools i:hover {
