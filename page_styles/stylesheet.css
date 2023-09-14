@@ -63,6 +63,7 @@ body::before {
 .nav-links-active:before {
     content: "";
     position: absolute;
+    z-index: 1;
     left: 51%;
     right: 51%;
     bottom: 0;
@@ -78,6 +79,7 @@ body::before {
 }
 .nav-links-active:before {
     content: "";
+    z-index: 1;
     left: 0;
     right: 0;
     bottom: 0;
