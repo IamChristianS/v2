@@ -48,6 +48,7 @@ body::before {
     font-weight: 600;
 }
 .nav-links button {
+    display: inline-block;
     background: none;
     border: none;
     margin: 0 1vw;
