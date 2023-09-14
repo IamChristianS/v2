@@ -1,4 +1,5 @@
 /* General */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -39,10 +40,11 @@ body::before {
 }
 .nav a {
     font-size: 1.75vw;
+    font-weight: 400;
     text-decoration: none;
 }
 .nav a span {
-    font-weight: bold;
+    font-weight: 600;
 }
 .nav-links button {
     margin: 0 1vw;
