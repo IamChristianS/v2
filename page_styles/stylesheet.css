@@ -54,11 +54,7 @@ body::before {
     font-size: 1.3vw;
     font-weight: 500;
     cursor: pointer;
-    padding: 1vw;
-}
-.nav-links button:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    padding: .5vw;
 }
 .nav-tools i {
     padding: 0 .5vw;
