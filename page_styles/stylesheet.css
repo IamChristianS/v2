@@ -8,12 +8,8 @@
     color: #fff;
 }
 body {
-    background:
-        linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(0, 0, 0, 0.7)
-        ),
-    url(../img/pageBackground.png);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/pageBackground.png);
     background-repeat: repeat;
 }
 body::before {
@@ -52,7 +48,7 @@ body::before {
 .nav a span {
     font-weight: 600;
 }
-.nav-links button {
+.nav-links-button {
     background: none;
     border: none;
     margin: 0 1vw;
@@ -65,7 +61,7 @@ body::before {
     position: relative;
     overflow: hidden;
 }
-.nav-links button:before {
+.nav-links-button:before {
     content: "";
     position: absolute;
     left: 51%;
@@ -77,7 +73,7 @@ body::before {
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
-.nav-links button:hover:before {
+.nav-links-button:hover:before {
     left: 0;
     right: 0;
 }
