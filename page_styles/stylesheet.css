@@ -77,9 +77,8 @@ body::before {
     left: 0;
     right: 0;
 }
-.nav-links-active:before {
+.nav-links-active {
     content: "";
-    z-index: 1;
     left: 0;
     right: 0;
     bottom: 0;
