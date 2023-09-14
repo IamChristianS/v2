@@ -2186,7 +2186,7 @@
   z-index: 1;
   left: 51%;
   right: 51%;
-  bottom: -5px;
+  bottom: 0;
   background: #ffffff;
   height: 2px;
   -webkit-transition-property: left, right;
