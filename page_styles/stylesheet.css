@@ -112,6 +112,7 @@ footer {
 .footer {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 .footer-description {
     width: 75vw;
