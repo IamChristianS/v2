@@ -25,9 +25,9 @@
 }
 .about-goal {
     transform: translateY(-5vh);
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 .about-contribute {
     transform: translateY(5vh);
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
 }
