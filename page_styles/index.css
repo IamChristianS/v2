@@ -29,3 +29,7 @@
 .about-contribute {
     transform: translateY(5vh);
 }
+.about-contribute p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
