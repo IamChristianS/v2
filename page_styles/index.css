@@ -6,11 +6,16 @@
 .about div {
     width: 40vw;
     height: 75vh;
-    background-color: blue;
+    background-color: var(--blue);
     border-radius: 1vw;
-    margin: 2vw;
+    margin: 3vh 3vw;
+    padding: 1vw;
 }
-.reviews {
-    height: 77vh;
-
+.about-goal {
+    transform: translateY(-1.5vh);
+    margin-top: 1vh;
+}
+.about-contribute {
+    transform: translateY(1.5vh);
+    margin-bottom: 1hw;
 }
