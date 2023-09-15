@@ -4,8 +4,8 @@
     justify-content: center;
 }
 .about div {
-    width: 40vw;
-    height: 75vh;
+    width: 35vw;
+    height: 70vh;
     background-color: var(--blue);
     border-radius: 1vw;
     margin: 3vh 3vw;
@@ -14,20 +14,20 @@
 .about div h2 {
     color: var(--white);
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.25vw;
     font-weight: 500;
 }
 .about div p {
     color: var(--white);
     text-align: center;
-    font-size: .9vw;
+    font-size: 1vw;
     font-weight: 400;
 }
 .about-goal {
-    transform: translateY(-1.5vh);
-    margin-top: 1vh;
+    transform: translateY(-5vh);
+    margin-top: 2vh;
 }
 .about-contribute {
-    transform: translateY(1.5vh);
-    margin-bottom: 1hw;
+    transform: translateY(5vh);
+    margin-bottom: 2vh;
 }
