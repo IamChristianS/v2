@@ -113,6 +113,7 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-description {
     width: 75vw;
     text-align: center;
@@ -121,6 +122,7 @@ footer {
     text-decoration: underline;
     cursor: pointer;
 }
+
 .footer-links {
     width: 25vw;
 }
@@ -134,6 +136,7 @@ footer {
     padding: .25vw .5vw;
     font-weight: 500;
 }
+
 .footer-socials {
     text-align: center;
 }
@@ -145,6 +148,7 @@ footer {
     border: 1px solid var(--white);
     border-radius: 10vw;
 }
+
 .footer-policies {
     margin: 1vw;
     padding-bottom: 2vh;
@@ -158,6 +162,7 @@ footer {
     border: 1px solid var(--white);
     border-radius: 10vw;
 }
+
 .footer-disclaimer p {
     padding: 1vh 15vw;
     font-size: .85vw;

@@ -5,23 +5,21 @@
 }
 .about div {
     width: 35vw;
-    height: 70vh;
+    min-height: 40vh;
     background-color: var(--blue);
     border-radius: 1vw;
     margin: 12vh 3vw;
     padding: 2.5vw;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
-}
-.about div h2 {
     color: var(--white);
     text-align: center;
+}
+.about div h2 {
     font-size: 1.35vw;
     font-weight: 600;
 }
 .about div p {
-    color: var(--white);
-    text-align: center;
     font-size: 1.15vw;
     font-weight: 500;
 }
