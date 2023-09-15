@@ -9,7 +9,9 @@
     background-color: var(--blue);
     border-radius: 1vw;
     margin: 12vh 3vw;
-    padding: 1vw;
+    padding: 2.5vw;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
 .about div h2 {
     color: var(--white);
