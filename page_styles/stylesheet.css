@@ -125,6 +125,10 @@ footer {
     font-size: 1vw;
     padding: .25vw .5vw;
 }
+.footer-description {
+    width: 75vw;
+    text-align: center;
+}
 .footer-socials i {
     font-size: 2vw;
     margin: 1vw;
