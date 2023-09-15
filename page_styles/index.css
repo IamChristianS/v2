@@ -8,7 +8,7 @@
     height: 70vh;
     background-color: var(--blue);
     border-radius: 1vw;
-    margin: 2vh 3vw;
+    margin: 12vh 3vw;
     padding: 1vw;
 }
 .about div h2 {
@@ -25,9 +25,7 @@
 }
 .about-goal {
     transform: translateY(-5vh);
-    margin-top: 15vh;
 }
 .about-contribute {
     transform: translateY(5vh);
-    margin-bottom: 15vh;
 }
