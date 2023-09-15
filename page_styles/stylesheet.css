@@ -113,6 +113,10 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+.footer-description {
+    width: 75vw;
+    text-align: center;
+}
 .footer-links {
     width: 25vw;
 }
@@ -124,10 +128,6 @@ footer {
     text-decoration: none;
     font-size: 1vw;
     padding: .25vw .5vw;
-}
-.footer-description {
-    width: 75vw;
-    text-align: center;
 }
 .footer-socials i {
     font-size: 2vw;
