@@ -6,7 +6,7 @@
     padding: 0;
     font-family: 'Montserrat', Courier, monospace;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white);
 }
 
 body {
@@ -23,15 +23,16 @@ body:before {
     box-shadow: 0px 0 25px rgba(0, 0, 0, 0.5);
 }
 
+:root {
+    --blue: #46789B;
+    --white: #FCFFFF;
+    --black: #46464B;
+}
 #incomplete {
     display: none;
 }
 
 /* Navbar */
-:root { /* TESTING ONLY */
-    --nav-shadow-size: 10px;
-    --nav-shadow-opacity: .5;
-}
 .nav {
     width: 100vw;
     padding: 3.5vh 6vw;
@@ -39,7 +40,7 @@ body:before {
     justify-content: space-between;
     align-items: center;
     cursor: default;
-    background-color: #487b9b;
+    background-color: var(--blue);
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -71,7 +72,7 @@ body:before {
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: #ffffff;
+    background: var(--white);
     height: 2px;
     transition-property: left, right;
     transition-duration: 0.2s;
@@ -87,7 +88,7 @@ body:before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #ffffff;
+    background: var(--white);
     height: 2px;
 }
 
@@ -97,14 +98,14 @@ body:before {
     cursor: pointer;
 }
 .nav-tools i:hover {
-    text-shadow: 0px 0px var(--nav-shadow-size) rgba(0,0,0,var(--nav-shadow-opacity));
+    text-shadow: 0px 0px 10 rgba(0,0,0,0.5);
 }
 
 /* Footer */
 footer {
     width: 100vw;
     padding: 3.5vh 10vw;
-    background-color: #487b9b;
+    background-color: var(--blue);
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -133,7 +134,7 @@ footer {
     margin: 1vw;
     cursor: pointer;
     padding: .5vw;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     border-radius: 10vw;
 }
 .footer-policies {
@@ -146,11 +147,15 @@ footer {
     padding-bottom: 1.5vh;
     margin: 1vh .75vw;
     padding: .5vw;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     border-radius: 10vw;
 }
 .footer-disclaimer p {
     padding: 1vh 15vw;
     font-size: .85vw;
     text-align: center;
+}
+.footer-disclaimer p span {
+    text-decoration: underline;
+    cursor: pointer;
 }
