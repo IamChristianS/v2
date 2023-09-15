@@ -8,26 +8,26 @@
     height: 70vh;
     background-color: var(--blue);
     border-radius: 1vw;
-    margin: 3vh 3vw;
+    margin: 2vh 3vw;
     padding: 1vw;
 }
 .about div h2 {
     color: var(--white);
     text-align: center;
-    font-size: 1.25vw;
-    font-weight: 500;
+    font-size: 1.35vw;
+    font-weight: 600;
 }
 .about div p {
     color: var(--white);
     text-align: center;
-    font-size: 1vw;
-    font-weight: 400;
+    font-size: 1.15vw;
+    font-weight: 500;
 }
 .about-goal {
     transform: translateY(-5vh);
-    margin-top: 2vh;
+    margin-top: 5vh;
 }
 .about-contribute {
     transform: translateY(5vh);
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
 }
