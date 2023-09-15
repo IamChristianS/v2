@@ -11,6 +11,18 @@
     margin: 3vh 3vw;
     padding: 1vw;
 }
+.about div h2 {
+    color: var(--white);
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.about div p {
+    color: var(--white);
+    text-align: center;
+    font-size: .9vw;
+    font-weight: 400;
+}
 .about-goal {
     transform: translateY(-1.5vh);
     margin-top: 1vh;
