@@ -6,16 +6,21 @@
 .about div {
     width: 35vw;
     min-height: 40vh;
-    background-color: var(--blue);
-    border-radius: 1vw;
-    margin: 12vh 3vw;
+    margin: 20vh 1.5vw;
     padding: 2.5vw;
+
+    background: linear-gradient(
+        var(--blue),
+        var(--darkblue)
+    );
+    border-radius: 1vw;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+
     color: var(--white);
     text-align: center;
-    line-height: 10px;
     word-spacing: 2px;
+    line-height: 3.5vh;
 }
 .about div h2 {
     font-size: 1.35vw;
@@ -26,10 +31,10 @@
     font-weight: 500;
 }
 .about-goal {
-    transform: translateY(-5vh);
+    transform: translateY(-15vh);
 }
 .about-contribute {
-    transform: translateY(5vh);
+    transform: translateY(15vh);
 }
 .about-contribute p span {
     text-decoration: underline;
