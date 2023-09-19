@@ -46,7 +46,8 @@
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    margin: 1vh 1vw;
+    margin: 1vw 1vw;
+    padding: 1vw;
 }
 .random-games div {
     width: 25vw;
@@ -61,10 +62,9 @@
 }
 .random-games div img {
     width: 25vw;
-    padding: .5vh;
 }
 .random-games div h2 {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     font-weight: 500;
 }
