@@ -47,7 +47,7 @@
     justify-content: space-around;
 }
 .random-games div {
-    width: 20vw;
+    width: 25vw;
     background: linear-gradient(
         var(--blue),
         var(--darkblue)
@@ -57,5 +57,5 @@
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
 .random-games div img {
-    
+    width: 25vw;
 }
