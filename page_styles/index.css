@@ -43,13 +43,13 @@
 
 /* Random Games */
 .random-games {
-    width: 95vw;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 .random-games div {
     width: 25vw;
+    margin: 3vw;
 
     background: linear-gradient(
         var(--blue),
