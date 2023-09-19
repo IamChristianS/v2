@@ -50,7 +50,6 @@
 .random-games div {
     width: 25vw;
     margin: 1.5vw 1vw;
-    padding: 1vw;
 
     background: linear-gradient(
         var(--blue),
@@ -63,6 +62,7 @@
 }
 .random-games div img {
     width: 25vw;
+    padding: 1vw;
 }
 .random-games div h2 {
     text-align: center;
