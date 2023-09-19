@@ -113,7 +113,20 @@
         </div>
 
         <div class="faq">
-
+            <div class="faq-slide">
+                <h2>"PutAFrequentlyAskedQuestionHere1"</h2><hr>
+                <p>PutAnAnswerToTheFrequentlyAskedQuestionHere1</p>
+            </div>
+            <div class="faq-slide">
+                <h2>"PutAFrequentlyAskedQuestionHere2"</h2><hr>
+                <p>PutAnAnswerToTheFrequentlyAskedQuestionHere2</p>
+            </div>
+            <div class="faq-slide">
+                <h2>"PutAFrequentlyAskedQuestionHer3e"</h2><hr>
+                <p>PutAnAnswerToTheFrequentlyAskedQuestionHere3</p>
+            </div>
+            <button class="faq-button-left" onclick="faqSlide(-1)">&#10094;</button>
+            <button class="faq-button-right" onclick="faqSlide(1)">&#10094;</button>
         </div>
         <!--Content-->
 
@@ -148,6 +161,27 @@
             </div>
         </footer>
         <!--Footer-->
+
+        <!--FAQ Sliding-->
+        <script>
+            var faqSlideIndex = 1;
+            showFaq(faqSlideIndex);
+
+            function faqSlide(plusNum) {
+                showFaq(faqSlideIndex += plusNum);
+            }
+            function showFaq(plusNum) {
+                var i;
+                var faqSlides = document.getElementsByClassName("faq-slides");
+                if (plusNum > faqSlides.length) {faqSlideIndex = 1}
+                if (plusNum < 1) {faqSlideIndex = faqSlides.length}
+                for (i = 0; i < faqSlides.length; i++) {
+                    faqSlides[i].style.display = "none";
+                }
+                faqSlides[faqSlideIndex-1].style.display = "block";  
+            }
+        </script>
+        <!--FAQ Sliding-->
         
         <!--AOS Library-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
