@@ -46,11 +46,11 @@
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    margin: 1vw 1vw;
-    padding: 1vw;
+    margin: 1.5vw 1vw;
 }
 .random-games div {
     width: 25vw;
+    padding: 1vw;
     background: linear-gradient(
         var(--blue),
         var(--darkblue)
