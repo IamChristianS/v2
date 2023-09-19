@@ -49,7 +49,7 @@
 }
 .random-games div {
     width: 25vw;
-    margin: 2vw;
+    margin: 3vw;
 
     background: linear-gradient(
         var(--blue),
