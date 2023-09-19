@@ -44,6 +44,7 @@
 /* Random Games */
 .random-games {
     width: 100vw;
+    display: flex;
     justify-content: space-around;
 }
 .random-games div {
