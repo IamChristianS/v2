@@ -70,3 +70,25 @@
     font-weight: 500;
     margin-bottom: 1vw;
 }
+/* FAQ */
+.faq-slides button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: snow;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 0 1vw;
+    color: #64829e;
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+}
+.faq-slides div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: snow;
+    padding: 1vw 3vw;
+    margin: 1vw 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #64829e;
+    letter-spacing: 2px;
+}
