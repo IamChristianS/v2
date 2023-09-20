@@ -87,3 +87,6 @@
 .faq p, .faq hr {
     display: none;
 }
+.faq-1:hover .faq-1 p .faq-1 hr {
+    display: block;
+}
