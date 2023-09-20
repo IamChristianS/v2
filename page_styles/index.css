@@ -128,6 +128,7 @@
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 
     width: 50vw;
+    height: 200px;
     margin: 1vw auto;
 
     animation: fade .5s;
@@ -135,27 +136,22 @@
     cursor: default;
 }
 .reviews-slides img {
-    height: 90%;
-    margin: 10%;
+    height: 180px;
     border-radius: 1vw;
 }
 .reviews-slides h2 {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);margin: auto 0;
+    vertical-align: middle;
     font-size: 1.5vw;
     font-weight: 500;
 }
 .reviews-slides p {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    vertical-align: middle;
     font-size: 1.25vw;
     font-weight: 400;
 }
 
 #prev, #next {
-    margin: auto 0;
+    vertical-align: middle;
     cursor: pointer;
 }
 #prev {
