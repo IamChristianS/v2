@@ -22,6 +22,18 @@
     word-spacing: 2px;
     line-height: 3.5vh;
 }
+
+.about-goal {
+    transform: translateY(-15vh);
+}
+.about-contribute {
+    transform: translateY(15vh);
+}
+
+.about-contribute p span {
+    text-decoration: underline;
+    cursor: pointer;
+}
 .about div h2 {
     font-size: 1.35vw;
     font-weight: 600;
@@ -29,16 +41,6 @@
 .about div p {
     font-size: 1.15vw;
     font-weight: 500;
-}
-.about-goal {
-    transform: translateY(-15vh);
-}
-.about-contribute {
-    transform: translateY(15vh);
-}
-.about-contribute p span {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 /* Random Games */
@@ -60,6 +62,7 @@
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+
 .random-games div img {
     width: 25vw;
     padding: 1vw;
@@ -70,6 +73,7 @@
     font-weight: 500;
     margin-bottom: 1vw;
 }
+
 /* FAQ */
 .faq div {
     background: linear-gradient(
@@ -84,6 +88,7 @@
     margin: 1vw auto;
     padding: 2vw 3vw;
 }
+
 .faq h2 {
     font-size: 1.5vw;
     font-weight: 500;
@@ -110,4 +115,46 @@
 .faq-2:hover .faq-2-reveal,
 .faq-3:hover .faq-3-reveal {
     display: block;
+}
+
+/* Reviews */
+.reviews {
+    background: linear-gradient(
+        var(--blue),
+        var(--darkblue)
+    );
+    border-radius: 1vw;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+
+    width: 60vw;
+    margin: 1vw auto;
+}
+.reviews-slides {
+    width: 100%;
+    height: 100%;
+    animation: fade 1.5s;
+    display: none;
+    padding: 2vw;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 49%;
+    cursor: pointer
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
