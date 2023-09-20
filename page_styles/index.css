@@ -71,10 +71,6 @@
     margin-bottom: 1vw;
 }
 /* FAQ */
-.faq {
-    width: 50vw;
-    align-self: center;
-}
 .faq div {
     background: linear-gradient(
         var(--blue),
@@ -84,10 +80,12 @@
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 
+    justify-content: center;
+    width: 60vw;
     margin: 1vw;
     padding: 1vw;
 }
-.faq p, .faq hr {
+.faq-1 p, .faq-1 hr {
     display: none;
 }
 .faq-1:hover .faq-1 p {
