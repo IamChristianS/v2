@@ -85,9 +85,17 @@
     margin: 1vw;
     padding: 2vw 3vw;
 }
+
 .faq-1 p, .faq-1 hr {
     display: none;
 }
 .faq-1:hover .faq-1 {
+    display: block;
+}
+
+.faq-3-reveal {
+    display: none;
+}
+.faq-3:hover .faq-3-reveal {
     display: block;
 }
