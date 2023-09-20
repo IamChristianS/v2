@@ -138,25 +138,29 @@
     padding: 2vw;
 }
 .reviews-slides img {
-    width: 5vw;
-    margin: 2vw;
+    width: 10vw;
+    margin: 1vw;
     border-radius: 1vw;
 }
 .reviews-slides h2 {
-
+    vertical-align: middle;
+    font-size: 1.5vw;
+    font-weight: 500;
 }
 .reviews-slides p {
-
+    vertical-align: middle;
+    font-size: 1.25vw;
+    font-weight: 400;
 }
 
-.prev, .next {
+.reviews-prev, .reviews-next {
     vertical-align: middle;
     cursor: pointer;
 }
-.prev {
+.reviews-prev {
     left: 10px;
 }
-.next {
+.reviews-next {
     right: 10px;
 }
 
