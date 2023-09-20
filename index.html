@@ -97,15 +97,18 @@
         <!--User Reviews-->
         <div class="reviews">
             <div class="reviews-slides slide1">
+                <img src="img/reviews/placeholder.png">
                 <h2>userName1</h2>
                 <p>- "userReview1"</p>
             </div>
             <div class="reviews-slides slide2">
+                <img src="img/reviews/placeholder.png">
                 <h2>userName2</h2>
                 <p>- "userReview2"</p>
             </div>
             <div class="reviews-slides slide3">
-                <h2>userNam3e</h2>
+                <img src="img/reviews/placeholder.png">
+                <h2>userName3</h2>
                 <p>- "userReview3"</p>
             </div>
             <i class="reviews-prev fa-solid fa-chevron-left" id="prev"> </i>
@@ -194,7 +197,7 @@
                 for (var i = 0; i < slides.length; i++) {
                     slides[i].style.display = 'none'
                 }
-                slides[currentSlide - 1].style.display = 'flex'
+                slides[currentSlide - 1].style.display = 'inline-block'
             }
             function nextSlide() {
                 showSlide(currentSlide += 1);
