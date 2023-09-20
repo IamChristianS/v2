@@ -85,16 +85,21 @@
     margin: 1vw;
     padding: 2vw 3vw;
 }
+.faq h2 {
+    font-size: 1.75vw;
+    font-weight: 500;
+}
+.faq p {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.faq hr {
+    margin: 1vw;
+}
 
 .faq-1-reveal, .faq-2-reveal, .faq-3-reveal {
     display: none;
 }
-.faq-1:hover .faq-1-reveal {
-    display: block;
-}
-.faq-2:hover .faq-2-reveal {
-    display: block;
-}
-.faq-3:hover .faq-3-reveal {
+.faq-1:hover .faq-1-reveal, .faq-2:hover .faq-2-reveal, .faq-3:hover .faq-3-reveal {
     display: block;
 }
