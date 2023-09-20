@@ -135,8 +135,8 @@
     cursor: default;
 }
 .reviews-slides img {
-    width: 6vw;
-    margin: .5vw;
+    height: 90%;
+    margin: 10%;
     border-radius: 1vw;
 }
 .reviews-slides h2 {
