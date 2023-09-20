@@ -136,10 +136,11 @@
     animation: fade .5s;
     display: none;
     padding: 2vw;
+    display: flex;
 }
 .reviews-slides img {
-    height: 90%;
-    margin: 10%;
+    width: 2vw;
+    margin: 2vw;
 }
 .reviews-slides h2 {
 
