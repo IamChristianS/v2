@@ -141,18 +141,18 @@
     border-radius: 1vw;
 }
 .reviews-slides h2 {
-    vertical-align: middle;
+    margin-top: 20px;
     font-size: 1.5vw;
     font-weight: 500;
 }
 .reviews-slides p {
-    vertical-align: middle;
+    margin-bottom: 20px;
     font-size: 1.25vw;
     font-weight: 400;
 }
 
 #prev, #next {
-    position: relative;
+    position: absolute;
     vertical-align: middle;
     cursor: pointer;
 }
@@ -165,7 +165,7 @@
 
 @keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: 0.5;
     }
     to {
         opacity: 1;
