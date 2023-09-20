@@ -80,26 +80,29 @@
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 
-    justify-content: center;
     width: 60vw;
-    margin: 1vw;
+    margin: 1vw auto;
     padding: 2vw 3vw;
 }
 .faq h2 {
-    font-size: 1.75vw;
+    font-size: 1.5vw;
     font-weight: 500;
 }
 .faq p {
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     font-weight: 400;
 }
 .faq hr {
     margin: 1vw;
 }
 
-.faq-1-reveal, .faq-2-reveal, .faq-3-reveal {
+.faq-1-reveal,
+.faq-2-reveal,
+.faq-3-reveal {
     display: none;
 }
-.faq-1:hover .faq-1-reveal, .faq-2:hover .faq-2-reveal, .faq-3:hover .faq-3-reveal {
+.faq-1:hover .faq-1-reveal,
+.faq-2:hover .faq-2-reveal,
+.faq-3:hover .faq-3-reveal {
     display: block;
 }
