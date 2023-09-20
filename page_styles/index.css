@@ -138,16 +138,15 @@
     padding: 2vw;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 49%;
-    cursor: pointer
-}
 .prev {
-    left: 10px;
+    margin: auto 1vw;
+    left: 0;
+    cursor: pointer;
 }
 .next {
-    right: 10px;
+    margin: auto 1vw;
+    right: 0;
+    cursor: pointer;
 }
 
 @keyframes fade {
