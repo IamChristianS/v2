@@ -73,7 +73,7 @@
 /* FAQ */
 .faq {
     width: 50vw;
-    justify-content: center;
+    align-self: center;
 }
 .faq div {
     background: linear-gradient(
@@ -90,6 +90,6 @@
 .faq p, .faq hr {
     display: none;
 }
-.faq-1:hover .faq-1 p, .faq-1:hover .faq-1 hr {
+.faq-1:hover .faq-1 p {
     display: block;
 }
