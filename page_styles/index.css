@@ -93,10 +93,10 @@
     font-weight: 400;
 }
 .faq hr, .faq i {
-    margin: 1vw;
+    margin-right: 1vw;
 }
 .faq span i {
-    margin: 0 1vw;
+    margin-right: 1vw;
 }
 
 .faq-1-reveal,
