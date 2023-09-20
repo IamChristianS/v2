@@ -86,15 +86,14 @@
     padding: 2vw 3vw;
 }
 
-.faq-1 p, .faq-1 hr {
+.faq-1-reveal, .faq-2-reveal, .faq-3-reveal {
     display: none;
 }
-.faq-1:hover .faq-1 {
+.faq-1:hover .faq-1-reveal {
     display: block;
 }
-
-.faq-3-reveal {
-    display: none;
+.faq-2:hover .faq-2-reveal {
+    display: block;
 }
 .faq-3:hover .faq-3-reveal {
     display: block;
