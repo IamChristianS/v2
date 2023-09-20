@@ -104,6 +104,7 @@ footer {
     background-color: var(--blue);
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+    cursor: default;
 }
 .footer {
     display: flex;
@@ -134,6 +135,7 @@ footer {
     font-size: 1.05vw;
     padding: .25vw .5vw;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .footer-socials {
