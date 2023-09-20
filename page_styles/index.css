@@ -95,6 +95,9 @@
 .faq hr, .faq i {
     margin: 1vw;
 }
+.faq span i {
+    margin: 0 1vw;
+}
 
 .faq-1-reveal,
 .faq-2-reveal,
