@@ -118,7 +118,7 @@
 }
 
 /* Reviews */
-.reviews {
+.reviews-slides {
     background: linear-gradient(
         var(--blue),
         var(--darkblue)
@@ -129,24 +129,27 @@
 
     width: 50vw;
     margin: 1vw auto;
-}
-.reviews-slides {
+
     animation: fade .5s;
     display: none;
-    padding: 1vw;
+    cursor: default;
 }
 .reviews-slides img {
-    width: 10vw;
-    margin: 1vw;
+    width: 6vw;
+    margin: .5vw;
     border-radius: 1vw;
 }
 .reviews-slides h2 {
-    margin: auto 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);margin: auto 0;
     font-size: 1.5vw;
     font-weight: 500;
 }
 .reviews-slides p {
-    margin: auto 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 1.25vw;
     font-weight: 400;
 }
