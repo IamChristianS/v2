@@ -1,6 +1,19 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+[data-theme="light"] {
+    --background-color: rgba(0,0,0,0);
+    --text-color: #FCFFFF;
+    --gradient-color-light: #46789B;
+    --gradient-color-dark: #356080;
+}
+[data-theme="dark"] {
+    --color-bg: rgba(0,0,0,0.7);
+    --text-color: #DCDDDD;
+    --gradient-color-light: #396686;
+    --gradient-color-dark: #2a5472;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,18 +29,6 @@ body {
     ), url(../img/pageBackground.png);
     background-repeat: repeat;
     overflow-x: hidden;
-}
-[data-theme="light"] {
-    --background-color: rgba(0,0,0,0);
-    --text-color: #FCFFFF;
-    --gradient-color-light: #46789B;
-    --gradient-color-dark: #356080;
-}
-[data-theme="dark"] {
-    --color-bg: rgba(0,0,0,0.7);
-    --text-color: #DCDDDD;
-    --gradient-color-light: #396686;
-    --gradient-color-dark: #2a5472;
 }
 
 #incomplete {
