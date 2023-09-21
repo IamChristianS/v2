@@ -1,28 +1,33 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-:root {
-    --blue: #46789B;
-    --darkblue: #356080;
-    --white: #FCFFFF;
-    --black: #46464B;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', Courier, Helvetica, Arial, sans-serif;
-    color: var(--white);
+    color: var(--text-color);
 }
 
 body {
     background: linear-gradient(
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0)
+        var(--background-color),
+        var(--background-color)
     ), url(../img/pageBackground.png);
     background-repeat: repeat;
     overflow-x: hidden;
+}
+[data-theme="light"] {
+    --background-color: rgba(0,0,0,0);
+    --text-color: #FCFFFF;
+    --gradient-color-light: #46789B;
+    --gradient-color-dark: #356080;
+}
+[data-theme="dark"] {
+    --color-bg: rgba(0,0,0,0.7);
+    --text-color: #DCDDDD;
+    --gradient-color-light: #396686;
+    --gradient-color-dark: #2a5472;
 }
 
 #incomplete {
@@ -37,7 +42,7 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: default;
-    background-color: var(--blue);
+    background-color: var(--gradient-color-light);
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -69,7 +74,7 @@ body {
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: var(--white);
+    background: var(--text-color);
     height: 2px;
     transition-property: left, right;
     transition-duration: 0.2s;
@@ -85,7 +90,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--white);
+    background: var(--text-color);
     height: 2px;
 }
 
@@ -104,7 +109,7 @@ body {
 footer {
     width: 100vw;
     padding: 3.5vh 10vw;
-    background-color: var(--blue);
+    background-color: var(--gradient-color-light);
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
     cursor: default;
@@ -149,7 +154,7 @@ footer {
     margin: 1vw;
     cursor: pointer;
     padding: .5vw;
-    border: 1px solid var(--white);
+    border: 1px solid var(--text-color);
     border-radius: 10vw;
 }
 
@@ -163,7 +168,7 @@ footer {
     padding-bottom: 1.5vh;
     margin: 1vh .75vw;
     padding: .5vw;
-    border: 1px solid var(--white);
+    border: 1px solid var(--text-color);
     border-radius: 10vw;
 }
 

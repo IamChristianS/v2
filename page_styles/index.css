@@ -10,8 +10,8 @@
     padding: 2.5vw;
 
     background: linear-gradient(
-        var(--blue),
-        var(--darkblue)
+        var(--gradient-color-light),
+        var(--gradient-color-dark)
     );
     border-radius: 1vw;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
@@ -50,8 +50,8 @@
 }
 .reviews-slides {
     background: linear-gradient(
-        var(--blue),
-        var(--darkblue)
+        var(--gradient-color-light),
+        var(--gradient-color-dark)
     );
     border-radius: 1vw;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
@@ -102,7 +102,7 @@
     scale: 110%;
 }
 .reviews h3, .reviews h3 a {
-    color: var(--darkblue);
+    color: var(--gradient-color-dark);
     text-shadow: 0px 0px 2.5px rgba(0,0,0,.1);
     font-weight: 600;
     margin: .5vw;
@@ -119,8 +119,8 @@
     margin: 3vw;
 
     background: linear-gradient(
-        var(--blue),
-        var(--darkblue)
+        var(--gradient-color-light),
+        var(--gradient-color-dark)
     );
     border-radius: 1vw;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
@@ -129,7 +129,7 @@
     transition: scale .15s;
 }
 .random-games div:hover {
-    background: var(--blue);
+    background: var(--gradient-color-light);
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
     scale: 102%;
 }
@@ -148,8 +148,8 @@
 /* FAQ */
 .faq div {
     background: linear-gradient(
-        var(--blue),
-        var(--darkblue)
+        var(--gradient-color-light),
+        var(--gradient-color-dark)
     );
     border-radius: 1vw;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
