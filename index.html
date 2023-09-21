@@ -49,8 +49,7 @@
     <body>
         <!--Navbar-->
         <header class="nav">
-            <a href="index.html"
-                data-aos="fade-down" data-aos-delay="600">Project-<span>Hub</span></a>
+            <a href="index.html">Project-<span>Hub</span></a>
             
             <div class="nav-links">
                 <button class="nav-links-button nav-links-active"
@@ -71,12 +70,8 @@
             </div>
 
             <div class="nav-tools">
-                <i class="fa-solid fa-circle-half-stroke"
-                    data-aos="fade-down" data-aos-delay="600"
-                    onclick=""></i>
-                <i class="fa-solid fa-gear"
-                    data-aos="fade-down" data-aos-delay="600"
-                    onclick=""></i>
+                <i class="fa-solid fa-circle-half-stroke" onclick=""></i>
+                <i class="fa-solid fa-gear" onclick=""></i>
             </div>
         </header>
         <!--Navbar-->
@@ -90,23 +85,35 @@
             </div>
             <div class="about-contribute">
                 <h2>Contributions</h2>
-                <p>Our site is built upon the contributions of the community, and that includes you as well. If you have an idea or game request that you'd like to see added, you can use our <span onclick="window.location.href='contact.html'">Contact Page</span>, or you can contact us at our email: <span onclick="window.location.href='https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1'">project.hub.games@gmail.com</span> and we would be glad to assist you in any way we can! We also greatly value keeping our project open-source so that you, the user, can clone our site and make your very own modifications.</p>
+                <p>Our site is built upon the contributions of the community, and that includes you as well. If you have an idea or game request that you'd like to see added, you can use our <a href="contact.html">Contact Page</a>, or you can contact us at our email: <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1">project.hub.games@gmail.com</a> and we would be glad to assist you in any way we can! We also greatly value keeping our project open-source so that you, the user, can clone our site and make your very own modifications.</p>
             </div>
         </div>
 
         <!--User Reviews-->
         <div class="reviews">
-            <div class="reviews-slides slide1">
-                <div class="reviews-slides-profile">
+            <div class="reviews-slides slides1">
+                <div class="review-slides-profile">
                     <img src="img/reviews/placeholder.png">
+                    <i class="fa-solid fa-chevron-left" onclick="previousSlide()"></i>
+                    <i class="fa-solid fa-chevron-right" onclick="nextSlide()"></i>
                 </div>
                 <div class="reviews-slides-text">
                     <h2>userName1</h2>
-                    <p>- "userReview1"</p>
+                    <p>- "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum."</p>
                 </div>
             </div>
-            <i class="fa-solid fa-chevron-left" id="prev"> </i>
-            <i class="fa-solid fa-chevron-right" id="next"> </i>
+            <div class="reviews-slides slides2">
+                <div class="review-slides-profile">
+                    <img src="img/reviews/placeholder.png">
+                    <i class="fa-solid fa-chevron-left" onclick="previousSlide()"></i>
+                    <i class="fa-solid fa-chevron-right" onclick="nextSlide()"></i>
+                </div>
+                <div class="reviews-slides-text">
+                    <h2>userName2</h2>
+                    <p>- "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum."</p>
+                </div>
+            </div>
+            <h3>Want to see yourself here? Email us at <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1">project.hub.games@gmail.com</a></h3>
         </div>
         
         <!--Random Games-->
@@ -126,7 +133,7 @@
         </div>
 
         <!--FAQ-->
-        <div class="faq" >
+        <div class="faq">
             <div class="faq-1">
                 <h2><i class="fa-regular fa-circle-question"></i>Why are there ads, and is there any way of turning them off?</h2>
                 <span class="faq-1-reveal"><hr>
@@ -136,7 +143,7 @@
             <div class="faq-2">
                 <h2><i class="fa-regular fa-circle-question"></i>Can you add _____ game? / Why doesn't _____ work?</h2>
                 <span class="faq-2-reveal"><hr>
-                    <p><i class="fa-regular fa-circle-check"></i>Sadly, we aren't able to find and host every game out there. However, if you'd like to let us know about a new game, you can contact us using our <a href="contact.html">Contact Forms</a>, <a href="https://github.com/unbl0ck/v2/issues">GitHub Issues</a>, or <a href="mailto:project.hub.games@gmail.com?subject=What%20do%20you%20wish%20to%20discuss%3F&body=Please%20put%20in-depth%20what%20you%20are%20wanting%20to%20talk%20about.%20I%20promise%20I%20don't%20bite...%20yet."">Emailing</a>. Sometimes, albeit rarely, there are few games which we cannot host due to Flash/external limitations, and if you find these games on our site, please contact us using one of the methods above..</p>
+                    <p><i class="fa-regular fa-circle-check"></i>Sadly, we aren't able to find and host every game out there. However, if you'd like to let us know about a new game, you can contact us using our <a href="contact.html">Contact Forms</a>, <a href="https://github.com/unbl0ck/v2/issues">GitHub Issues</a>, or <a href='https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1'>Email</a>. Sometimes, albeit rarely, there are few games which we cannot host due to Flash/external limitations, and if you find these games on our site, please contact us using one of the methods above..</p>
                 </span>
             </div>
             <div class="faq-3">
@@ -191,23 +198,18 @@
                 for (var i = 0; i < slides.length; i++) {
                     slides[i].style.display = 'none'
                 }
-                slides[currentSlide - 1].style.display = 'flex'
+                slides[currentSlide - 1].style.display = 'inline-flex'
+            }
+
+            function previousSlide() {
+                showSlide(currentSlide -= 1);
             }
             function nextSlide() {
                 showSlide(currentSlide += 1);
             }
-            function previousSlide() {
-                showSlide(currentSlide -= 1);
-            }
 
             window.onload = function () {
                 showSlide(currentSlide);
-                document.getElementById('prev').addEventListener('click', function () {
-                    previousSlide();
-                })
-                document.getElementById('next').addEventListener('click', function () {
-                    nextSlide();
-                })
             }
         </script>
         <!--FAQ Sliding-->
