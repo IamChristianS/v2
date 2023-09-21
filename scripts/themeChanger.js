@@ -1,32 +1,32 @@
-localStorage.getItem("theme");
-localStorage.setItem("theme", newTheme);
+const storageKey = 'theme-preference'
 
-const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+const onClick = () => {
+  theme.value = theme.value === 'light'
+    ? 'dark'
+    : 'light'
 
-function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
-    if (localStorageTheme !== null) {
-        return localStorageTheme;
-    }
-    
-    if (systemSettingDark.matches) {
-        return "dark";
-    }
-
-    return "light";
+  setPreference()
 }
 
-const localStorageTheme = localStorage.getItem("theme");
-const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+const getColorPreference = () => {
+  if (localStorage.getItem(storageKey))
+    return localStorage.getItem(storageKey)
+  else
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+}
+const setPreference = () => {
+  localStorage.setItem(storageKey, theme.value)
+}
 
-let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+const theme = {
+  value: getColorPreference(),
+}
 
-const button = document.querySelector("[data-theme-toggle]");
+window.onload = () => {
+  document.querySelector('#theme-toggle').addEventListener('click', onClick)
+}
 
-button.addEventListener("click", () => {
-    const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
-
-    document.querySelector("html").setAttribute("data-theme", newTheme);
-
-    localStorage.setItem("theme", newTheme);
-    currentThemeSetting = newTheme;
-});
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({matches:isDark}) => {
+    theme.value = isDark ? 'dark' : 'light'
+    setPreference()
+})
