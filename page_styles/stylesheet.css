@@ -108,10 +108,6 @@ body {
 
 /* Settings */
 #settings {
-    width: 35vw;
-    height: 100vh;
-    padding: 2vw;
-
     background: linear-gradient(
         var(--gradient-color-light),
         var(--gradient-color-dark)
@@ -124,7 +120,7 @@ body {
     height: 0;
     right: 0;
     overflow: hidden;
-    transition: width 0.5s ease-in;
+    transition: height 0.5s ease-in;
 }
 
 /* Footer */
