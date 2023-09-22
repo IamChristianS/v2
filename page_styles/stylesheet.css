@@ -107,7 +107,7 @@ body {
 }
 
 /* Settings */
-.settings {
+#settings {
     width: 35vw;
     height: 100vh;
     padding: 2vw;

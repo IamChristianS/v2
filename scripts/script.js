@@ -3,7 +3,7 @@
 //    document.querySelector('settings').classList.toggle("settings-animate");
 //}
 
-function toggleSettings() {
+document.getElementById('theme-changer').onclick = function() {
     this.__toggle = !this.__toggle;
     var target = document.getElementById('settings');
     if( this.__toggle) {
