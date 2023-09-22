@@ -119,8 +119,6 @@ body {
     position: fixed;
     overflow-x: hidden;
 
-    padding: 2vw;
-
     background: linear-gradient(
         var(--gradient-color-light),
         var(--gradient-color-dark)
