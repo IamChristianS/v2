@@ -7,10 +7,10 @@ function toggleSettings() {
     this.__toggle = !this.__toggle;
     var target = document.getElementById('settings');
     if( this.__toggle) {
-        target.style.width = target.scrollWidth+"px";
+        target.style.height = target.scrollHeight+"px";
     }
     else {
-        target.style.width = 0;
+        target.style.height = 0;
     }
 }
 
