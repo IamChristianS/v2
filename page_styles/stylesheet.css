@@ -28,7 +28,7 @@ body {
         var(--background-color)
     ), url(../img/pageBackground.png);
     background-repeat: repeat;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 #incomplete {
