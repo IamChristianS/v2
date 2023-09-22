@@ -71,10 +71,17 @@
 
             <div class="nav-tools">
                 <i class="fa-solid fa-circle-half-stroke"></i>
-                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-gear" id="btnSlideToggle"></i>
             </div>
         </header>
         <!--Navbar-->
+
+        <!--Settings-->
+        <div class="settings">
+            <h2>Settings</h2>
+            
+        </div>
+        <!--Settings-->
 
         <!--Content-->
         <!--About Cards-->
@@ -94,8 +101,8 @@
             <div class="reviews-slides slides1">
                 <div class="review-slides-profile">
                     <img src="img/reviews/placeholder.png">
-                    <i class="fa-solid fa-chevron-left" onclick="previousSlide()"></i>
-                    <i class="fa-solid fa-chevron-right" onclick="nextSlide()"></i>
+                    <i class="fa-solid fa-chevron-left" onclick="showSlide(currentSlide--)"></i>
+                    <i class="fa-solid fa-chevron-right" onclick="showSlide(currentSlide++)"></i>
                 </div>
                 <div class="reviews-slides-text">
                     <h2>userName1</h2>
@@ -202,10 +209,10 @@
             }
 
             function previousSlide() {
-                showSlide(currentSlide -= 1);
+                showSlide(currentSlide--);
             }
             function nextSlide() {
-                showSlide(currentSlide += 1);
+                showSlide(currentSlide++);
             }
 
             window.onload = function () {
