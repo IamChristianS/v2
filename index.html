@@ -32,8 +32,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--AOS Library-->
         <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 
-        <script src="scripts/themeChanger.js" crossorigin="anonymous"></script>
-        <script src="scripts/settingsMenu.js" crossorigin="anonymous"></script>
+        <script src="scripts/script.js" crossorigin="anonymous"></script>
 
         <meta property="og:title" content="Project Hub V2">
         <meta property="og:description" content="">
@@ -71,7 +70,7 @@
 
             <div class="nav-tools">
                 <i class="fa-solid fa-circle-half-stroke"></i>
-                <i class="fa-solid fa-gear" id="btnSlideToggle"></i>
+                <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
             </div>
         </header>
         <!--Navbar-->
@@ -112,8 +111,8 @@
             <div class="reviews-slides slides2">
                 <div class="review-slides-profile">
                     <img src="img/reviews/placeholder.png">
-                    <i class="fa-solid fa-chevron-left" onclick="previousSlide()"></i>
-                    <i class="fa-solid fa-chevron-right" onclick="nextSlide()"></i>
+                    <i class="fa-solid fa-chevron-left" onclick="showSlide(currentSlide--)"></i>
+                    <i class="fa-solid fa-chevron-right" onclick="showSlide(currentSlide++)"></i>
                 </div>
                 <div class="reviews-slides-text">
                     <h2>userName2</h2>
@@ -206,13 +205,6 @@
                     slides[i].style.display = 'none'
                 }
                 slides[currentSlide - 1].style.display = 'inline-flex'
-            }
-
-            function previousSlide() {
-                showSlide(currentSlide--);
-            }
-            function nextSlide() {
-                showSlide(currentSlide++);
             }
 
             window.onload = function () {

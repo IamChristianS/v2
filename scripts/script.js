@@ -1,3 +1,4 @@
+// Settings Menu (poorly made by me)
 var settingsDiv = document.querySelector('settings');
 
 function toggleSettings() {
@@ -7,3 +8,5 @@ function toggleSettings() {
         settingsDiv.classList.add("settings-animate");
     }
 }
+
+// Theme Changer
