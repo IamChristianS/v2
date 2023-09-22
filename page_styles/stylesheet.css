@@ -119,12 +119,15 @@ body {
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
     color: var(--text-color);
+    z-index: 9999;
 
     position: absolute;
     right: 0;
     transition: right 1s ease-in;
 }
 .settings-animate {
+    position: sticky;
+    top: 0;
     right: 0;
 }
 
