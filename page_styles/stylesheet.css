@@ -28,7 +28,7 @@ body {
         var(--background-color)
     ), url(../img/pageBackground.png);
     background-repeat: repeat;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 #incomplete {
@@ -121,7 +121,7 @@ body {
     color: var(--text-color);
 
     position: absolute;
-    right: 999rem;
+    right: 0;
     transition: right 1s ease-in;
 }
 .settings-animate {
