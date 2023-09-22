@@ -121,7 +121,7 @@ body {
     color: var(--text-color);
 
     position: absolute;
-    right: 101vw;
+    right: 999rem;
     transition: right 1s ease-in;
 }
 .settings-animate {
