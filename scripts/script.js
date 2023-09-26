@@ -1,15 +1,15 @@
 // Settings Menu
-function toggleSettings() {
-  var settingsMenu = document.getElementById("settings-modal");
-  if (settingsMenu.style.display = "block") {
-    settingsMenu.style.display = "none";
-  } else {
-    settingsMenu.style.display = "block";
-  }
+var settingsMenu = document.getElementById("settings-modal");
+
+function openSettings() {
+  settingsMenu.style.display = "block";
+}
+function closeSettings() {
+  settingsMenu.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == settingsMenu) {
+  if (event.target != settingsMenu) {
     settingsMenu.style.display = "none";
   }
 }
@@ -17,6 +17,6 @@ window.onclick = function(event) {
 // Theme Changer
 
 
-// About:Blank Cloaking
+// About:Blank Cloak
 
 
