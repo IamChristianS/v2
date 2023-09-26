@@ -1,11 +1,12 @@
 // Settings Menu
-function openSettings() {
-  var settingsMenu = document.getElementById("settings");
-  settingsMenu.style.display = "block";
-}
-function closeSettings() {
-  var settingsMenu = document.getElementById("settings");
-  settingsMenu.style.display = "none";
+var settingsMenu = document.getElementById("settings-modal");
+
+function toggleSettings() {
+  if (settingsMenu.style.display = "block") {
+    settingsMenu.style.display = "none";
+  } else {
+    settingsMenu.style.display = "block";
+  }
 }
 
 window.onclick = function(event) {
@@ -15,3 +16,8 @@ window.onclick = function(event) {
 }
 
 // Theme Changer
+
+
+// About:Blank Cloaking
+
+
