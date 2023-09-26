@@ -146,12 +146,6 @@ body {
     color: var(--text-color);
     text-align: center;
 }
-.settings span {
-    text-align: right;
-}
-.settings hr {
-    padding: 1vw;
-}
 
 /* Footer */
 footer {
