@@ -1,7 +1,6 @@
 // Settings Menu
-var settingsMenu = document.getElementById("settings-modal");
-
 function toggleSettings() {
+  var settingsMenu = document.getElementById("settings-modal");
   if (settingsMenu.style.display = "block") {
     settingsMenu.style.display = "none";
   } else {
