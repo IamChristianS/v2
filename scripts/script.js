@@ -9,7 +9,7 @@ function closeSettings() {
 }
 
 window.onclick = function(event) {
-  if (event.target != settingsMenu) {
+  if (event.target == settingsMenu) {
     settingsMenu.style.display = "none";
   }
 }
