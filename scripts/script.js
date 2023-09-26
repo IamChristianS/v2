@@ -2,16 +2,10 @@
 var settingsMenu = document.getElementById("settings-modal");
 
 function openSettings() {
-  settingsMenu.style.display = "block";
+  document.getElementById("settings-modal").style.display = "block";
 }
 function closeSettings() {
-  settingsMenu.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == settingsMenu) {
-    settingsMenu.style.display = "none";
-  }
+  document.getElementById("settings-modal").style.display = "none";
 }
 
 // Theme Changer
