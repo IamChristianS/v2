@@ -118,10 +118,12 @@ body {
     left: 0;
     top: 0;
 
-    display: none;
     background-color: rgba(0,0,0,0.4);
     z-index: 9999;
     overflow-y: auto;
+}
+.settings {
+    display: none;
 }
 .settings-content {
     width: 50vw;
