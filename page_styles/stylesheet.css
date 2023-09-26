@@ -126,7 +126,7 @@ body {
 }
 .settings {
     width: 50vw;
-    height: 65vh;
+    min-height: 65vh;
     /*
     position: absolute;
     left: 50%;
