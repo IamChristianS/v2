@@ -1,10 +1,10 @@
 // Settings Menu
-var settingsMenu = document.getElementById("settings");
-
 function openSettings() {
+  var settingsMenu = document.getElementById("settings");
   settingsMenu.style.display = "block";
 }
 function closeSettings() {
+  var settingsMenu = document.getElementById("settings");
   settingsMenu.style.display = "none";
 }
 
