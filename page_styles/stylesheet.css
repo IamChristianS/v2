@@ -110,7 +110,7 @@ body {
     scale: 110%;
 }
 
-/* Settings (ty w3schools <3) */
+/* Settings */
 .settings-modal {
     position: absolute;
     width: 100%;
@@ -167,6 +167,11 @@ body {
 }
 .settings hr {
     margin: 1vw 5vw;
+}
+
+/* Credits */
+.credits {
+    width: 80%;
 }
 
 /* Footer */

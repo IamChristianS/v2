@@ -81,13 +81,47 @@
                 <span class="settings-close" onclick="toggleSettings()">X</span>
                 <h2>Settings</h2><hr>
                 <h3>Tab Masking</h3>
-                <input type="text">
+                <div class="settings-tab">
+                    <input class="settings-tab-input" type="text">
+                    <button class="settings-tab-btn">Submit</button>
+                </div>
                 <h3>Tab Presets:</h3>
                 <hr>
                 <h3>About:Blank Cloaking</h3>
                 <button onclick="toggleABCloak()">Enable</button><hr>
-                <h3>Credits</h3>
+                <div class="credits">
+                    <h3>Credits</h3>
+                    <div class="credits-expand">
+                        <div>
+                            <p>Ruffle Flash Player</p>
+                            <a href="https://www.ruffle.rs">Ruffle Team</a>
+                        </div>
+                        <div>
+                            <p>WAFlash</p>
+                            <a href="https://github.com/vidkidz/waflash">Vidkidz</a>
+                        </div>
+                        <div>
+                            <p>IodineGBA</p>
+                            <a href="https://github.com/taisel/IodineGBA">Grant Galitz</a>
+                        </div>
+                        <div>
+                            <p>Desmond - NDS Emulator</p>
+                            <a href="https://github.com/js-emulators/desmond">Unknown</a>
+                        </div>
+                        <div>
+                            <p>Hover.CSS</p>
+                            <a href="https://github.com/IanLunn/Hover">IanLunn</a>
+                        </div>
+                        <div>
+                            <p>Animate on Scroll</p>
+                            <a href="https://github.com/michalsnik/aos">Michał Sajnóg</a>
+                        </div>
+                        <h3>You!</h3>
+                        <p></p>
+                    </div>
+                </div>
                 <h3>Lincense</h3>
+                <p>This site uses the GPL-3.0 License. <a href="https://github.com/unbl0ck/v2/blob/main/LICENSE">Read more on our GitHub page.</a></p>
             </div>
         </div>
         <!--Settings-->
@@ -95,11 +129,11 @@
         <!--Content-->
         <!--About Cards-->
         <div class="about">
-            <div class="about-goal">
+            <div id="about-goal">
                 <h2>Site's Goal</h2>
                 <p>What we hope to achieve is to curate and protect games and tools from being blocked from extensions, wifi security, and authority figures who can't mind their own business. Not only will you find that our large library of over 70 games contains multiple emulators to choose from, but you will also see that we have implemented top-level tab cloaking using Masking and About:Blank Cloaking. You can change all of these settings on-the-fly in the top-right of any webpage for easy access.</p>
             </div>
-            <div class="about-contribute">
+            <div id="about-contribute">
                 <h2>Contributions</h2>
                 <p>Our site is built upon the contributions of the community, and that includes you as well. If you have an idea or game request that you'd like to see added, you can use our <a href="contact.html">Contact Page</a>, or you can contact us at our email: <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1">project.hub.games@gmail.com</a> and we would be glad to assist you in any way we can! We also greatly value keeping our project open-source so that you, the user, can clone our site and make your very own modifications.</p>
             </div>

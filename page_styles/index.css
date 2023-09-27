@@ -28,10 +28,10 @@
     scale: 102%;
 }
 
-.about-goal {
+#about-goal {
     transform: translateY(-15vh);
 }
-.about-contribute {
+#about-contribute {
     transform: translateY(15vh);
 }
 
