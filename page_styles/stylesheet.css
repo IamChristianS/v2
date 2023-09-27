@@ -171,10 +171,12 @@ body {
 
 /* Credits */
 .credits {
-    border: 5px solid var(--text-color);
-    border-radius: 1vw;
+    border: 2px solid var(--text-color);
+    border-radius: .5vw;
     text-align: center;
-    width: 80%;
+    width: 90%;
+    padding: 1vw;
+    margin: 1vw;
 }
 
 .credits-expand {
@@ -184,11 +186,10 @@ body {
 .credits-expand div {
     display: flex;
 }
-.credits-expand p {
+.credits-expand div p {
     font-size: 1.25vw;
     padding-right: 2px;
 }
-
 
 /* Footer */
 footer {
