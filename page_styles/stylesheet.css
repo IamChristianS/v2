@@ -173,7 +173,8 @@ body {
 .credits {
     border: 2px solid var(--text-color);
     border-radius: .5vw;
-    text-align: center;
+    justify-content: center;
+
     width: 90%;
     padding: 1vw;
     margin: 1vw;
