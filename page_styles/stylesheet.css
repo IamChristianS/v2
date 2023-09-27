@@ -120,6 +120,7 @@ body {
 
     display: none;
     background-color: rgba(0,0,0,0.4);
+    transition: 2s ease-in;
 
     overflow: auto;
     z-index: 9999;
@@ -141,8 +142,31 @@ body {
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3);
     padding: 1vw;
 
+    cursor: default;
     color: var(--text-color);
     text-align: center;
+}
+.settings-close {
+    position: absolute;
+    right: 1.25vw;
+    transition: .5s ease-in;
+    font-size: 1.25vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+.settings-close:hover {
+    text-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+.settings h2 {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.settings h3 {
+    font-size: 1.25vw;
+    font-weight: 600;
+}
+.settings hr {
+    margin: 1vw 5vw;
 }
 
 /* Footer */
