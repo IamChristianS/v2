@@ -162,7 +162,7 @@ body {
     font-weight: 700;
 }
 .settings h3 {
-    font-size: 1.25vw;
+    font-size: 1.3vw;
     font-weight: 600;
 }
 .settings hr {
@@ -171,8 +171,26 @@ body {
 
 /* Credits */
 .credits {
+    border: 5px solid var(--text-color);
+}
+.credits h3 {
     width: 80%;
 }
+
+.credits-expand {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+}
+.credits-expand div {
+    margin: 1vw;
+    display: flex;
+}
+.credits-expand p {
+    font-size: 1.25vw;
+    padding-right: 2vw;
+}
+
 
 /* Footer */
 footer {
