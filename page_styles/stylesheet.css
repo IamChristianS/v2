@@ -180,18 +180,6 @@ body {
     margin: 1vw;
 }
 
-.credits-expand {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.credits-expand div {
-    display: flex;
-}
-.credits-expand div p {
-    font-size: 1.25vw;
-    padding-right: 2px;
-}
-
 /* Footer */
 footer {
     width: 100vw;
