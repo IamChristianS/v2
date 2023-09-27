@@ -24,7 +24,7 @@ document.addEventListener('click', function(event) {
 let creditsDropped = false
 
 function toggleCredits() {
-  const creditsDropdown = document.getElementById("credits");
+  const creditsDropdown = document.getElementById("credits-expand");
   if (creditsDropped) {
     creditsDropdown.style.display = "none";
     creditsDropped = false;
