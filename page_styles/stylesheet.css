@@ -172,23 +172,21 @@ body {
 /* Credits */
 .credits {
     border: 5px solid var(--text-color);
-}
-.credits h3 {
+    border-radius: 1vw;
+    text-align: center;
     width: 80%;
 }
 
 .credits-expand {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1vw;
 }
 .credits-expand div {
-    margin: 1vw;
     display: flex;
 }
 .credits-expand p {
     font-size: 1.25vw;
-    padding-right: 2vw;
+    padding-right: 2px;
 }
 
 
