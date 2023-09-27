@@ -173,6 +173,7 @@ body {
 .credits {
     border: 2px solid var(--text-color);
     border-radius: .5vw;
+    background-color: rgba(255, 255, 255, 0.25);
     justify-content: center;
     text-align: center;
 
@@ -181,12 +182,11 @@ body {
     margin: 1vw;
 }
 
-.credits-expand {
-    text-align: center;
+.credits-expand:not(.credits-head) {
+    background-color: rgba(0,0,0,0);
 }
 .credits-head {
-    background-color: rgba(255, 255, 255, 0.25);
-    margin-bottom: .25vw;
+    margin-bottom: .5vw;
 }
 .credits h3 {
     background-color: rgba(255, 255, 255, 0.25);
