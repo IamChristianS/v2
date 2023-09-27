@@ -1,5 +1,5 @@
 /* General */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 [data-theme="light"] {
     --background-color: rgba(0,0,0,0);
@@ -174,10 +174,28 @@ body {
     border: 2px solid var(--text-color);
     border-radius: .5vw;
     justify-content: center;
+    text-align: center;
 
     width: 90%;
     padding: 1vw;
     margin: 1vw;
+}
+
+.credits-expand {
+    text-align: center;
+}
+.credits-head {
+    background-color: rgba(255, 255, 255, 0.25);
+    margin-bottom: .25vw;
+}
+.credits h3 {
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 1.3vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+.credits h3:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Footer */
