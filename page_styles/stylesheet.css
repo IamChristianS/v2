@@ -170,32 +170,33 @@ body {
 }
 
 /* Credits */
+.credits-button {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid var(--text-color);
+    border-radius: .5vw;
+    width: 90%;
+    padding: .25vw;
+    margin-top: 1vw;
+    margin: 0 auto; 
+
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.credits-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
 .credits {
     border: 2px solid var(--text-color);
     border-radius: .5vw;
-    background-color: rgba(255, 255, 255, 0.25);
-    justify-content: center;
     text-align: center;
 
     width: 90%;
     padding: 1vw;
-    margin: 1vw;
+    margin: 1vw auto;
 }
 
-.credits-expand:not(.credits-head) {
-    background-color: rgba(0,0,0,0);
-}
-.credits-head {
-    margin-bottom: .5vw;
-}
-.credits h3 {
-    background-color: rgba(255, 255, 255, 0.25);
-    font-size: 1.3vw;
-    font-weight: 600;
-    cursor: pointer;
-}
-.credits h3:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+.credits-expand {
+    display: none;
 }
 
 /* Footer */

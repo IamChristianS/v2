@@ -19,6 +19,21 @@ document.addEventListener('click', function(event) {
     toggleSettings()
   }
 });
+
+// Credits
+let creditsDropped = false
+
+function toggleCredits() {
+  const creditsDropdown = document.getElementById("credits");
+  if (creditsDropped) {
+    creditsDropdown.style.display = "none";
+    creditsDropped = false;
+  } else {
+    creditsDropdown.style.display = "block";
+    creditsDropped = true;
+  }
+}
+
 // Theme Changer
 
 
