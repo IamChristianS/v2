@@ -28,11 +28,11 @@
 
         <link rel="stylesheet" href="page_styles/stylesheet.css">
         <link rel="stylesheet" href="page_styles/index.css"> <!--Page-Specific-->
-        <link rel="stylesheet" href="page_styles/hover.css"> <!--Hover.css Library-->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--AOS Library-->
         <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 
         <script src="scripts/script.js"></script>
+        <script src="scripts/index.js"></script> <!--Page-Specific-->
 
         <meta property="og:title" content="Project Hub V2">
         <meta property="og:description" content="">
@@ -69,7 +69,7 @@
             </div>
 
             <div class="nav-tools">
-                <i class="fa-solid fa-circle-half-stroke"></i>
+                <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
                 <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
             </div>
         </header>
@@ -90,38 +90,16 @@
                 <h3>About:Blank Cloaking</h3>
                 <button class="ab-cloak-button" onclick="toggleABCloak()">Enable</button><hr>
                 <button class="credits-button" onclick="toggleCredits()">Credits</button>
-                <table class="credits-expand" id="credits-expand" style="width:100%">
-                    <tr class="credits-head">
-                        <td>Resource</td>
-                        <td>Developer(s)</td>
-                    </tr>
-                    <tr>
-                        <td>Ruffle Flash Player</td>
-                        <td><a href="https://www.ruffle.rs">Ruffle Team</a></td>
-                    </tr>
-                    <tr>
-                        <td>WAFlash</td>
-                        <td><a href="https://github.com/vidkidz/waflash">Vidkidz</a></td>
-                    </tr>
-                    <tr>
-                        <td>IodineGBA</td>
-                        <td><a href="https://github.com/taisel/IodineGBA">Grant Galitz</a></td>
-                    </tr>
-                    <tr>
-                        <td>Desmond - NDS Emulator</td>
-                        <td><a href="https://github.com/js-emulators/desmond">Unknown</a></td>
-                    </tr>
-                    <tr>
-                        <td>Hover.CSS</td>
-                        <td><a href="https://github.com/IanLunn/Hover">IanLunn</a></td>
-                    </tr>
-                    <tr>
-                        <td>Animate on Scroll</td>
-                        <td><a href="https://github.com/michalsnik/aos">Michał Sajnóg</a></td>
-                    </tr>
-                </table>
+                <div class="credits-expand" id="credits-expand">
+                    <p>Ruffle Flash Player - <a href="https://www.ruffle.rs" target="_blank">Ruffle Team</a></p>
+                    <p>WAFlash - <a href="https://github.com/vidkidz/waflash" target="_blank">Vidkidz</a></p>
+                    <p>IodineGBA - <a href="https://github.com/taisel/IodineGBA" target="_blank">Grant Galitz</a></p>
+                    <p>Desmond - NDS Emulator - <a href="https://github.com/js-emulators/desmond" target="_blank">Unknown</a></p>
+                    <p>Hover.CSS - <a href="https://github.com/IanLunn/Hover" target="_blank">Ian Lunn</a></p>
+                    <p>Animate on Scroll - <a href="https://github.com/michalsnik/aos" target="_blank">Michał Sajnóg</a></p>
+                </div>
                 <h3>Lincense</h3>
-                <p>This site uses the GPL-3.0 License. <a href="https://github.com/unbl0ck/v2/blob/main/LICENSE">Read more on our GitHub page.</a></p>
+                <p>This site uses the GPL-3.0 License. <a href="https://github.com/unbl0ck/v2/blob/main/LICENSE" target="_blank">Read more on our GitHub page.</a></p>
             </div>
         </div>
         <!--Settings-->
@@ -135,7 +113,7 @@
             </div>
             <div id="about-contribute">
                 <h2>Contributions</h2>
-                <p>Our site is built upon the contributions of the community, and that includes you as well. If you have an idea or game request that you'd like to see added, you can use our <a href="contact.html">Contact Page</a>, or you can contact us at our email: <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1">project.hub.games@gmail.com</a> and we would be glad to assist you in any way we can! We also greatly value keeping our project open-source so that you, the user, can clone our site and make your very own modifications.</p>
+                <p>Our site is built upon the contributions of the community, and that includes you as well. If you have an idea or game request that you'd like to see added, you can use our <a href="contact.html">Contact Page</a>, or you can contact us at our email: <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1" target="_blank">project.hub.games@gmail.com</a> and we would be glad to assist you in any way we can! We also greatly value keeping our project open-source so that you, the user, can clone our site and make your very own modifications.</p>
             </div>
         </div>
 
@@ -163,22 +141,22 @@
                     <p>- "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum."</p>
                 </div>
             </div>
-            <h3>Want to see yourself here? Email us at <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1">project.hub.games@gmail.com</a></h3>
+            <h3>Want to see yourself here? Email us at <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1" target="_blank">project.hub.games@gmail.com</a></h3>
         </div>
         
         <!--Random Games-->
         <div class="random-games">
             <div onclick="window.location.href='games/gamePath/index.html'">
                 <img src="img/games/placeholder.png">
-                <h2>gameTitle</h2>
+                <h2>GameTitle</h2>
             </div>
             <div onclick="window.location.href='games/gamePath/index.html'">
                 <img src="img/games/placeholder.png">
-                <h2>gameTitle</h2>
+                <h2>GameTitle</h2>
             </div>
             <div onclick="window.location.href='games/gamePath/index.html'">
                 <img src="img/games/placeholder.png">
-                <h2>gameTitle</h2>
+                <h2>GameTitle</h2>
             </div>
         </div>
 
@@ -193,7 +171,7 @@
             <div class="faq-2">
                 <h2><i class="fa-regular fa-circle-question"></i>Can you add _____ game? / Why doesn't _____ work?</h2>
                 <span class="faq-2-reveal"><hr>
-                    <p><i class="fa-regular fa-circle-check"></i>Sadly, we aren't able to find and host every game out there. However, if you'd like to let us know about a new game, you can contact us using our <a href="contact.html">Contact Forms</a>, <a href="https://github.com/unbl0ck/v2/issues">GitHub Issues</a>, or <a href='https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1'>Email</a>. Sometimes, albeit rarely, there are few games which we cannot host due to Flash/external limitations, and if you find these games on our site, please contact us using one of the methods above..</p>
+                    <p><i class="fa-regular fa-circle-check"></i>Sadly, we aren't able to find and host every game out there. However, if you'd like to let us know about a new game, you can contact us using our <a href="contact.html">Contact Forms</a>, <a href="https://github.com/unbl0ck/v2/issues" target="_blank">GitHub Issues</a>, or <a href='https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1' target="_blank">Email</a>. Sometimes, albeit rarely, there are few games which we cannot host due to Flash/external limitations, and if you find these games on our site, please contact us using one of the methods above..</p>
                 </span>
             </div>
             <div class="faq-3">
@@ -216,7 +194,7 @@
                     <li><a href="settings.html">Settings</a></li>
                 </div>
                 <div class="footer-description">
-                    <p>Welcome to Version 2 of Project-Hub; the brand-new and improved version of the first version, which you can visit here: <span onclick="window.location.href='https://unbl0ck.github.io'">https://unbl0ck.github.io</span>! Much effort was put into making this site the best one-stop-shop for any unblocked game content. For example, notable mention will be the proxy services, which will allow you to fully bypass any wi-fi restriction. Not only that, but we have made cloaking your activity much safer with About:Blank Cloaking, and new presets for masking your tab to make it appear like an appropriate site. There are also many ways where the community can pitch in their own ideas for the site. One of the many ways include going into the <span onclick="window.location.href='contact.html'">Contact Page</span> of the site, but you can also submit an issue on the GitHub repo, or email me at: <span onclick="window.location.href='https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1'">project.hub.games@gmail.com</span>.</p>
+                    <p>Welcome to Version 2 of Project-Hub; the brand-new and improved version of the first version, which you can visit here: <a href="https://unbl0ck.github.io" target="_blank">https://unbl0ck.github.io</a>! Much effort was put into making this site the best one-stop-shop for any unblocked game content. For example, notable mention will be the proxy services, which will allow you to fully bypass any wi-fi restriction. Not only that, but we have made cloaking your activity much safer with About:Blank Cloaking, and new presets for masking your tab to make it appear like an appropriate site. There are also many ways where the community can pitch in their own ideas for the site. One of the many ways include going into the <a href="contact.html">Contact Page</a> of the site, but you can also submit an issue on the GitHub repo, or email me at: <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1" target="_blank">project.hub.games@gmail.com</a>.</p>
                 </div>
             </div>
             <div class="footer-socials">

@@ -6,9 +6,12 @@ function toggleSettings() {
   if (settingsOpen) {
     settingsModal.style.display = "none";
     settingsOpen = false;
+    document.body.style.overflowY = "auto";
   } else {
     settingsModal.style.display = "block";
     settingsOpen = true;
+    document.body.style.overflowY = "hidden";
+    window.scrollTo(0, 0);
   }
 }
 
@@ -34,8 +37,21 @@ function toggleCredits() {
   }
 }
 
-// Theme Changer
+// Theme Changer (ty chatgpt <3)
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  const newTheme = currentTheme === "light" ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", newTheme);
 
+  localStorage.setItem("theme", newTheme);
+}
+
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+} else {
+    document.documentElement.setAttribute("data-theme", "light");
+}
 
 // About:Blank Cloak
 

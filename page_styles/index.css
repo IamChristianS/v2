@@ -102,10 +102,10 @@
     scale: 110%;
 }
 .reviews h3, .reviews h3 a {
-    color: var(--gradient-color-dark);
+    color: var(--review-bottom-text);
     text-shadow: 0px 0px 2.5px rgba(0,0,0,.1);
     font-weight: 600;
-    margin: .5vw;
+    margin-top: .5vw;
 }
 
 /* Random Games */
@@ -157,6 +157,7 @@
 
     width: 60vw;
     margin: 1vw auto;
+    margin-bottom: 2vw;
     padding: 2vw 3vw;
 }
 

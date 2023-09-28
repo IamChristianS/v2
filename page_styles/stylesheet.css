@@ -6,12 +6,16 @@
     --text-color: #FCFFFF;
     --gradient-color-light: #46789B;
     --gradient-color-dark: #356080;
+
+    --review-bottom-text: #356080;
 }
 [data-theme="dark"] {
-    --color-bg: rgba(0,0,0,0.7);
-    --text-color: #DCDDDD;
-    --gradient-color-light: #396686;
-    --gradient-color-dark: #2a5472;
+    --background-color: rgba(0,0,0,0.6);
+    --text-color: #FEFEFE;
+    --gradient-color-light: #2f495e;
+    --gradient-color-dark: #2c4355;
+
+    --review-bottom-text: #EDEEEE;
 }
 
 * {
@@ -174,9 +178,8 @@ body {
     background-color: rgba(255, 255, 255, 0.25);
     border: 2px solid var(--text-color);
     border-radius: .5vw;
-    width: 90%;
+    width: 50%;
     padding: .25vw;
-    margin-top: 1vw;
     margin: 0 auto; 
 
     font-size: 1.3vw;
@@ -185,18 +188,17 @@ body {
 .credits-button:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
-.credits {
-    border: 2px solid var(--text-color);
-    border-radius: .5vw;
-    text-align: center;
-
-    width: 90%;
-    padding: 1vw;
-    margin: 1vw auto;
-}
 
 .credits-expand {
+    border: 2px solid var(--text-color);
+    border-radius: .5vw;
+    width: 50%;
     display: none;
+    padding: .25vw;
+    margin: .5vw auto; 
+
+    font-size: 1vw;
+    font-weight: 400;
 }
 
 /* Footer */
@@ -219,10 +221,6 @@ footer {
     text-align: center;
     line-height: 1.5vw;
     word-spacing: 2px;
-}
-.footer-description p span {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 .footer-links {
@@ -254,7 +252,7 @@ footer {
 
 .footer-policies {
     margin: 1vw;
-    padding-bottom: 2vh;
+    padding-bottom: 1vw;
     text-align: center;
 }
 .footer-policies a {
