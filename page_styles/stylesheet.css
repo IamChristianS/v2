@@ -166,6 +166,7 @@ body {
     font-weight: 700;
 }
 .settings h3 {
+    margin: 1vw;
     font-size: 1.3vw;
     font-weight: 600;
 }
@@ -189,6 +190,7 @@ body {
 }
 .settings-presets div img {
     max-width: 100%;
+    border-radius: 1vw;
 }
 .settings-presets div p {
     font-size: 1.2vw;
