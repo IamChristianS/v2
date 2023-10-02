@@ -176,6 +176,7 @@ body {
 /* Presets */
 .settings-presets {
     justify-content: center;
+    display: flex;
 }
 .settings-presets div {
     background: linear-gradient(
@@ -187,7 +188,7 @@ body {
     margin: 1vw;
 }
 .settings-presets div img {
-    width: 10vw;
+    max-width: 100%;
 }
 .settings-presets div p {
     font-size: 1.25vw;
