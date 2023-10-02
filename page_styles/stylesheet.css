@@ -184,15 +184,16 @@ body {
         var(--gradient-color-dark)
     );
     border-radius: 1vw;
-    padding: 1vw;
     margin: 1vw;
+    cursor: pointer;
 }
 .settings-presets div img {
     max-width: 100%;
 }
 .settings-presets div p {
-    font-size: 1.25vw;
+    font-size: 1.2vw;
     font-weight: 500;
+    padding: .5vw 1vw;
 }
 
 /* Credits */
