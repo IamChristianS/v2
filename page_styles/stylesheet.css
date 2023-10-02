@@ -130,7 +130,7 @@ body {
     z-index: 9999;
 }
 .settings {
-    width: 50vw;
+    min-width: 50vw;
     min-height: 65vh;
     position: absolute;
     left: 50%;
