@@ -170,7 +170,6 @@ body {
 
 /* Tab Masking */
 .settings-masking {
-    width: 75%;
     margin: 0 auto;
     display: flex;
 }
