@@ -190,15 +190,13 @@ body {
 }
 .settings-presets div img {
     max-height: 100%;
-    max-width: 8vw;
+    max-width: 6vw;
     border-radius: 1vw;
 }
 .settings-presets div p {
     font-size: 1.2vw;
     font-weight: 500;
     padding: .5vw 1vw;
-    align-items: center;
-    margin: auto 0;
 }
 
 /* Credits */
