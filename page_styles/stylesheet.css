@@ -25,7 +25,6 @@
     font-family: 'Montserrat', Courier, Helvetica, Arial, sans-serif;
     color: var(--text-color);
 }
-
 body {
     background: linear-gradient(
         var(--background-color),
@@ -34,11 +33,6 @@ body {
     background-repeat: repeat;
     overflow-x: hidden;
 }
-
-#content {
-    transition: margin-right .5s;
-}
-
 #incomplete {
     display: none;
 }
@@ -174,19 +168,40 @@ body {
     margin: 1vw 5vw;
 }
 
+/* Tab Masking */
+.settings-masking {
+
+}
+.settings-masking input {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--text-color);
+    border-radius: .25vw;
+    width: 50%;
+    padding: .25vw;
+    margin: 0 auto;
+
+    color: #000;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.credits-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 /* Presets */
 .settings-presets {
     justify-content: center;
     display: flex;
 }
 .settings-presets div {
-    margin: 1vw;
+    margin: 0 1vw;
     cursor: pointer;
     transition: scale .15s;
 }
 .settings-presets div:hover {
     scale: 102%;
 }
+
 .settings-presets div img {
     max-height: 100%;
     max-width: 6vw;
