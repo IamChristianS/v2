@@ -170,7 +170,7 @@ body {
 
 /* Tab Masking */
 .settings-masking {
-    width: 65%;
+    width: 75%;
     justify-content: center;
     display: flex;
 }
@@ -179,6 +179,7 @@ body {
     border: 1px solid var(--text-color);
     border-radius: .25vw;
     padding: .25vw;
+    margin: 0 .25vw;
 
     color: var(--text-color);
     font-size: 1.2vw;
@@ -194,6 +195,7 @@ body {
     border-radius: .25vw;
     min-width: 10%;
     padding: .25vw;
+    margin: 0 .25vw;
 
     color: var(--text-color);
     font-size: 1.2vw;
