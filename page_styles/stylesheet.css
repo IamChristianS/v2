@@ -178,6 +178,7 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid var(--text-color);
     border-radius: .25vw;
+    max-width: 90%;
     padding: .25vw;
     margin: 0 .25vw;
 
