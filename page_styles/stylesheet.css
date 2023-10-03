@@ -180,13 +180,12 @@ body {
     display: flex;
 }
 .settings-presets div {
-    background: linear-gradient(
-        var(--gradient-color-light),
-        var(--gradient-color-dark)
-    );
-    border-radius: 1vw;
     margin: 1vw;
     cursor: pointer;
+    transition: scale .15s;
+}
+.settings-presets div {
+    scale: 102%;
 }
 .settings-presets div img {
     max-height: 100%;
@@ -194,7 +193,6 @@ body {
     border-radius: 1vw;
 }
 .settings-presets div p {
-    max-height: 100%;
     font-size: 1.2vw;
     font-weight: 500;
     padding: .5vw 1vw;
