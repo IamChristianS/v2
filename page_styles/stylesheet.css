@@ -170,22 +170,36 @@ body {
 
 /* Tab Masking */
 .settings-masking {
-
+    width: 65%;
 }
 .settings-masking input {
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid var(--text-color);
     border-radius: .25vw;
-    width: 50%;
+    width: 90%;
     padding: .25vw;
-    margin: 0 auto;
 
-    color: #000;
+    color: var(--text-color);
     font-size: 1.2vw;
     font-weight: 500;
 }
-.credits-button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+.settings-masking input::placeholder {
+    color: var(--text-color);
+    text-align: center;
+}
+.settings-masking button {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--text-color);
+    border-radius: .25vw;
+    width: 10%;
+    padding: .25vw;
+
+    color: var(--text-color);
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.settings-masking button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Presets */
