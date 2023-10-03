@@ -184,7 +184,7 @@ body {
     cursor: pointer;
     transition: scale .15s;
 }
-.settings-presets div {
+.settings-presets div:hover {
     scale: 102%;
 }
 .settings-presets div img {
