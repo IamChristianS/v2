@@ -12,8 +12,8 @@
 [data-theme="dark"] {
     --background-color: rgba(0,0,0,0.6);
     --text-color: #FEFEFE;
-    --gradient-color-light: #2f495e;
-    --gradient-color-dark: #2c4355;
+    --gradient-color-light: #333d46;
+    --gradient-color-dark: #2a333a;
 
     --review-bottom-text: #EDEEEE;
 }
@@ -190,6 +190,7 @@ body {
 }
 .settings-presets div img {
     max-height: 100%;
+    max-width: 10%;
     border-radius: 1vw;
 }
 .settings-presets div p {
