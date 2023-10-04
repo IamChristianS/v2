@@ -156,12 +156,12 @@ body {
     text-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
 .settings h2 {
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     font-weight: 700;
 }
 .settings h3 {
     margin: .5vw;
-    font-size: 1.3vw;
+    font-size: 1.35vw;
     font-weight: 600;
 }
 .settings hr {
@@ -171,13 +171,14 @@ body {
 /* Tab Masking */
 .settings-masking {
     justify-content: center;
+    width: 50%;
     display: flex;
 }
 .settings-masking input {
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid var(--text-color);
     border-radius: .25vw;
-    max-width: 90%;
+    max-width: 100%;
     padding: .3vw;
     margin: 0 .25vw;
 
