@@ -127,8 +127,6 @@ body {
     min-width: 50vw;
     min-height: 65vh;
     position: absolute;
-    left: 50%;
-    top: 50%;
 
     background: linear-gradient(
         var(--gradient-color-light),
