@@ -220,8 +220,10 @@ body {
 }
 
 .settings-presets div img {
+    background-color: rgba(255, 255, 255, 0.15);
     max-height: 100%;
     max-width: 6vw;
+    border: 1px solid var(--text-color);
     border-radius: 1vw;
 }
 .settings-presets div p {
