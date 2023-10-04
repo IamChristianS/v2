@@ -170,8 +170,7 @@ body {
 
 /* Tab Masking */
 .settings-masking {
-    width: 100%;
-    text-align: center;
+    justify-content: center;
     display: flex;
 }
 .settings-masking input {
