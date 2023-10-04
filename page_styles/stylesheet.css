@@ -230,6 +230,23 @@ body {
     padding: .5vw 1vw;
 }
 
+/* About:Blank */
+.ab-cloak-button {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--text-color);
+    border-radius: .25vw;
+    justify-content: center;
+    width: 50%;
+    padding: .3vw;
+
+    color: var(--text-color);
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+.ab-cloak-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* Credits */
 .credits-button {
     background-color: rgba(255, 255, 255, 0.25);
