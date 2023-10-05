@@ -147,7 +147,7 @@ body {
     text-align: center;
 }
 .settings::-webkit-scrollbar {
-    height: 98%;
+    margin: 1vw 0;
 }
 .settings-close {
     position: absolute;
