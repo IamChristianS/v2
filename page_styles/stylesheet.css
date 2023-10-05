@@ -126,7 +126,7 @@ body {
 .settings {
     min-width: 50vw;
     min-height: 65vh;
-    max-height: 100vh;
+    max-height: 90vh;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -145,6 +145,9 @@ body {
     cursor: default;
     color: var(--text-color);
     text-align: center;
+}
+.settings::-webkit-scrollbar {
+    height: 98%;
 }
 .settings-close {
     position: absolute;
