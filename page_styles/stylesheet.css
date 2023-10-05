@@ -126,10 +126,12 @@ body {
 .settings {
     min-width: 50vw;
     min-height: 65vh;
+    max-height: 100vh;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    overflow: auto;
 
     background: linear-gradient(
         var(--gradient-color-light),

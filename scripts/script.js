@@ -66,7 +66,7 @@ if (savedTheme) {
 
 // About:Blank Cloak
 
-// Tab Masking
+// Tab Masking (ty chatgpt <3)
 function updateTitle() {
   const newTitle = document.getElementById('tabNameInput').value;
   document.title = newTitle;
