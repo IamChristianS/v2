@@ -146,7 +146,7 @@ body {
     color: var(--text-color);
     text-align: center;
 }
-.settings::-webkit-scrollbar {
+.settings::-webkit-scrollbar-track {
     margin: 1vw 0;
 }
 .settings-close {
