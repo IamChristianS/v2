@@ -138,7 +138,7 @@ body {
     border-radius: 1vw;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3);
-    padding: 1vw;
+    padding: 1.25vw;
 
     cursor: default;
     color: var(--text-color);
@@ -169,27 +169,23 @@ body {
 }
 
 /* Tab Masking */
-.settings-masking {
-    justify-content: center;
-    display: flex;
-}
-.settings-masking input {
+.name-masking input, .favicon-masking input {
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid var(--text-color);
     border-radius: .25vw;
     width: 35%;
     padding: .3vw;
-    margin: 0 .25vw;
+    margin: .15vw;
 
     color: var(--text-color);
     font-size: 1.2vw;
     font-weight: 500;
 }
-.settings-masking input::placeholder {
+.name-masking input::placeholder, .favicon-masking input::placeholder {
     color: var(--text-color);
     text-align: center;
 }
-.settings-masking button {
+.name-masking button, .favicon-masking button {
     background-color: rgba(255, 255, 255, 0.15);
     border: 1px solid var(--text-color);
     border-radius: .25vw;
@@ -200,8 +196,9 @@ body {
     color: var(--text-color);
     font-size: 1.2vw;
     font-weight: 500;
+    cursor: pointer;
 }
-.settings-masking button:hover {
+.name-masking button:hover, .favicon-masking button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -230,7 +227,7 @@ body {
 .settings-presets div p {
     font-size: 1.2vw;
     font-weight: 500;
-    padding: .5vw 1vw;
+    padding: .75vw 1vw;
 }
 
 /* About:Blank */
@@ -241,10 +238,12 @@ body {
     justify-content: center;
     width: 50%;
     padding: .3vw;
+    margin-bottom: .5vw;
 
     color: var(--text-color);
     font-size: 1.2vw;
     font-weight: 500;
+    cursor: pointer;
 }
 .ab-cloak-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -252,21 +251,29 @@ body {
 
 /* Credits */
 .credits-button {
-    background-color: rgba(255, 255, 255, 0.25);
-    border: 2px solid var(--text-color);
-    border-radius: .5vw;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--text-color);
+    border-radius: .25vw;
+    justify-content: center;
     width: 50%;
-    padding: .25vw;
-    margin: 0 auto; 
+    padding: .3vw;
+    margin: .5vw 0;
 
     font-size: 1.3vw;
-    font-weight: 600;
+    font-weight: 500;
+    cursor: pointer;
 }
 .credits-button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.credits-button i {
+    font-size: 1vw;
+    margin: 0 .75vw;
+    transform: translate(0, -15%);
 }
 
 .credits-expand {
+    background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid var(--text-color);
     border-radius: .5vw;
     width: 50%;

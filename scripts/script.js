@@ -28,12 +28,23 @@ let creditsDropped = false
 
 function toggleCredits() {
   const creditsDropdown = document.getElementById("credits-expand");
+  var creditsArrows = document.querySelectorAll('.credits-button i');
   if (creditsDropped) {
     creditsDropdown.style.display = "none";
     creditsDropped = false;
+    for (var i=0; i<creditsArrows.length; i++) {
+      creditsArrows[i].style.transform = "translate(0,-15%)"
+      creditsArrows[i].classList.remove("fa-angles-up");
+      creditsArrows[i].classList.add("fa-angles-down");
+    }
   } else {
     creditsDropdown.style.display = "block";
     creditsDropped = true;
+    for (var i=0; i<creditsArrows.length; i++) {
+      creditsArrows[i].style.transform = "translate(0,0)"
+      creditsArrows[i].classList.remove("fa-angles-down");
+      creditsArrows[i].classList.add("fa-angles-up");
+    }
   }
 }
 
@@ -55,3 +66,59 @@ if (savedTheme) {
 
 // About:Blank Cloak
 
+// Tab Masking
+function updateTitle() {
+  const newTitle = document.getElementById('tabNameInput').value;
+  document.title = newTitle;
+}
+
+function updateFavicon() {
+  const faviconInput = document.getElementById('faviconInput');
+  const faviconFileInput = document.getElementById('faviconFileInput');
+  const favicon = document.getElementById('favicon');
+
+  if (faviconFileInput.files.length > 0) {
+      const file = faviconFileInput.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function(event) {
+          favicon.href = event.target.result;
+      };
+      reader.readAsDataURL(file);
+
+      faviconInput.value = '';
+  } else if (faviconInput.value.trim() !== '') {
+      favicon.href = faviconInput.value;
+  }
+}
+
+function loadPreset(presetTitle, presetFaviconUrl) {
+  document.title = presetTitle;
+  const favicon = document.getElementById('favicon');
+  favicon.href = presetFaviconUrl;
+}
+
+function customPresetPopup() {
+  const customPresetTitle = prompt('Enter Custom Preset Title:');
+  if (customPresetTitle === null || customPresetTitle.trim() === '') {
+      return;
+  }
+  const customPresetFavicon = prompt('Enter Custom Preset Favicon URL:');
+  if (customPresetFavicon === null || customPresetFavicon.trim() === '') {
+      return;
+  }
+
+  const customPreset = {
+      title: customPresetTitle,
+      favicon: customPresetFavicon
+  };
+  localStorage.setItem('customPreset', JSON.stringify(customPreset));
+
+  const presetContainer = document.getElementById('presetContainer');
+  const customPresetElement = document.createElement('div');
+  customPresetElement.innerHTML = `
+      <img src="${customPreset.favicon}" onclick="loadPreset('${customPreset.title}', '${customPreset.favicon}')">
+      <p>${customPreset.title}</p>
+  `;
+  presetContainer.appendChild(customPresetElement);
+}

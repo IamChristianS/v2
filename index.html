@@ -76,33 +76,38 @@
                 <span class="settings-close" onclick="toggleSettings()">X</span>
                 <h2>Settings</h2><hr>
                 <h3>Tab Masking</h3>
-                <div class="settings-masking">
-                    <input type="text" placeholder="Enter Tab Name...">
-                    <button>Submit</button>
+                <div class="name-masking">
+                    <input type="text" placeholder="Enter Tab Name..." id="tabNameInput">
+                    <button onclick="updateTitle()">Submit</button>
+                </div>
+                <div class="favicon-masking">
+                    <input type="text" placeholder="Enter Image Link..." id="faviconInput">
+                    <input type="file" accept="image/*" id="faviconFileInput">
+                    <button onclick="updateFavicon()">Submit</button>
                 </div>
                 <h3>Tab Presets:</h3>
                 <div class="settings-presets">
-                    <div>
+                    <div onclick="loadPreset('Dashboard', 'img/presets/canvasFavicon.png')">
                         <img src="img/presets/canvas.png">
                         <p>Canvas</p>
                     </div>
-                    <div>
+                    <div onclick="loadPreset('Google', 'img/presets/googleFavicon.png')">
                         <img src="img/presets/google.png">
                         <p>Google</p>
                     </div>
-                    <div>
+                    <div onclick="loadPreset('Inbox - Gmail', 'img/presets/gmailFavicon.png')">
                         <img src="img/presets/gmail.png">
                         <p>Gmail</p>
                     </div>
-                    <div>
+                    <div onclick="loadPreset('Google Drive', 'img/presets/googleDriveFavicon.png')">
                         <img src="img/presets/googleDrive.png">
                         <p>Google Drive</p>
                     </div>
-                    <div>
+                    <div onclick="loadPreset('TurnItIn', 'img/presets/turnitinFavicon.png')">
                         <img src="img/presets/turnitin.png">
                         <p>TurnItIn</p>
                     </div>
-                    <div>
+                    <div onclick="customPresetPopup()">
                         <img src="img/presets/customPreset.png">
                         <p>Add Preset</p>
                     </div>
@@ -110,7 +115,7 @@
                 <hr>
                 <h3>About:Blank Cloaking</h3>
                 <button class="ab-cloak-button" onclick="toggleABCloak()">Enable</button><hr>
-                <button class="credits-button" onclick="toggleCredits()">Credits</button>
+                <button class="credits-button" onclick="toggleCredits()"><i class="fa-solid fa-angles-down"></i>Credits<i class="fa-solid fa-angles-down"></i></button>
                 <div class="credits-expand" id="credits-expand">
                     <p>Ruffle Flash Player - <a href="https://www.ruffle.rs" target="_blank">Ruffle Team</a></p>
                     <p>WAFlash - <a href="https://github.com/vidkidz/waflash" target="_blank">Vidkidz</a></p>
@@ -119,7 +124,7 @@
                     <p>Hover.CSS - <a href="https://github.com/IanLunn/Hover" target="_blank">Ian Lunn</a></p>
                     <p>Animate.CSS - <a href="https://github.com/animate-css/animate.css" target="_blank">Animate.CSS Team</a></p>
                 </div>
-                <h3>Lincense</h3>
+                <h3>License</h3>
                 <p>This site uses the GPL-3.0 License. <a href="https://github.com/unbl0ck/v2/blob/main/LICENSE" target="_blank">Read more on our GitHub page.</a></p>
             </div>
         </div>
