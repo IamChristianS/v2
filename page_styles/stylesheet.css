@@ -146,7 +146,7 @@ body {
     color: var(--text-color);
     text-align: center;
 }
-.settings::-webkit-scrollbar-track {
+.settings::-webkit-scrollbar-track { /* STACKOVERLOOOOWW, I NEED HELP AGAINN */
     height: 95%;
 }
 .settings-close {
