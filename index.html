@@ -16,9 +16,9 @@
 <html lang="en" data-theme="light">
     <head>
         <title>Project-Hub V2 | Home</title>
-        <link rel="icon" href="">
+        <link rel="icon" href="https://unbl0ck.github.io/v2/favicon.ico">
         <link rel="canonical" href="https://unbl0ck.github.io/v2">
-        <meta name="description" content="">
+        <meta name="description" content="Come browse our 80+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more! We have Kahoot and other Game Hacks coming soon.">
         <meta name="keywords" content="unblocked, games, google sites, unblocked games mom, ublocked, project-hub, project, hub, project hub, unbl0ck, github, unbl0ck.github.io, unblock.github.io, unblock, g@mes, unblocked games school">
 
         <meta charset="UTF-8">
@@ -32,18 +32,17 @@
         <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 
         <script src="scripts/script.js"></script>
-        <script src="scripts/index.js"></script> <!--Page-Specific-->
 
         <meta property="og:title" content="Project Hub V2">
-        <meta property="og:description" content="">
-        <meta property="og:image" content="">
+        <meta property="og:description" content="Come browse our 80+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!">
+        <meta property="og:image" content="https://unbl0ck.github.io/v2/favicon.ico">
         <meta property="og:url" content="https://unbl0ck.github.io/v2">
         <meta property="og:type" content="website">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="Project Hub V2">
-        <meta name="twitter:description" content="">
-        <meta name="twitter:image" content="">
-        <link rel="apple-touch-icon" href="">
+        <meta name="twitter:description" content="Come browse our 80+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!">
+        <meta name="twitter:image" content="https://unbl0ck.github.io/v2/favicon.ico">
+        <link rel="apple-touch-icon" href="https://unbl0ck.github.io/v2/favicon.ico">
     </head>
     <body>
         <!--Navbar-->
@@ -64,11 +63,19 @@
             </div>
 
             <div class="nav-tools">
+                <i class="fa-solid fa-earth-americas" onclick="toggleTranslate()"></i>
                 <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
                 <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
             </div>
         </header>
         <!--Navbar-->
+
+        <!--Translate-->
+        <div class="translate">
+            <a href="https://www.unbl0ck.github.io/v2/index.html">English</a><hr>
+            <a href="https://www.unbl0ck.github.io/v2_es/index.html">Español</a>
+        </div>
+        <!--Translate-->
 
         <!--Settings-->
         <div class="settings-modal" id="settings-modal">
@@ -82,7 +89,6 @@
                 </div>
                 <div class="favicon-masking">
                     <input type="text" placeholder="Enter Image Link..." id="faviconInput">
-                    <input type="file" accept="image/*" id="faviconFileInput">
                     <button onclick="updateFavicon()">Submit</button>
                 </div>
                 <h3>Tab Presets:</h3>
@@ -204,7 +210,7 @@
                     <p><i class="fa-regular fa-circle-check"></i>Sadly, we aren't able to find and host every game out there. However, if you'd like to let us know about a new game, you can contact us using our <a href="contact.html">Contact Forms</a>, <a href="https://github.com/unbl0ck/v2/issues" target="_blank">GitHub Issues</a>, or <a href='https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1' target="_blank">Email</a>. Sometimes, albeit rarely, there are few games which we cannot host due to Flash/external limitations, and if you find these games on our site, please contact us using one of the methods above..</p>
                 </span>
             </div>
-            <div class="faq-3">
+            <div class="faq-3" id="incomplete">
                 <h2><i class="fa-regular fa-circle-question"></i>QUESTIONHERE</h2>
                 <span class="faq-3-reveal"><hr>
                     <p><i class="fa-regular fa-circle-check"></i>ANSWERHERE</p>

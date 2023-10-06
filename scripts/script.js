@@ -74,20 +74,9 @@ function updateTitle() {
 
 function updateFavicon() {
   const faviconInput = document.getElementById('faviconInput');
-  const faviconFileInput = document.getElementById('faviconFileInput');
   const favicon = document.getElementById('favicon');
 
-  if (faviconFileInput.files.length > 0) {
-      const file = faviconFileInput.files[0];
-      const reader = new FileReader();
-
-      reader.onload = function(event) {
-          favicon.href = event.target.result;
-      };
-      reader.readAsDataURL(file);
-
-      faviconInput.value = '';
-  } else if (faviconInput.value.trim() !== '') {
+  if (faviconInput.value.trim() !== '') {
       favicon.href = faviconInput.value;
   }
 }

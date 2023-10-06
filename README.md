@@ -1,6 +1,6 @@
 <!-- Project Logo -->
 <p align="center">
-  <img src="" alt="Logo">
+  <img src="img/logoText.png" alt="Logo">
 </p>
 
 <!-- Badges -->
@@ -25,17 +25,6 @@
 - Constantly Updating
 - Open-Source
 
-<!-- About Me -->
-# Hi, I'm Christian!
-
-## About Me
-<p>Hey, I'm Christian! 👋</p>
-<p>I'm an amateur developer, and high school student passionate about web design and computer science. 🌟</p>
-<p>I like working on small hobby projects that allow me to try new things and sharpen my skills. 🎨</p>
-<p>My main project is <a href="https://unbl0ck.github.io/v2">Project-Hub</a> (Go check it out!). 🚀</p>
-<p>It's a sequal to my previous hub for running games whilst bypassing extension-blocking capabilities. 🎮</p>
-<p>I'm constantly updating, and improving this project, so go check it out. 🔄</p>
-
 <!-- Screenshots -->
 ## Screenshots 📷
 <div align="center">
@@ -56,10 +45,13 @@ You can also submit a contact form on the [Contact Page](https://unbl0ck.github.
 Each game I curate can be found in the ***Settings*** of the site.
 
 Special thanks to the following projects and libraries:
-- [Ruffle](https://ruffle.rs) - Flash emulator
-- [WAFlash](https://github.com/vidkidz/waflash) - Secondary Flash emulator
-- [IodineGBA](https://github.com/taisel/IodineGBA) - Game Boy Advance emulator
-- [3kh0](https://github.com/3kh0) - Some Game Ports (amazing person btw)
+- [Ruffle](https://ruffle.rs) - Flash Emulator
+- [WAFlash](https://github.com/vidkidz/waflash) - Secondary Flash Emulator
+- [IodineGBA](https://github.com/taisel/IodineGBA) - Game Boy Advance Emulator
+- [Desmond](https://github.com/js-emulators/desmond) - Nintendo DS Emulator
+- [Animate.CSS](https://github.com/animate-css/animate.css) - Animation Library
+- [Hover.CSS](https://github.com/IanLunn/Hover) - Animation Library
+- [3kh0](https://github.com/3kh0) - Game Ports & Inspiration (amazing person btw)
 
 ---
 

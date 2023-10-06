@@ -108,6 +108,29 @@ body {
     scale: 110%;
 }
 
+/* Translate */
+.translate {
+    position: relative;
+    top: 0;
+    right: 100%;
+    width: 5vw;
+    padding: 1vw;
+
+    background: linear-gradient(
+        var(--gradient-color-light),
+        var(--gradient-color-dark)
+    );
+    cursor: default;
+    color: var(--text-color);
+}
+.translate a {
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+.translate hr {
+    margin: 1vw;
+}
+
 /* Settings */
 .settings-modal {
     position: absolute;
