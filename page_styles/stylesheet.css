@@ -41,6 +41,7 @@ body {
 .nav {
     width: 100vw;
     padding: 3.5vh 6vw;
+    max-height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,8 +111,8 @@ body {
 
 /* Translate */
 .translate {
-    position: absolute;
-    top: 0;
+    position: static;
+    top: 8vh;
     right: 0;
     padding: 1vw;
 
