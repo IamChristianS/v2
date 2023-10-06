@@ -113,7 +113,7 @@ body {
     position: absolute;
     top: 6vw;
     right: 0;
-    padding: 4vw 3vw;
+    padding: 2.5vw 2vw;
 
     background: linear-gradient(
         var(--gradient-color-light),
