@@ -64,7 +64,7 @@
             </div>
 
             <div class="nav-tools">
-                <i class="fa-solid fa-globe nav-tools-translate"></i>
+                <i class="fa-solid fa-globe" onclick="toggleTranslate()"></i>
                 <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
                 <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
             </div>
@@ -72,9 +72,9 @@
         <!--Navbar-->
 
         <!--Translate-->
-        <div class="translate">
-            <a href="https://www.unbl0ck.github.io/v2/index.html"><span class="fi fi-gb"></span>English</a><hr>
-            <a href="https://www.unbl0ck.github.io/v2_es/index.html"><span class="fi fi-es"></span>Español</a>
+        <div class="translate" id="translate">
+            <button href="https://www.unbl0ck.github.io/v2/index.html"><span class="fi fi-gb"></span>English</button><hr>
+            <button href="https://www.unbl0ck.github.io/v2_es/index.html"><span class="fi fi-es"></span>Español</button>
         </div>
         <!--Translate-->
 
@@ -118,10 +118,12 @@
                         <img src="img/presets/customPreset.png">
                         <p>Add Preset</p>
                     </div>
-                </div>
-                <hr>
+                </div><hr>
                 <h3>About:Blank Cloaking</h3>
                 <button class="ab-cloak-button" onclick="toggleABCloak()">Enable</button><hr>
+                <h3>Panic Button</h3>
+                <button class="panic-button">Press to Record Key...</button>
+                <p class="panic-key-display">Current Panic Key: <span>None</span></p><hr>
                 <button class="credits-button" onclick="toggleCredits()"><i class="fa-solid fa-angles-down"></i>Credits<i class="fa-solid fa-angles-down"></i></button>
                 <div class="credits-expand" id="credits-expand">
                     <p>Ruffle Flash Player - <a href="https://www.ruffle.rs" target="_blank">Ruffle Team</a></p>

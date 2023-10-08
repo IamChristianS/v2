@@ -1,3 +1,4 @@
+//////////////////////////////////////////////////
 // Settings Menu
 let settingsOpen = false
 
@@ -21,6 +22,41 @@ document.addEventListener('click', function(event) {
   if (settingsModal.contains(event.target) && !settingsMenu.contains(event.target)) {
     toggleSettings()
   }
+});
+
+// Tab Masking (ty chatgpt <3)
+
+
+// About:Blank Cloak
+
+
+// Panic Button (ty chatgpt <3)
+document.addEventListener("DOMContentLoaded", function () {
+  let panicKey = null;
+  const setPanicKeyButton = document.querySelector(".panic-button");
+  const displayPanicKey = document.querySelector(".panic-key-display");
+  const redirectURL = "https://www.google.com";
+
+  function setPanicKey() {
+    setPanicKeyButton.textContent = "Recording... Press a Key";
+    document.removeEventListener("keydown", recordPanicKey);
+    document.addEventListener("keydown", recordPanicKey);
+  }
+  function recordPanicKey(event) {
+    const key = event.key.toUpperCase();
+    panicKey = event.code;
+    displayPanicKey.textContent = `Current Panic Key: ${key}`;
+    setPanicKeyButton.textContent = "Change Panic Key";
+    document.removeEventListener("keydown", recordPanicKey);
+  }
+
+  setPanicKeyButton.addEventListener("click", setPanicKey);
+
+  document.addEventListener("keydown", (event) => {
+    if (panicKey && event.code === panicKey) {
+        window.location.href = redirectURL;
+    }
+  });
 });
 
 // Credits
@@ -47,7 +83,7 @@ function toggleCredits() {
     }
   }
 }
-
+//////////////////////////////////////////////////
 // Theme Changer (ty chatgpt <3)
 function toggleTheme() {
   const currentTheme = document.documentElement.getAttribute("data-theme");
@@ -63,51 +99,18 @@ if (savedTheme) {
 } else {
     document.documentElement.setAttribute("data-theme", "light");
 }
+//////////////////////////////////////////////////
+// Language Selector
+let translateOpen = false
 
-// About:Blank Cloak
-
-// Tab Masking (ty chatgpt <3)
-function updateTitle() {
-  const newTitle = document.getElementById('tabNameInput').value;
-  document.title = newTitle;
-}
-
-function updateFavicon() {
-  const faviconInput = document.getElementById('faviconInput');
-  const favicon = document.getElementById('favicon');
-
-  if (faviconInput.value.trim() !== '') {
-      favicon.href = faviconInput.value;
+function toggleTranslate() {
+  const translateMenu = document.getElementById("translate");
+  if (translateOpen) {
+    translateMenu.style.display = "none";
+    translateOpen = false;
+  } else {
+    translateMenu.style.display = "block";
+    translateOpen = true;
   }
 }
-
-function loadPreset(presetTitle, presetFaviconUrl) {
-  document.title = presetTitle;
-  const favicon = document.getElementById('favicon');
-  favicon.href = presetFaviconUrl;
-}
-
-function customPresetPopup() {
-  const customPresetTitle = prompt('Enter Custom Preset Title:');
-  if (customPresetTitle === null || customPresetTitle.trim() === '') {
-      return;
-  }
-  const customPresetFavicon = prompt('Enter Custom Preset Favicon URL:');
-  if (customPresetFavicon === null || customPresetFavicon.trim() === '') {
-      return;
-  }
-
-  const customPreset = {
-      title: customPresetTitle,
-      favicon: customPresetFavicon
-  };
-  localStorage.setItem('customPreset', JSON.stringify(customPreset));
-
-  const presetContainer = document.getElementById('presetContainer');
-  const customPresetElement = document.createElement('div');
-  customPresetElement.innerHTML = `
-      <img src="${customPreset.favicon}" onclick="loadPreset('${customPreset.title}', '${customPreset.favicon}')">
-      <p>${customPreset.title}</p>
-  `;
-  presetContainer.appendChild(customPresetElement);
-}
+//////////////////////////////////////////////////

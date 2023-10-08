@@ -4,6 +4,7 @@
 [data-theme="light"] {
     --background-color: rgba(0,0,0,0);
     --text-color: #FCFFFF;
+    --gradient-color-selected: #5182a5;
     --gradient-color-light: #46789B;
     --gradient-color-dark: #356080;
 
@@ -12,6 +13,7 @@
 [data-theme="dark"] {
     --background-color: rgba(0,0,0,0.6);
     --text-color: #FEFEFE;
+    --gradient-color-selected: #3c4650;
     --gradient-color-light: #333d46;
     --gradient-color-dark: #2a333a;
 
@@ -110,28 +112,34 @@ body {
 
 /* Translate */
 .translate {
+    display: none;
     position: absolute;
     top: 6vw;
     right: 0;
-    padding: 2vw 1.75vw;
 
-    background: linear-gradient(
-        var(--gradient-color-light),
-        var(--gradient-color-dark)
-    );
+    background: var(--gradient-color-light);
     cursor: default;
     color: var(--text-color);
 }
-.translate a {
+.translate button {
     font-size: 1.1vw;
     font-weight: 400;
-    text-decoration: none;
+    cursor: pointer;
+
+    background: var(--gradient-color-light);
+    border: none;
+    width: 100%;
+    padding: 1vw .5vw;
+    padding-right: 1vw;
 }
-.translate a span {
+.translate button:hover {
+    background: var(--gradient-color-selected);
+}
+.translate button span {
     margin: 0 .5vw;
 }
 .translate hr {
-    margin: .9vw;
+    margin: .25vw 1vw;
 }
 
 /* Settings */
