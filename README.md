@@ -1,6 +1,6 @@
 <!-- Project Logo -->
 <p align="center">
-  <img src="img/logoText.png" alt="Logo">
+  <img src="img/logoTextIcon.png" alt="Project-Hub Logo">
 </p>
 
 <!-- Badges -->
@@ -22,14 +22,14 @@
 - Unblocked Games
 - Tab Cloaking
 - Proxy Services
-- Constantly Updating
+- Panic Button
 - Open-Source
 
 <!-- Screenshots -->
 ## Screenshots 📷
 <div align="center">
   <img src="" alt="Games Page" width="300">
-  <img src="" alt="Settings Page" width="300">
+  <img src="" alt="Settings Menu" width="300">
 </div>
 <div align="center">
   <img src="" alt="Cookie Clicker" width="300">
@@ -38,7 +38,7 @@
 
 <!-- Contributions -->
 ## Contributing
-Contributions are welcome! If you have any bug reports, feature requests, or suggestions, please open an issue or submit a pull request. My e-mail is also available at Project.Hub.Games@gmail.com.
+Contributions are welcome! If you have any bug reports, feature requests, or suggestions, please open an issue or submit a pull request. My e-mail is also available at [project.hub.games@gmail.com](https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1).
 You can also submit a contact form on the [Contact Page](https://unbl0ck.github.io/v2/contact.html) of the site.
 
 ## Acknowledgements
