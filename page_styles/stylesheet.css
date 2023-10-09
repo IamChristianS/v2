@@ -288,6 +288,36 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Panic Button */
+.panic-button {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--text-color);
+    border-radius: .25vw;
+    justify-content: center;
+    width: 33%;
+    padding: .3vw;
+    margin-bottom: .5vw;
+
+    color: var(--text-color);
+    font-size: 1.2vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+.panic-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.panic-key-display {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1vw;
+    font-weight: 400;
+}
+.panic-key-display span {
+    font-weight: 500;
+    font-style: italic;
+}
+
 /* Credits */
 .credits-button {
     background-color: rgba(255, 255, 255, 0.15);
