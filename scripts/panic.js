@@ -1,7 +1,10 @@
-const redirectURL = "https://www.google.com";
+document.addEventListener("DOMContentLoaded", function () {
+    const redirectURL = "https://www.google.com";
+    const storedSavedKey = localStorage.getItem("savedKey");
 
-document.addEventListener("keydown", (event) => {
-    if (event.code === localStorage.getItem("savedKey")) {  
-        window.location.href = redirectURL;
-    }
+    document.addEventListener("keydown", (event) => {
+        if (storedSavedKey && event.code === storedSavedKey) {  
+            window.location.href = redirectURL;
+        }
+    });
 });
