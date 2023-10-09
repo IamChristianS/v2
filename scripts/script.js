@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const setPanicKeyButton = document.querySelector(".panic-button");
   const displayPanicKey = document.querySelector(".panic-key-display");
   const storedSavedKey = localStorage.getItem("savedKey");
+  const redirectURL = "https://www.google.com";
 
   if (storedSavedKey != null) {
     displayPanicKey.textContent = `Current Panic Key: ${storedSavedKey}`;
@@ -52,10 +53,17 @@ document.addEventListener("DOMContentLoaded", function () {
     displayPanicKey.textContent = `Current Panic Key: ${key}`;
     setPanicKeyButton.textContent = "Change Panic Key";
     document.removeEventListener("keyup", recordPanicKey);
+
     localStorage.setItem("savedKey", key);
   }
 
   setPanicKeyButton.addEventListener("click", setPanicKey);
+
+  document.addEventListener("keydown", (event) => {
+    if (storedSavedKey && event.code === storedSavedKey) {  
+        window.location.href = redirectURL;
+    }
+});
 });
 
 // Credits
