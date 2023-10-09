@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const redirectURL = "https://www.google.com";
 
   if (storedSavedKey != null) {
-    displayPanicKey.textContent = `Current Panic Key: ${storedSavedKey}`;
+    recordPanicKey(storedSavedKey)
   }
 
   function setPanicKey() {
@@ -50,11 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
   function recordPanicKey(event) {
     const key = event.key.toUpperCase();
     panicKey = event.code;
-    displayPanicKey.textContent = `Current Panic Key: ${key}`;
+
+    localStorage.setItem("savedKey", panicKey);
+
+    displayPanicKey.textContent = `Current Panic Key: ${storedSavedKey}`;
     setPanicKeyButton.textContent = "Change Panic Key";
     document.removeEventListener("keyup", recordPanicKey);
-
-    localStorage.setItem("savedKey", key);
   }
 
   setPanicKeyButton.addEventListener("click", setPanicKey);
