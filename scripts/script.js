@@ -24,13 +24,13 @@ document.addEventListener('click', function(event) {
   }
 });
 
-// Tab Masking (ty chatgpt <3)
+// Tab Masking
 
 
 // About:Blank Cloak
 
 
-// Panic Button (ty chatgpt <3)
+// Panic Button (ty chatgpt <3) ((Gonna need it again for setting it to localstorage :/))
 document.addEventListener("DOMContentLoaded", function () {
   let panicKey = null;
   const setPanicKeyButton = document.querySelector(".panic-button");
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const redirectURL = "https://www.google.com";
 
   if (storedSavedKey != null) {
-    recordPanicKey(storedSavedKey)
+    displayPanicKey.textContent = `Current Panic Key: ${storedSavedKey}`;
   }
 
   function setPanicKey() {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 });
 
-// Credits
+// Credits (ty stackoveflow user <3)
 let creditsDropped = false
 
 function toggleCredits() {

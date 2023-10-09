@@ -1,9 +1,2 @@
-
-const redirectURL = "https://www.google.com";
-const storedSavedKey = localStorage.getItem("savedKey");
-
-document.addEventListener("keydown", (event) => {
-    if (storedSavedKey && event.code === storedSavedKey) {  
-        window.location.href = redirectURL;
-    }
-});
+// Eventually will be a seperate script that detects if user presses panic button
+// Is used in ALL pages
