@@ -35,7 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let panicKey = null;
   const setPanicKeyButton = document.querySelector(".panic-button");
   const displayPanicKey = document.querySelector(".panic-key-display");
-  const redirectURL = "https://www.google.com";
+  const storedSavedKey = localStorage.getItem("savedKey");
+
+  if (storedSavedKey != null) {
+    displayPanicKey.textContent = `Current Panic Key: ${storedSavedKey}`;
+  }
 
   function setPanicKey() {
     setPanicKeyButton.textContent = "Recording... Press a Key";
@@ -48,15 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
     displayPanicKey.textContent = `Current Panic Key: ${key}`;
     setPanicKeyButton.textContent = "Change Panic Key";
     document.removeEventListener("keyup", recordPanicKey);
+    localStorage.setItem("savedKey", key);
   }
 
   setPanicKeyButton.addEventListener("click", setPanicKey);
-
-  document.addEventListener("keydown", (event) => {
-    if (panicKey && event.code === panicKey) {
-        window.location.href = redirectURL;
-    }
-  });
 });
 
 // Credits
@@ -91,13 +90,6 @@ function toggleTheme() {
   document.documentElement.setAttribute("data-theme", newTheme);
 
   localStorage.setItem("theme", newTheme);
-}
-
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme) {
-    document.documentElement.setAttribute("data-theme", savedTheme);
-} else {
-    document.documentElement.setAttribute("data-theme", "light");
 }
 //////////////////////////////////////////////////
 // Language Selector

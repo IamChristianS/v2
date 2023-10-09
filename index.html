@@ -27,12 +27,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="page_styles/stylesheet.css">
-        <link rel="stylesheet" href="page_styles/index.css"> <!--Page-Specific-->
+        <link rel="stylesheet" href="page_styles/index.css"> <!--Page Specific-->
         <link rel="stylesheet" href="page_styles/animate.css"> <!--Animate.CSS Library-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css">
         <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 
-        <script src="scripts/script.js"></script>
+        <script src="scripts/script.js"></script> <!--Use For Navbar-->
+        <script src="scripts/panic.js"></script>
+        <script src="scripts/theme.js"></script>
 
         <meta property="og:title" content="Project Hub V2">
         <meta property="og:description" content="Come browse our 80+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!">
@@ -69,21 +71,19 @@
                 <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
             </div>
         </header>
-        <!--Navbar-->
-
         <!--Translate-->
         <div class="translate" id="translate">
             <button href="https://www.unbl0ck.github.io/v2/index.html"><span class="fi fi-gb"></span>English</button><hr>
             <button href="https://www.unbl0ck.github.io/v2_es/index.html"><span class="fi fi-es"></span>Español</button>
         </div>
-        <!--Translate-->
+        <!--Navbar-->
 
         <!--Settings-->
         <div class="settings-modal" id="settings-modal">
             <div class="settings" id="settings">
                 <span class="settings-close" onclick="toggleSettings()">X</span>
                 <h2>Settings</h2><hr>
-                
+
                 <h3>Tab Masking</h3>
                 <div class="name-masking">
                     <input type="text" placeholder="Enter Tab Name..." id="tabNameInput">
