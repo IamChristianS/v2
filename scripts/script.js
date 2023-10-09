@@ -39,15 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setPanicKey() {
     setPanicKeyButton.textContent = "Recording... Press a Key";
-    document.removeEventListener("keydown", recordPanicKey);
-    document.addEventListener("keydown", recordPanicKey);
+    document.removeEventListener("keyup", recordPanicKey);
+    document.addEventListener("keyup", recordPanicKey);
   }
   function recordPanicKey(event) {
     const key = event.key.toUpperCase();
     panicKey = event.code;
     displayPanicKey.textContent = `Current Panic Key: ${key}`;
     setPanicKeyButton.textContent = "Change Panic Key";
-    document.removeEventListener("keydown", recordPanicKey);
+    document.removeEventListener("keyup", recordPanicKey);
   }
 
   setPanicKeyButton.addEventListener("click", setPanicKey);
