@@ -3,21 +3,23 @@
 
 [data-theme="light"] {
     --background-color: rgba(0,0,0,0);
-    --text-color: #FCFFFF;
+    --text-color: #ffffff;
     --gradient-color-selected: #5182a5;
     --gradient-color-light: #46789B;
     --gradient-color-dark: #356080;
 
     --review-bottom-text: #356080;
+    --review-bottom-text-shadow: 0px 0px 15px rgba(0,0,0,.25);
 }
 [data-theme="dark"] {
-    --background-color: rgba(0,0,0,0.6);
-    --text-color: #FEFEFE;
-    --gradient-color-selected: #3c4650;
-    --gradient-color-light: #333d46;
-    --gradient-color-dark: #2a333a;
+    --background-color: rgba(0,0,0,0.5);
+    --text-color: #ffffff;
+    --gradient-color-selected: #525252;
+    --gradient-color-light: #202020;
+    --gradient-color-dark: #101010;
 
-    --review-bottom-text: #EDEEEE;
+    --review-bottom-text: #ffffff;
+    --review-bottom-text-shadow: 0px 0px 15px rgba(0,0,0,.75);
 }
 
 * {
@@ -197,11 +199,19 @@ body {
 .settings h2 {
     font-size: 1.6vw;
     font-weight: 700;
+    cursor: auto;
 }
 .settings h3 {
-    margin: .5vw;
+    margin: .6vw;
     font-size: 1.35vw;
     font-weight: 600;
+    cursor: auto;
+}
+.settings p {
+    margin: .5vw;
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: auto;
 }
 .settings hr {
     margin: 1vw 5vw;
@@ -266,7 +276,7 @@ body {
 .settings-presets div p {
     font-size: 1.2vw;
     font-weight: 500;
-    padding: .75vw 1vw;
+    cursor: pointer;
 }
 
 /* About:Blank */
@@ -320,6 +330,7 @@ body {
     color: var(--text-color);
     font-size: 1vw;
     font-weight: 400;
+    cursor: auto;
 }
 
 /* Credits */
@@ -378,6 +389,7 @@ footer {
     text-align: center;
     line-height: 1.5vw;
     word-spacing: 2px;
+    cursor: auto;
 }
 
 .footer-links {
@@ -406,6 +418,10 @@ footer {
     border: 1px solid var(--text-color);
     border-radius: 10vw;
 }
+.footer-socials .fa-solid {
+    font-size: 1.8vw;
+    padding: .7vw;
+}
 
 .footer-policies {
     margin: 1vw;
@@ -427,4 +443,5 @@ footer {
     text-align: center;
     line-height: 1.5vw;
     word-spacing: 2px;
+    cursor: auto;
 }
