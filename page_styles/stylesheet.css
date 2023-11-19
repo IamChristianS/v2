@@ -250,6 +250,20 @@ body {
 .name-masking button:hover, .favicon-masking button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+.masking-reset-btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--text-color);
+    border-radius: .25vw;
+    justify-content: center;
+    width: 30%;
+    padding: .3vw;
+    margin: .75vw 0;
+
+    color: var(--text-color);
+    font-size: 1.2vw;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 /* Presets */
 .settings-presets {
