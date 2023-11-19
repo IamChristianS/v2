@@ -117,7 +117,7 @@ body {
     display: none;
     position: absolute;
     top: 6vw;
-    right: 0;
+    right: 2vw;
 
     background: var(--gradient-color-light);
     cursor: default;
@@ -182,9 +182,17 @@ body {
     color: var(--text-color);
     text-align: center;
 }
-.settings::-webkit-scrollbar-track { /* STACKOVERLOOOOWW, I NEED HELP AGAINN */
-    height: 95%;
+.settings::-webkit-scrollbar {
+    width: 10px;
 }
+.settings::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.settings::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1vw;
+}
+
 .settings-close {
     position: absolute;
     right: 1.25vw;
@@ -215,6 +223,24 @@ body {
 }
 .settings hr {
     margin: 1vw 5vw;
+}
+.settings-btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--text-color);
+    border-radius: .25vw;
+    display: block;
+    justify-content: center;
+    width: 35%;
+    padding: .3vw;
+    margin: .75vw auto;
+
+    color: var(--text-color);
+    font-size: 1.2vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+.settings-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Tab Masking */
@@ -250,20 +276,6 @@ body {
 .name-masking button:hover, .favicon-masking button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
-.masking-reset-btn {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid var(--text-color);
-    border-radius: .25vw;
-    justify-content: center;
-    width: 30%;
-    padding: .3vw;
-    margin: .75vw 0;
-
-    color: var(--text-color);
-    font-size: 1.2vw;
-    font-weight: 500;
-    cursor: pointer;
-}
 
 /* Presets */
 .settings-presets {
@@ -283,7 +295,6 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
     max-height: 100%;
     max-width: 6vw;
-    padding: .25vw;
     border: 2px solid var(--text-color);
     border-radius: 1vw;
 }
@@ -291,25 +302,6 @@ body {
     font-size: 1.2vw;
     font-weight: 500;
     cursor: pointer;
-}
-
-/* About:Blank */
-.ab-cloak-button {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid var(--text-color);
-    border-radius: .25vw;
-    justify-content: center;
-    width: 30%;
-    padding: .3vw;
-    margin-bottom: .5vw;
-
-    color: var(--text-color);
-    font-size: 1.2vw;
-    font-weight: 500;
-    cursor: pointer;
-}
-.ab-cloak-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Panic Button */

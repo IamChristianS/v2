@@ -90,11 +90,12 @@
                     <button onclick="updateTitle()">Submit</button>
                 </div>
                 <div class="favicon-masking">
-                    <input type="text" placeholder="Enter Image Link..." id="faviconInput">
+                    <input type="text" placeholder="Enter Image Link..." id="faviconInput" aria-label="https://example.com/image.png">
                     <button onclick="updateFavicon()">Submit</button>
                 </div>
 
-                <button class="masking-reset-btn" onclick="resetMasking()">Reset</button>
+                <button class="settings-btn" onclick="addPreset()">Add Custom Preset</button>
+                <button class="settings-btn" onclick="resetMasking()">Reset</button>
 
                 <h3>Tab Presets:</h3>
                 <div class="settings-presets">
@@ -118,14 +119,14 @@
                         <img src="img/presets/turnitin.png">
                         <p>TurnItIn</p>
                     </div>
-                    <div onclick="customPresetPopup()">
-                        <img src="img/presets/customPreset.png">
-                        <p>Add Preset</p>
+                    <div onclick="usePreset()">
+                        <img id="presetFavicon" src="img/presets/customPreset.png">
+                        <p id="presetTitle">Add Preset</p>
                     </div>
                 </div><hr>
 
                 <h3>About:Blank Cloaking</h3>
-                <button class="ab-cloak-button" onclick="toggleABCloak('https://unbl0ck.github.io')">Enable</button><hr>
+                <button class="settings-btn" style="margin:.25vw auto" onclick="toggleABCloak('https://unbl0ck.github.io')">Enable</button><hr>
 
                 <h3>Panic Button</h3>
                 <div class="panic-buttons">
@@ -191,7 +192,7 @@
                     <p>- "Project-Hub is always my number one pick for unblocked gaming whenever I'm feeling bored, and have nothing else to do."</p>
                 </div>
             </div>
-            <h3>Want to see yourself here? Email us at <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1" target="_blank">project.hub.games@gmail.com</a></h3>
+            <h3>Want to see yourself here? Fill out our form at <a href="https://forms.gle/YZSapScWn58kaVs69" target="_blank">https://forms.gle/YZSapScWn58kaVs69</a>.</h3>
         </div>
         
         <!--Random Games-->

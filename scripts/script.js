@@ -24,7 +24,7 @@ document.addEventListener('click', function(event) {
   }
 });
 
-// Tab Masking
+// Tab Masking (I wrote half of this at 3am, so only god knows how this works now)
 function updateTitle() {
   const title = document.getElementById('tabNameInput').value;
   document.title = title;
@@ -58,6 +58,38 @@ function applyPreset(presetButton) {
   localStorage.setItem('faviconUrl', presetFaviconUrl);
 }
 
+function addPreset() {
+  const title = document.getElementById('tabNameInput').value;
+  const favicon = document.getElementById('faviconInput').value;
+  if (title != '' && favicon != '') {
+    localStorage.setItem('presetTabTitle', title);
+    localStorage.setItem('presetFaviconUrl', favicon);
+  
+    const presetTxt = document.getElementById("presetTitle");
+    const presetImg = document.getElementById("presetFavicon");
+    presetTxt.innerText = title;
+    presetImg.src = favicon;
+    presetImg.width = 200;
+    presetImg.style.padding = ".5vw"
+  }
+}
+function usePreset() {
+  const savedPresetTitle = localStorage.getItem('presetTabTitle');
+  const savedPresetFavicon = localStorage.getItem('presetFaviconUrl');
+  if (savedPresetTitle && savedPresetFavicon) {
+    document.title = savedPresetTitle;
+    document.getElementById('tabNameInput').value = savedPresetTitle;
+    localStorage.setItem('tabTitle', savedPresetTitle);
+
+    const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
+    favicon.href = savedPresetFavicon;
+    document.head.appendChild(favicon);
+    document.getElementById('faviconInput').value = savedPresetFavicon;
+    localStorage.setItem('faviconUrl', savedPresetFavicon);
+  }
+}
 
 function resetMasking() {
   localStorage.removeItem('tabTitle');
@@ -69,12 +101,13 @@ function resetMasking() {
 document.addEventListener('DOMContentLoaded', function () {
   const savedTitle = localStorage.getItem('tabTitle');
   const savedFaviconUrl = localStorage.getItem('faviconUrl');
+  const savedPresetTitle = localStorage.getItem('presetTabTitle');
+  const savedPresetFavicon = localStorage.getItem('presetFaviconUrl');
 
   if (savedTitle) {
     document.title = savedTitle;
     document.getElementById('tabNameInput').value = savedTitle;
   }
-
   if (savedFaviconUrl) {
     const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
     favicon.rel = 'icon';
@@ -82,6 +115,16 @@ document.addEventListener('DOMContentLoaded', function () {
     favicon.href = savedFaviconUrl;
     document.head.appendChild(favicon);
     document.getElementById('faviconInput').value = savedFaviconUrl;
+  }
+
+  if (savedPresetTitle && savedPresetFavicon) {
+    const presetTxt = document.getElementById("presetTitle");
+    const presetImg = document.getElementById("presetFavicon");
+
+    presetTxt.innerText = savedPresetTitle;
+    presetImg.src = savedPresetFavicon;
+    presetImg.width = 200;
+    presetImg.style.padding = ".5vw"
   }
 });
 
