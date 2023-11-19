@@ -16,7 +16,7 @@
 <html lang="en" data-theme="light">
     <head>
         <title>Project-Hub V2 | Home</title>
-        <link rel="icon" href="https://unbl0ck.github.io/v2/favicon.ico">
+        <link rel="icon" href="favicon.png">
         <link rel="canonical" href="https://unbl0ck.github.io/v2">
         <meta name="description" content="Come browse our 80+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more! We have Kahoot and other Game Hacks coming soon.">
         <meta name="keywords" content="unblocked, games, google sites, unblocked games mom, ublocked, project-hub, project, hub, project hub, unbl0ck, github, unbl0ck.github.io, unblock.github.io, unblock, g@mes, unblocked games school">
@@ -93,25 +93,28 @@
                     <input type="text" placeholder="Enter Image Link..." id="faviconInput">
                     <button onclick="updateFavicon()">Submit</button>
                 </div>
+
+                <button class="masking-reset-btn" onclick="resetMasking()">Reset</button>
+
                 <h3>Tab Presets:</h3>
                 <div class="settings-presets">
-                    <div onclick="loadPreset('Dashboard', 'img/presets/canvasFavicon.png')">
+                    <div class="presets-btn" data-name="Dashboard" data-favicon="https://i.ibb.co/c8DTXVm/canvas-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/canvas.png">
                         <p>Canvas</p>
                     </div>
-                    <div onclick="loadPreset('Google', 'img/presets/googleFavicon.png')">
+                    <div class="presets-btn" data-name="Google" data-favicon="https://i.ibb.co/zHRG2fB/google-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/google.png">
                         <p>Google</p>
                     </div>
-                    <div onclick="loadPreset('Inbox - Gmail', 'img/presets/gmailFavicon.png')">
+                    <div class="presets-btn" data-name="Inbox - Gmail" data-favicon="https://i.ibb.co/g7fpQkC/gmail-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/gmail.png">
                         <p>Gmail</p>
                     </div>
-                    <div onclick="loadPreset('Google Drive', 'img/presets/googleDriveFavicon.png')">
+                    <div class="presets-btn" data-name="Google Drive" data-favicon="https://i.ibb.co/SwLGW4x/google-Drive-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/googleDrive.png">
                         <p>Google Drive</p>
                     </div>
-                    <div onclick="loadPreset('TurnItIn', 'img/presets/turnitinFavicon.png')">
+                    <div class="presets-btn" data-name="TurnItIn" data-favicon="https://i.ibb.co/T0Lwytc/turnitin-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/turnitin.png">
                         <p>TurnItIn</p>
                     </div>
@@ -161,9 +164,9 @@
 
         <!--User Reviews-->
         <!--
+            Every time I come back and look at this, I have a mini heart attack.
             This is horribly optimized, but ehhhh whatever it works,
             but if any of y'all got any fixes though, please submit a pull request.
-            Every time I come back and look at this, I have a mini heart attack.
         -->
         <div class="reviews">
             <div class="reviews-slides slides1">
