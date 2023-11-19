@@ -86,13 +86,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // About:Blank Cloak
-function toggleABCloak() {
+function toggleABCloak(url) {
   var win = window.open('', '_blank', 'menubar=no,toolbar=no,location=no,status=no')
   var iframe = win.document.createElement('iframe')
   iframe.style.width = "100%";
   iframe.style.height = "100%";
   iframe.style.border = "none";
-  iframe.src = "https://unbl0ck.github.io"
+  iframe.src = url
   win.document.body.appendChild(iframe)
 }
 
