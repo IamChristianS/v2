@@ -7,7 +7,7 @@
     width: 35vw;
     min-height: 40vh;
     margin: 20vh 1.5vw;
-    padding: 2.5vw;
+    padding: 2vw;
 
     background: linear-gradient(
         var(--gradient-color-light),
@@ -42,6 +42,10 @@
 .about div p {
     font-size: 1.15vw;
     font-weight: 500;
+}
+.about div img {
+    width: 100%;
+    margin-top: 1vw;
 }
 
 /* Reviews */
