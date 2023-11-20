@@ -61,16 +61,25 @@ function applyPreset(presetButton) {
 function addPreset() {
   const title = document.getElementById('tabNameInput').value;
   const favicon = document.getElementById('faviconInput').value;
-  if (title != '' && favicon != '') {
+  const presetTxt = document.getElementById("presetTitle");
+  const presetImg = document.getElementById("presetFavicon");
+  const presetBtn = document.getElementById("presetBtn");
+  
+  if (title != '' && favicon != '' && presetBtn.innerText != "Remove Custom Preset") {
     localStorage.setItem('presetTabTitle', title);
     localStorage.setItem('presetFaviconUrl', favicon);
-  
-    const presetTxt = document.getElementById("presetTitle");
-    const presetImg = document.getElementById("presetFavicon");
     presetTxt.innerText = title;
     presetImg.src = favicon;
     presetImg.width = 200;
     presetImg.style.padding = ".5vw"
+    presetBtn.innerText = "Remove Custom Preset"
+  } else {
+    localStorage.removeItem('presetTabTitle');
+    localStorage.removeItem('presetFaviconUrl');
+
+    presetTxt.innerText = "Custom Preset";
+    presetImg.src = "https://i.ibb.co/VjNwzxv/custom-Preset.png";
+    presetBtn.innerText = "Add Custom Preset"
   }
 }
 function usePreset() {
@@ -120,11 +129,13 @@ document.addEventListener('DOMContentLoaded', function () {
   if (savedPresetTitle && savedPresetFavicon) {
     const presetTxt = document.getElementById("presetTitle");
     const presetImg = document.getElementById("presetFavicon");
+    const presetBtn = document.getElementById("presetBtn");
 
     presetTxt.innerText = savedPresetTitle;
     presetImg.src = savedPresetFavicon;
     presetImg.width = 200;
     presetImg.style.padding = ".5vw"
+    presetBtn.innerText = "Remove Custom Preset"
   }
 });
 
