@@ -156,6 +156,7 @@
             <div id="about-goal">
                 <h2>Site's Goal</h2>
                 <p>What we hope to achieve is to curate and protect games and tools from being blocked from extensions, wifi security, and authority figures who can't mind their own business. Not only will you find that our large library of over 90 games contains multiple emulators to choose from, but you will also see that we have implemented top-level tab cloaking using Masking and About:Blank Cloaking. You can change all of these settings on-the-fly in the top-right of any webpage for easy access.</p>
+                <img src="img/index/goal.png">
             </div>
             <div id="about-contribute">
                 <h2>Contributions</h2>
@@ -172,25 +173,17 @@
         -->
         <div class="reviews">
             <div class="reviews-slides slides1">
-                <div class="review-slides-profile">
-                    <img src="img/reviews/placeholder.png">
-                    <i class="fa-solid fa-chevron-left" onclick="showSlide(currentSlide -= 1)"></i>
-                    <i class="fa-solid fa-chevron-right" onclick="showSlide(currentSlide += 1)"></i>
-                </div>
+                <img src="img/reviews/placeholder.png">
                 <div class="reviews-slides-text">
                     <h2>userName1</h2>
                     <p>- "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum."</p>
                 </div>
             </div>
             <div class="reviews-slides slides2">
-                <div class="review-slides-profile">
-                    <img src="img/reviews/christiansantangelo.png">
-                    <i class="fa-solid fa-chevron-left" onclick="showSlide(currentSlide -= 1)"></i>
-                    <i class="fa-solid fa-chevron-right" onclick="showSlide(currentSlide += 1)"></i>
-                </div>
+                <img src="img/reviews/christiansantangelo.png">
                 <div class="reviews-slides-text">
                     <h2>Christian Santangelo</h2>
-                    <p>- "Project-Hub is always my number one pick for unblocked gaming whenever I'm feeling bored, and have nothing else to do."</p>
+                    <p>- "Project-Hub is always my number one pick for unblocked gaming whenever I'm feeling bored, and have nothing else to do. 10/10"</p>
                 </div>
             </div>
             <h3>Want to see yourself here? Fill out our form at <a href="https://forms.gle/YZSapScWn58kaVs69" target="_blank">https://forms.gle/YZSapScWn58kaVs69</a>.</h3>
@@ -273,6 +266,7 @@
         <!--Review Sliding-->
         <script>
             var currentSlide = 1;
+            var secondsTilSwitch = 5;
 
             function showSlide(slideIndex) {
                 const slides = document.getElementsByClassName('reviews-slides');
@@ -283,11 +277,14 @@
                 }
                 slides[currentSlide - 1].style.display = 'inline-flex'
             }
+            function nextSlide() {
+                showSlide(currentSlide += 1);
+            }
 
             window.onload = function () {
                 showSlide(currentSlide);
+                setInterval(nextSlide, secondsTilSwitch * 1000);
             }
         </script>
-        <!--FAQ Sliding-->
     </body>
 </html>
