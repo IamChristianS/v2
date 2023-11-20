@@ -182,15 +182,14 @@ body {
     color: var(--text-color);
     text-align: center;
 }
-.settings::-webkit-scrollbar {
+.settings::-webkit-scrollbar, .settings::-webkit-scrollbar-track {
+    background: transparent; 
     width: 10px;
-}
-.settings::-webkit-scrollbar-track {
-    background-color: transparent;
+    margin: 1vw 0;
 }
 .settings::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 1vw;
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .settings-close {
