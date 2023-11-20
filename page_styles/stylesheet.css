@@ -434,6 +434,7 @@ footer {
     text-align: center;
 }
 .footer-policies a {
+    font-size: .8vw;
     text-decoration: none;
     padding-bottom: 1.5vh;
     margin: 1vh .75vw;
