@@ -10,6 +10,9 @@
 
     --review-bottom-text: #356080;
     --review-bottom-text-shadow: 0px 0px 15px rgba(0,0,0,.25);
+
+    --selection-bg: #ffffff;
+    --selection-text: #356080;
 }
 [data-theme="dark"] {
     --background-color: rgba(0,0,0,0.5);
@@ -20,6 +23,9 @@
 
     --review-bottom-text: #ffffff;
     --review-bottom-text-shadow: 0px 0px 15px rgba(0,0,0,.75);
+
+    --selection-bg: #ffffff;
+    --selection-text: #000000;
 }
 
 * {
@@ -29,6 +35,10 @@
     font-family: 'Montserrat', Courier, Helvetica, Arial, sans-serif;
     color: var(--text-color);
 }
+*::selection { 
+    background: var(--selection-bg); 
+    color: var(--selection-text); 
+} 
 body {
     background: linear-gradient(
         var(--background-color),
@@ -56,7 +66,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    font-size: 1.75vw;
+    font-size: 1.75em;
     font-weight: 400;
 }
 .nav a span {
@@ -67,7 +77,7 @@ body {
     background: none;
     border: none;
     margin: 0 1vw;
-    font-size: 1.3vw;
+    font-size: 1.3em;
     font-weight: 500;
     cursor: pointer;
     padding: .5vw;
@@ -103,7 +113,7 @@ body {
 
 .nav-tools i {
     padding: 0 .5vw;
-    font-size: 1.4vw;
+    font-size: 1.4em;
     cursor: pointer;
     transition: scale .15s;
 }
@@ -124,7 +134,7 @@ body {
     color: var(--text-color);
 }
 .translate button {
-    font-size: 1.1vw;
+    font-size: 1.1em;
     font-weight: 400;
     cursor: pointer;
 
@@ -196,7 +206,7 @@ body {
     position: absolute;
     right: 1.25vw;
     transition: .5s ease-in;
-    font-size: 1.25vw;
+    font-size: 1.25em;
     font-weight: 600;
     cursor: pointer;
 }
@@ -204,19 +214,18 @@ body {
     text-shadow: 0px 0px 5px rgba(0,0,0,.5);
 }
 .settings h2 {
-    font-size: 1.6vw;
+    font-size: 1.6em;
     font-weight: 700;
     cursor: auto;
 }
 .settings h3 {
     margin: .6vw;
-    font-size: 1.35vw;
+    font-size: 1.35em;
     font-weight: 600;
     cursor: auto;
 }
 .settings p {
     margin: .5vw;
-    font-size: 1vw;
     font-weight: 400;
     cursor: auto;
 }
@@ -234,7 +243,7 @@ body {
     margin: .75vw auto;
 
     color: var(--text-color);
-    font-size: 1.2vw;
+    font-size: 1.2em;
     font-weight: 500;
     cursor: pointer;
 }
@@ -252,7 +261,7 @@ body {
     margin: .15vw;
 
     color: var(--text-color);
-    font-size: 1.2vw;
+    font-size: 1.2em;
     font-weight: 500;
 }
 .name-masking input::placeholder, .favicon-masking input::placeholder {
@@ -268,7 +277,7 @@ body {
     margin: 0 .25vw;
 
     color: var(--text-color);
-    font-size: 1.2vw;
+    font-size: 1.25em;
     font-weight: 500;
     cursor: pointer;
 }
@@ -298,69 +307,23 @@ body {
     border-radius: 1vw;
 }
 .settings-presets div p {
-    font-size: 1.2vw;
+    font-size: 1.2em;
     font-weight: 500;
     cursor: pointer;
 }
 
 /* Panic Button */
-.panic-buttons {
-    justify-content: center;
-}
-.panic-button, .panic-reset-button {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid var(--text-color);
-    border-radius: .25vw;
-    padding: .3vw;
-    margin: 0 .05vw;
-    margin-bottom: .5vw;
-
-    color: var(--text-color);
-    font-size: 1.2vw;
-    font-weight: 500;
-    cursor: pointer;
-}
-.panic-button {
-    width: 33%;
-}
-.panic-reset-button {
-    width: 13%;
-}
-.panic-button:hover, .panic-reset-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
 .panic-key-display {
     text-align: center;
     color: var(--text-color);
-    font-size: 1vw;
     font-weight: 400;
     cursor: auto;
 }
 
 /* Credits */
-.credits-button {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid var(--text-color);
-    border-radius: .25vw;
-    justify-content: center;
-    width: 50%;
-    padding: .3vw;
-    margin: .5vw 0;
-
-    font-size: 1.3vw;
-    font-weight: 500;
-    cursor: pointer;
+.settings-btn i {
+    margin: auto .75vw;
 }
-.credits-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.credits-button i {
-    font-size: 1vw;
-    margin: 0 .75vw;
-    transform: translate(0, -15%);
-}
-
 .credits-expand {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid var(--text-color);
@@ -369,8 +332,6 @@ body {
     display: none;
     padding: .25vw;
     margin: .5vw auto; 
-
-    font-size: 1vw;
     font-weight: 400;
 }
 
@@ -390,9 +351,8 @@ footer {
 
 .footer-description {
     width: 75vw;
-    font-size: .9vw;
     text-align: center;
-    line-height: 1.5vw;
+    line-height: 1.5em;
     word-spacing: 2px;
     cursor: auto;
 }
@@ -406,7 +366,7 @@ footer {
 }
 .footer-links li a {
     text-decoration: none;
-    font-size: 1.05vw;
+    font-size: 1.05em;
     padding: .25vw .5vw;
     font-weight: 500;
     cursor: pointer;
@@ -416,7 +376,7 @@ footer {
     text-align: center;
 }
 .footer-socials i {
-    font-size: 2vw;
+    font-size: 2em;
     margin: 1vw;
     cursor: pointer;
     padding: .5vw;
@@ -424,17 +384,17 @@ footer {
     border-radius: 10vw;
 }
 .footer-socials .fa-solid {
-    font-size: 1.8vw;
+    font-size: 1.8em;
     padding: .7vw;
 }
 
 .footer-policies {
-    margin: 1vw;
+    margin: 1vw 0;
     padding-bottom: 1vw;
     text-align: center;
 }
 .footer-policies a {
-    font-size: .8vw;
+    font-size: .95em;
     text-decoration: none;
     padding-bottom: 1.5vh;
     margin: 1vh .75vw;
@@ -445,9 +405,9 @@ footer {
 
 .footer-disclaimer p {
     padding: 1vh 15vw;
-    font-size: .85vw;
+    font-size: .85em;
     text-align: center;
-    line-height: 1.5vw;
+    line-height: 1.5em;
     word-spacing: 2px;
     cursor: auto;
 }

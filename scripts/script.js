@@ -155,12 +155,11 @@ let creditsDropped = false
 
 function toggleCredits() {
   const creditsDropdown = document.getElementById("credits-expand");
-  var creditsArrows = document.querySelectorAll('.credits-button i');
+  var creditsArrows = document.querySelectorAll('.settings-btn i');
   if (creditsDropped) {
     creditsDropdown.style.display = "none";
     creditsDropped = false;
     for (var i = 0; i < creditsArrows.length; i++) {
-      creditsArrows[i].style.transform = "translate(0,-15%)"
       creditsArrows[i].classList.remove("fa-angles-up");
       creditsArrows[i].classList.add("fa-angles-down");
     }
@@ -168,7 +167,6 @@ function toggleCredits() {
     creditsDropdown.style.display = "block";
     creditsDropped = true;
     for (var i = 0; i < creditsArrows.length; i++) {
-      creditsArrows[i].style.transform = "translate(0,0)"
       creditsArrows[i].classList.remove("fa-angles-down");
       creditsArrows[i].classList.add("fa-angles-up");
     }

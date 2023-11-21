@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .about div {
-    width: 35vw;
+    width: 80vh;
     min-height: 40vh;
     margin: 20vh 1.5vw;
     padding: 2vw;
@@ -20,8 +20,8 @@
 
     color: var(--text-color);
     text-align: center;
-    word-spacing: 2px;
-    line-height: 3.5vh;
+    word-spacing: .2em;
+    line-height: 2em;
 }
 .about div:hover {
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
@@ -36,11 +36,12 @@
 }
 
 .about div h2 {
-    font-size: 1.35vw;
+    font-size: 1.35em;
     font-weight: 600;
+    margin-bottom: .5em;
 }
 .about div p {
-    font-size: 1.15vw;
+    font-size: 1.15em;
     font-weight: 500;
 }
 .about div img {
@@ -90,12 +91,12 @@
     text-align: left;
 }
 .reviews-slides h2 {
-    font-size: 1.5vw;
+    font-size: 1.5em;
     font-weight: 500;
     cursor: auto;
 }
 .reviews-slides p {
-    font-size: 1.25vw;
+    font-size: 1.25em;
     font-weight: 400;
     cursor: auto;
 }
@@ -103,7 +104,6 @@
 .reviews h3, .reviews h3 a {
     color: var(--review-bottom-text);
     text-shadow: var(--review-bottom-text-shadow);
-    font-size: 1vw;
     font-weight: 600;
     margin-top: .5vw;
 }
@@ -140,7 +140,7 @@
 }
 .random-games div h2 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 2em;
     font-weight: 500;
     margin-bottom: 1vw;
 }
@@ -162,11 +162,11 @@
 }
 
 .faq h2 {
-    font-size: 1.5vw;
+    font-size: 1.5em;
     font-weight: 500;
 }
 .faq p {
-    font-size: 1.25vw;
+    font-size: 1.25em;
     font-weight: 400;
 }
 .faq hr, .faq i {

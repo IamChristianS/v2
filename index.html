@@ -37,21 +37,21 @@
         <script src="scripts/theme.js"></script>
 
         <meta property="og:title" content="Project Hub V2">
-        <meta property="og:description" content="Come browse our 80+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!">
-        <meta property="og:image" content="https://unbl0ck.github.io/v2/favicon.ico">
+        <meta property="og:description" content="Come browse our 90+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!">
+        <meta property="og:image" content="favicon.png">
         <meta property="og:url" content="https://unbl0ck.github.io/v2">
         <meta property="og:type" content="website">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="Project Hub V2">
-        <meta name="twitter:description" content="Come browse our 80+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!">
-        <meta name="twitter:image" content="https://unbl0ck.github.io/v2/favicon.ico">
-        <link rel="apple-touch-icon" href="https://unbl0ck.github.io/v2/favicon.ico">
+        <meta name="twitter:description" content="Come browse our 90+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!">
+        <meta name="twitter:image" content="favicon.png">
+        <link rel="apple-touch-icon" href="favicon.png">
     </head>
     <body>
         <!--Navbar-->
         <header class="nav">
             <a href="index.html">Project-<span>Hub</span></a>
-            
+
             <div class="nav-links">
                 <button class="nav-links-button nav-links-active animate__animated animate__fadeInDown"
                     onclick="window.location.href='index.html'">Home</button>
@@ -74,8 +74,21 @@
         <!--Translate-->
         <div class="translate" id="translate">
             <button href="https://www.unbl0ck.github.io/v2/index.html"><span class="fi fi-gb"></span>English</button><hr>
-            <button href="https://www.unbl0ck.github.io/v2_es/index.html"><span class="fi fi-es"></span>Español</button>
+            <button href="https://www.unbl0ck.github.io/v2/es/index.html"><span class="fi fi-es"></span>Español</button>
         </div>
+
+        <!--Mobile Version-->
+        <header class="mobile-nav">
+            <i class="fa-solid fa-bars" onclick="toggleMobileNav()"></i>
+            <div class="mobile-nav-out">
+                <button class="nav-links-button animate__animated animate__fadeInDown"
+                    onclick="window.location.href='games.html'">RENAME</button>
+                <button class="nav-links-button animate__animated animate__fadeInDown"
+                    onclick="window.location.href='apps.html'">RENAME</button>
+                <button class="nav-links-button animate__animated animate__fadeInDown"
+                    onclick="window.location.href='https://github.com/unbl0ck/v2'">GitHub</button>
+            </div>
+        </header>
         <!--Navbar-->
 
         <!--Settings-->
@@ -129,13 +142,11 @@
                 <button class="settings-btn" style="margin:.25vw auto" onclick="toggleABCloak('https://unbl0ck.github.io')">Enable</button><hr>
 
                 <h3>Panic Button</h3>
-                <div class="panic-buttons">
-                    <button class="panic-button">Press to Record Key...</button>
-                    <button class="panic-reset-button">Reset</button>
-                </div>
+                <button id="recordPanic" class="settings-btn" style="display:inline;margin:0;">Press to Record Key...</button>
+                <button id="resetPanic" class="settings-btn" style="display:inline;width:15%;margin:0;">Reset</button>
                 <p class="panic-key-display">Current Panic Key: Not Set</p><hr>
 
-                <button class="credits-button" onclick="toggleCredits()"><i class="fa-solid fa-angles-down"></i>Credits<i class="fa-solid fa-angles-down"></i></button>
+                <button class="settings-btn" onclick="toggleCredits()"><i class="fa-solid fa-angles-down"></i>Credits<i class="fa-solid fa-angles-down"></i></button>
                 <div class="credits-expand" id="credits-expand">
                     <p>Ruffle Flash Player - <a href="https://www.ruffle.rs" target="_blank">Ruffle Team</a></p>
                     <p>WAFlash - <a href="https://github.com/vidkidz/waflash" target="_blank">Vidkidz</a></p>
@@ -166,17 +177,12 @@
         </div>
 
         <!--User Reviews-->
-        <!--
-            Every time I come back and look at this, I have a mini heart attack.
-            This is horribly optimized, but ehhhh whatever it works,
-            but if any of y'all got any fixes though, please submit a pull request.
-        -->
         <div class="reviews">
             <div class="reviews-slides slides1">
                 <img src="img/reviews/placeholder.png">
                 <div class="reviews-slides-text">
                     <h2>userName1</h2>
-                    <p>- "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum."</p>
+                    <p>- "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum. #/10"</p>
                 </div>
             </div>
             <div class="reviews-slides slides2">
@@ -204,10 +210,6 @@
                 <h2>GameTitle</h2>
             </div>
         </div>
-
-        <!--Screenshots
-            May not be added, but if it were, it'd be here.
-        -->
 
         <!--FAQ-->
         <div class="faq">

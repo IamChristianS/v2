@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const setPanicKeyButton = document.querySelector(".panic-button");
-    const resetPanicKeyButton = document.querySelector(".panic-reset-button");
+    const setPanicKeyButton = document.getElementById("recordPanic");
+    const resetPanicKeyButton = document.getElementById("resetPanic");
     const displayPanicKey = document.querySelector(".panic-key-display");
     let storedSavedKey = localStorage.getItem("savedKey");
     let panicKey = null;
