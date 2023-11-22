@@ -26,13 +26,15 @@
         <meta name="robots" content="index, follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="page_styles/stylesheet.css">
+        <link rel="stylesheet" href="page_styles/main.css">
+        <link rel="stylesheet" href="page_styles/mainMobile.css">
         <link rel="stylesheet" href="page_styles/index.css"> <!--Page Specific-->
         <link rel="stylesheet" href="page_styles/animate.css"> <!--Animate.CSS Library-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css">
         <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 
-        <script src="scripts/script.js"></script> <!--Use For Navbar-->
+        <script src="scripts/navbar.js"></script>
+        <script src="scripts/navbarMobile.js"></script>
         <script src="scripts/panic.js"></script>
         <script src="scripts/theme.js"></script>
 
@@ -53,16 +55,16 @@
             <a href="index.html">Project-<span>Hub</span></a>
 
             <div class="nav-links">
-                <button class="nav-links-button nav-links-active animate__animated animate__fadeInDown"
-                    onclick="window.location.href='index.html'">Home</button>
-                <button class="nav-links-button animate__animated animate__fadeInDown"
-                    onclick="window.location.href='games.html'">RENAME</button>
-                <button class="nav-links-button animate__animated animate__fadeInDown"
-                    onclick="window.location.href='apps.html'">RENAME</button>
-                <button class="nav-links-button animate__animated animate__fadeInDown"
-                    onclick="window.location.href='contact.html'">Contact</button>
-                <button class="nav-links-button animate__animated animate__fadeInDown"
-                    onclick="window.location.href='https://github.com/unbl0ck/v2'">GitHub</button>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='index.html'">Home</a>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='games.html'">RENAME</a>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='apps.html'">RENAME</a>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='contact.html'">Contact</a>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='https://github.com/unbl0ck/v2'">GitHub</a>
             </div>
 
             <div class="nav-tools">
@@ -79,14 +81,23 @@
 
         <!--Mobile Version-->
         <header class="mobile-nav">
-            <i class="fa-solid fa-bars" onclick="toggleMobileNav()"></i>
-            <div class="mobile-nav-out">
-                <button class="nav-links-button animate__animated animate__fadeInDown"
-                    onclick="window.location.href='games.html'">RENAME</button>
-                <button class="nav-links-button animate__animated animate__fadeInDown"
-                    onclick="window.location.href='apps.html'">RENAME</button>
-                <button class="nav-links-button animate__animated animate__fadeInDown"
-                    onclick="window.location.href='https://github.com/unbl0ck/v2'">GitHub</button>
+            <i class="fa-solid fa-bars mobile-open-nav" id="mobile-open-nav" onclick="toggleMobileNav()"></i>
+            <div class="mobile-nav-out" id="mobile-nav-out">
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='index.html'">Home</a>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='games.html'">RENAME</a>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='apps.html'">RENAME</a>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='contact.html'">Contact</a>
+                <a class="animate__animated animate__fadeInDown"
+                    onclick="window.location.href='https://github.com/unbl0ck/v2'">GitHub</a>
+                <div class="mobile-out-tools">
+                    <i class="fa-solid fa-globe" onclick="toggleTranslate()"></i>
+                    <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
+                    <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
+                </div>
             </div>
         </header>
         <!--Navbar-->
@@ -155,6 +166,8 @@
                     <p>Hover.CSS - <a href="https://github.com/IanLunn/Hover" target="_blank">Ian Lunn</a></p>
                     <p>Animate.CSS - <a href="https://github.com/animate-css/animate.css" target="_blank">Animate.CSS Team</a></p>
                 </div>
+                <h3>Translations</h3>
+                <p>Want to help translate the site? <a href="https://forms.gle/JMiLp9CpqYZWgcDF7" target="_blank">Fill out our form!.</a></p>
                 <h3>License</h3>
                 <p>This site uses the GPL-3.0 License. <a href="https://github.com/unbl0ck/v2/blob/main/LICENSE" target="_blank">Read more on our GitHub page.</a></p>
             </div>

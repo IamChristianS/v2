@@ -73,11 +73,11 @@ body {
     font-weight: 600;
 }
 
-.nav-links-button {
+.nav-links a, .mobile-nav-out a {
     background: none;
     border: none;
     margin: 0 1vw;
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-weight: 500;
     cursor: pointer;
     padding: .5vw;
@@ -85,7 +85,7 @@ body {
     vertical-align: middle;
     position: relative;
 }
-.nav-links-button:before {
+.nav-links a:before, .mobile-nav-out a:before {
     content: "";
     position: absolute;
     left: 51%;
@@ -97,18 +97,9 @@ body {
     transition-duration: 0.2s;
     transition-timing-function: ease-out;
 }
-.nav-links-button:hover:before {
+.nav-links a:hover:before {
     left: 0;
     right: 0;
-}
-.nav-links-active:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--text-color);
-    height: 2px;
 }
 
 .nav-tools i {
