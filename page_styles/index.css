@@ -2,11 +2,12 @@
 .about {
     display: flex;
     justify-content: center;
+    margin: 10vw auto;
 }
 .about div {
     width: 80vh;
     min-height: 40vh;
-    margin: 20vh 1.5vw;
+    margin: 0 1.5vw;
     padding: 2vw;
 
     background: linear-gradient(
@@ -81,22 +82,23 @@
 }
 
 .reviews-slides img {
-    width: 6vw;
-    height: 6vw;
+    width: 12vh;
+    height: 12vh;
     margin: auto 0;
     border-radius: 1vw;
 }
 .reviews-slides-text {
+    margin: auto 0;
     margin-left: 1vw;
     text-align: left;
 }
 .reviews-slides h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 500;
     cursor: auto;
 }
 .reviews-slides p {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 400;
     cursor: auto;
 }
@@ -187,4 +189,35 @@
 .faq-2:hover > .faq-2-reveal,
 .faq-3:hover > .faq-3-reveal {
     display: block;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    #about-goal, #about-contribute {
+        transform: translateY(0);
+    }
+    .about {
+        display: block;
+        justify-content: center;
+    }
+    .about div {
+        width: 80vh;
+        min-height: 40vh;
+        margin: 0 1.5vw;
+        padding: 2vw;
+    
+        background: linear-gradient(
+            var(--gradient-color-light),
+            var(--gradient-color-dark)
+        );
+        border-radius: 1vw;
+        box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+        box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+        transition: scale .15s;
+    
+        color: var(--text-color);
+        text-align: center;
+        word-spacing: .2em;
+        line-height: 2em;
+    }
 }
