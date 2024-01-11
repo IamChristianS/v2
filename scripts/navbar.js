@@ -202,16 +202,23 @@ let navOpen = false
 function toggleMobileNav() {
     const navOut = document.getElementById("mobile-nav-out");
     const navBtn = document.getElementById("mobile-open-nav");
+    var navLink = document.querySelectorAll('.mobile-nav-link');
     if (navOpen) {
         navOut.style.display = "none";
         navOpen = false;
         document.body.style.overflowY = "auto";
         navBtn.style.scale = "100%";
+        for (var i = 0; i < navLink.length; i++) {
+          navLink[i].style.display = "none";
+        }
     } else {
         navOut.style.display = "block";
         navOpen = true;
         window.scrollTo(0,0);
         document.body.style.overflowY = "hidden";
         navBtn.style.scale = "115%";
+        for (var i = 0; i < navLink.length; i++) {
+          navLink[i].style.display = "block";
+        }
     }
 }

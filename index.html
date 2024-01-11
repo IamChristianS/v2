@@ -18,7 +18,7 @@
         <title>Project-Hub V2 | Home</title>
         <link rel="icon" href="favicon.png">
         <link rel="canonical" href="https://unbl0ck.github.io/v2">
-        <meta name="description" content="Come browse our 80+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more! We have Kahoot and other Game Hacks coming soon.">
+        <meta name="description" content="Come browse our 90+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more! We have Kahoot and other Game Hacks coming soon.">
         <meta name="keywords" content="unblocked, games, google sites, unblocked games mom, ublocked, project-hub, project, hub, project hub, unbl0ck, github, unbl0ck.github.io, unblock.github.io, unblock, g@mes, unblocked games school">
 
         <meta charset="UTF-8">
@@ -50,7 +50,7 @@
     <body>
         <!--Navbar-->
         <header class="nav">
-            <a href="index.html">Project-<span>Hub</span></a>
+            <a href="index.html" class="nav-title">Project-<span>Hub</span></a>
 
             <div class="nav-links">
                 <a class="animate__animated animate__fadeInDown"
@@ -66,7 +66,9 @@
             </div>
 
             <div class="nav-tools">
+                <!--
                 <i class="fa-solid fa-globe" onclick="toggleTranslate()"></i>
+                -->
                 <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
                 <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
             </div>
@@ -79,22 +81,29 @@
 
         <!--Mobile Version-->
         <header class="mobile-nav">
-            <i class="fa-solid fa-bars mobile-open-nav" id="mobile-open-nav" onclick="toggleMobileNav()"></i>
+            <div class="mobile-nav-top">
+                <a href="index.html" class="mobile-nav-title">Project-<span>Hub</span></a>
+                <i class="fa-solid fa-bars mobile-open-nav" id="mobile-open-nav" onclick="toggleMobileNav()"></i>
+            </div>
             <div class="mobile-nav-out" id="mobile-nav-out">
-                <a class="animate__animated animate__fadeInDown"
+                <a class="animate__animated animate__fadeInDown mobile-nav-link"
                     onclick="window.location.href='index.html'">Home</a>
-                <a class="animate__animated animate__fadeInDown"
+                <a class="animate__animated animate__fadeInDown mobile-nav-link"
                     onclick="window.location.href='games.html'">RENAME</a>
-                <a class="animate__animated animate__fadeInDown"
+                <a class="animate__animated animate__fadeInDown mobile-nav-link"
                     onclick="window.location.href='apps.html'">RENAME</a>
-                <a class="animate__animated animate__fadeInDown"
+                <a class="animate__animated animate__fadeInDown mobile-nav-link"
                     onclick="window.location.href='contact.html'">Contact</a>
-                <a class="animate__animated animate__fadeInDown"
+                <a class="animate__animated animate__fadeInDown mobile-nav-link"
                     onclick="window.location.href='https://github.com/unbl0ck/v2'">GitHub</a>
                 <div class="mobile-out-tools">
+                    <!--
                     <i class="fa-solid fa-globe" onclick="toggleTranslate()"></i>
+                    -->
                     <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
+                    <!--
                     <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
+                    -->
                 </div>
             </div>
         </header>
@@ -203,7 +212,7 @@
                     <p>- "Project-Hub is always my number one pick for unblocked gaming whenever I'm feeling bored, and have nothing else to do. 10/10"</p>
                 </div>
             </div>
-            <h3>Want to see yourself here? Fill out our form at <a href="https://forms.gle/YZSapScWn58kaVs69" target="_blank">https://forms.gle/YZSapScWn58kaVs69</a>.</h3>
+            <h3>Want to see yourself here? <a href="https://forms.gle/YZSapScWn58kaVs69" target="_blank">Fill out a form for a chance to get featured</a>.</h3>
         </div>
         
         <!--Random Games-->
@@ -224,23 +233,17 @@
 
         <!--FAQ-->
         <div class="faq">
-            <div class="faq-1">
-                <h2><i class="fa-regular fa-circle-question"></i>Why are there ads, and is there any way of turning them off?</h2>
-                <span class="faq-1-reveal"><hr>
+            <div class="faq-bg">
+                <button class="faq-btn"><i class="fa-regular fa-circle-question"></i>Why are there ads, and is there any way of turning them off?</button>
+                <div class="faq-reveal" id="faq-1">
                     <p><i class="fa-regular fa-circle-check"></i>Ads are there to simply support the maintaining of the site, and personally supports me, as a very broke high school student. We kindly ask you to not enable ad-blockers of sorts, as the ads hosted are not intrusive, nor do they affect the site's function.</p>
-                </span>
+                </div>
             </div>
-            <div class="faq-2">
-                <h2><i class="fa-regular fa-circle-question"></i>Can you add _____ game? / Why doesn't _____ work?</h2>
-                <span class="faq-2-reveal"><hr>
-                    <p><i class="fa-regular fa-circle-check"></i>Sadly, we aren't able to find and host every game out there. However, if you'd like to let us know about a new game, you can contact us using our <a href="contact.html">Contact Forms</a>, <a href="https://github.com/unbl0ck/v2/issues" target="_blank">GitHub Issues</a>, or <a href='https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1' target="_blank">Email</a>. Sometimes, albeit rarely, there are few games which we cannot host due to Flash/external limitations, and if you find these games on our site, please contact us using one of the methods above..</p>
-                </span>
-            </div>
-            <div class="faq-3" id="incomplete">
-                <h2><i class="fa-regular fa-circle-question"></i>QUESTIONHERE</h2>
-                <span class="faq-3-reveal"><hr>
-                    <p><i class="fa-regular fa-circle-check"></i>ANSWERHERE</p>
-                </span>
+            <div class="faq-bg" id="faq-2">
+                <button class="faq-btn"><i class="fa-regular fa-circle-question"></i>Can you add _____ game? / Why doesn't _____ work?</button>
+                <div class="faq-reveal">
+                    <p><i class="fa-regular fa-circle-check"></i>Ads are there to simply support the maintaining of the site, and personally supports me, as a very broke high school student. We kindly ask you to not enable ad-blockers of sorts, as the ads hosted are not intrusive, nor do they affect the site's function.</p>
+                </div>
             </div>
         </div>
         <!--Content-->
@@ -297,6 +300,25 @@
             window.onload = function () {
                 showSlide(currentSlide);
                 setInterval(nextSlide, secondsTilSwitch * 1000);
+            }
+        </script>
+
+        <!--FAQ Accordion (ty w3schools <3) -->
+        <script>
+            var faqBtn = document.getElementsByClassName("faq-btn");
+            var i;
+
+            for (i = 0; i < faqBtn.length; i++) {
+                faqBtn[i].addEventListener("click", function() {
+                    var faqReveal = this.nextElementSibling;
+                    if (faqReveal.style.maxHeight) {
+                        faqReveal.style.maxHeight = null;
+                        faqReveal.style.padding = "0 5vh";
+                    } else {
+                        faqReveal.style.maxHeight = "100vh";
+                        faqReveal.style.padding = "3.5vh 5vh";
+                    }
+                });
             }
         </script>
     </body>

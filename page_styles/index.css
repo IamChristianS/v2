@@ -2,7 +2,7 @@
 .about {
     display: flex;
     justify-content: center;
-    margin: 10vw auto;
+    margin: 20vh auto;
 }
 .about div {
     width: 80vh;
@@ -14,7 +14,7 @@
         var(--gradient-color-light),
         var(--gradient-color-dark)
     );
-    border-radius: 1vw;
+    border-radius: 1.5vh;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
     transition: scale .15s;
@@ -50,6 +50,27 @@
     margin-top: 1vw;
 }
 
+/* Mobile About Cards */
+@media only screen and (max-width: 1000px) {
+    #about-goal, #about-contribute {
+        transform: translateY(0);
+    }
+    .about {
+        display: block;
+        margin: 0 auto;
+    }
+    .about div {
+        width: 90vw;
+        min-height: 50vh;
+        max-height: 100vh;
+        margin: 7.5vh 5vw;
+        padding: 5vh;
+    }
+    .about div img {
+        display: none;
+    }
+}
+
 /* Reviews */
 .reviews {
     text-align: center;
@@ -59,11 +80,11 @@
         var(--gradient-color-light),
         var(--gradient-color-dark)
     );
-    border-radius: 1vw;
+    border-radius: 1.5vh;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
-    width: 40vw;
-    padding: .8vw;
+    width: 100vh;
+    max-width: 90vw;
 
     animation: fade .5s;
     display: none;
@@ -84,12 +105,13 @@
 .reviews-slides img {
     width: 12vh;
     height: 12vh;
-    margin: auto 0;
-    border-radius: 1vw;
+    margin: 2vh 2vh;
+    vertical-align: middle;
+    border-radius: 1.5vh;
 }
 .reviews-slides-text {
     margin: auto 0;
-    margin-left: 1vw;
+    margin: 1vw;
     text-align: left;
 }
 .reviews-slides h2 {
@@ -103,11 +125,28 @@
     cursor: auto;
 }
 
-.reviews h3, .reviews h3 a {
+.reviews h3, 
+.reviews h3 a {
     color: var(--review-bottom-text);
     text-shadow: var(--review-bottom-text-shadow);
     font-weight: 600;
-    margin-top: .5vw;
+    margin: 0.5vh 0.5vw;
+}
+
+/* Mobile Reviews */
+@media only screen and (max-width: 1000px) {
+    .reviews-slides h2 {
+        font-size: 1.4em;
+    }
+    .reviews-slides p {
+        font-size: 1.25em;
+    }
+    .reviews-slides img {
+        margin: 2vh 2vh;
+    }
+    .reviews-slides-text {
+        margin: 2vw;
+    }
 }
 
 /* Random Games */
@@ -124,7 +163,7 @@
         var(--gradient-color-light),
         var(--gradient-color-dark)
     );
-    border-radius: 1vw;
+    border-radius: 1.5vh;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -147,77 +186,69 @@
     margin-bottom: 1vw;
 }
 
+/* Mobile Random Games */
+@media only screen and (max-width: 1000px) {
+    .random-games {
+        width: 100vw;
+        display: block;
+        margin: 5vh 0;
+    }
+    .random-games div {
+        width: 60vw;
+        margin: 5vh auto;
+    } 
+    .random-games div img {
+        width: 60vw;
+        height: 50vw;
+    }
+    .random-games div h2 {
+        font-size: 2.5em;
+        padding-bottom: 2.5vh;
+    }
+}
+
 /* FAQ */
-.faq div {
-    background: linear-gradient(
-        var(--gradient-color-light),
-        var(--gradient-color-dark)
-    );
-    border-radius: 1vw;
+.faq-bg {
+    background: var(--gradient-color-dark);
+    width: 100vh;
+    max-width: 90vw;
+    border-radius: 1.5vh;
+    margin: 2vh auto;
+}
+.faq-btn {
+    background: var(--gradient-color-light);
+    border-radius: 1.5vh;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 
-    width: 60vw;
-    margin: 1vw auto;
-    margin-bottom: 2vw;
-    padding: 2vw 3vw;
-}
+    width: 100vh;
+    max-width: 90vw;
+    padding: 5vh 5vh;
 
-.faq h2 {
+    text-align: left;
     font-size: 1.5em;
     font-weight: 500;
 }
-.faq p {
-    font-size: 1.25em;
-    font-weight: 400;
+.faq-btn:hover {
+    background: var(--gradient-color-selected);
 }
-.faq hr, .faq i {
+.faq-bg i {
     margin: 1vw 0;
     margin-right: 1vw;
 }
-.faq span i {
-    margin: 0;
-    margin-right: 1vw;
+.faq-reveal {
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: 0 5vh;
+    max-height: 0vh;
+    overflow: hidden;
+    transition: 0.2s ease;
 }
 
-.faq-1-reveal,
-.faq-2-reveal,
-.faq-3-reveal {
-    display: none;
-}
-.faq-1:hover > .faq-1-reveal,
-.faq-2:hover > .faq-2-reveal,
-.faq-3:hover > .faq-3-reveal {
-    display: block;
-}
-
-/* Media Queries */
-@media only screen and (max-width: 1200px) {
-    #about-goal, #about-contribute {
-        transform: translateY(0);
-    }
-    .about {
-        display: block;
-        justify-content: center;
-    }
-    .about div {
-        width: 80vh;
-        min-height: 40vh;
-        margin: 0 1.5vw;
-        padding: 2vw;
-    
-        background: linear-gradient(
-            var(--gradient-color-light),
-            var(--gradient-color-dark)
-        );
-        border-radius: 1vw;
-        box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
-        box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
-        transition: scale .15s;
-    
-        color: var(--text-color);
-        text-align: center;
-        word-spacing: .2em;
-        line-height: 2em;
+/* Mobile FAQ */
+@media only screen and (max-width: 1000px) {
+    .faq div {
+        margin: 2.5vh auto;
+        margin-bottom: 5vh;
     }
 }
