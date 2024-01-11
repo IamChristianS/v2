@@ -217,6 +217,7 @@
 }
 .faq-btn {
     background: var(--gradient-color-light);
+    border: none;
     border-radius: 1.5vh;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
