@@ -49,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     document.addEventListener("click", function () {
-      if (!settingsOpen) {
+      const settingsModal = document.getElementById("settings-modal");
+      if (settingsModal.style.display == "none") {
         document.removeEventListener("keyup", recordPanicKey);
       setPanicKeyButton.textContent = "Press to Record Key...";
       }
