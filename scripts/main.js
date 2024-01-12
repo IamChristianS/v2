@@ -1,16 +1,12 @@
 //////////////////////////////////////////////////
 // Settings Menu
-let settingsOpen = false
-
 function toggleSettings() {
   const settingsModal = document.getElementById("settings-modal");
-  if (settingsOpen) {
+  if (settingsModal.style.display == "block") {
     settingsModal.style.display = "none";
-    settingsOpen = false;
     document.body.style.overflowY = "auto";
   } else {
     settingsModal.style.display = "block";
-    settingsOpen = true;
     document.body.style.overflowY = "hidden";
     window.scrollTo(0, 0);
   }
@@ -151,21 +147,17 @@ function toggleABCloak(url) {
 }
 
 // Credits (ty stackoverflow user <3)
-let creditsDropped = false
-
 function toggleCredits() {
   const creditsDropdown = document.getElementById("credits-expand");
   var creditsArrows = document.querySelectorAll('.settings-btn i');
-  if (creditsDropped) {
+  if (creditsDropdown.style.display == "block") {
     creditsDropdown.style.display = "none";
-    creditsDropped = false;
     for (var i = 0; i < creditsArrows.length; i++) {
       creditsArrows[i].classList.remove("fa-angles-up");
       creditsArrows[i].classList.add("fa-angles-down");
     }
   } else {
     creditsDropdown.style.display = "block";
-    creditsDropped = true;
     for (var i = 0; i < creditsArrows.length; i++) {
       creditsArrows[i].classList.remove("fa-angles-down");
       creditsArrows[i].classList.add("fa-angles-up");
@@ -183,29 +175,22 @@ function toggleTheme() {
 }
 //////////////////////////////////////////////////
 // Language Selector
-let translateOpen = false
-
 function toggleTranslate() {
   const translateMenu = document.getElementById("translate");
-  if (translateOpen) {
+  if (translateMenu.style.display == "block") {
     translateMenu.style.display = "none";
-    translateOpen = false;
   } else {
     translateMenu.style.display = "block";
-    translateOpen = true;
   }
 }
 //////////////////////////////////////////////////
 // Mobile
-let navOpen = false
-
 function toggleMobileNav() {
     const navOut = document.getElementById("mobile-nav-out");
     const navBtn = document.getElementById("mobile-open-nav");
     var navLink = document.querySelectorAll('.mobile-nav-link');
-    if (navOpen) {
+    if (navOut.style.display == "block") {
         navOut.style.display = "none";
-        navOpen = false;
         document.body.style.overflowY = "auto";
         navBtn.style.scale = "100%";
         for (var i = 0; i < navLink.length; i++) {
@@ -213,7 +198,6 @@ function toggleMobileNav() {
         }
     } else {
         navOut.style.display = "block";
-        navOpen = true;
         window.scrollTo(0,0);
         document.body.style.overflowY = "hidden";
         navBtn.style.scale = "115%";
@@ -222,3 +206,15 @@ function toggleMobileNav() {
         }
     }
 }
+//////////////////////////////////////////////////
+// Contact
+var contactBtn = document.getElementsByClassName(".contact-btn");
+var contactExpand = document.getElementsByClassName(".contact-expand");
+function toggleContact() {
+  if (contactExpand.style.display != "none") {
+    contactExpand.style.display = "none";
+  } else {
+    contactExpand.style.display = "block";
+  }
+}
+

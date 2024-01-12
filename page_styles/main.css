@@ -444,6 +444,45 @@ body {
     font-weight: 400;
 }
 
+/* Contact */
+.contact-btn, .contact-expand button {
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    margin: 5vh;
+    padding: 1vh 1vw;
+    
+    background-color: #efefef;
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 100vh;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+    transition: scale .15s;
+}
+.contact-btn:hover {
+    scale: 105%;
+}
+.contact-btn i {
+    color: var(--gradient-color-light);
+    font-size: 1.75em;
+}
+.contact-btn i:hover {
+    color: var(--gradient-color-selected);
+}
+.contact-expand button i {
+    color: #444444;
+    font-size: 1em;
+    padding-left: .5vw;
+}
+.contact-expand {
+    display: none;
+    transition: .5 ease-out;
+}
 /* Footer */
 footer {
     width: 100vw;
@@ -479,22 +518,6 @@ footer {
     padding: .25vw .5vw;
     font-weight: 500;
     cursor: pointer;
-}
-
-.footer-socials {
-    text-align: center;
-}
-.footer-socials i {
-    font-size: 2em;
-    margin: 1vw;
-    cursor: pointer;
-    padding: 1vh;
-    border: 1px solid var(--text-color);
-    border-radius: 10vh;
-}
-.footer-socials .fa-solid {
-    font-size: 1.8em;
-    padding: 1.2vh;
 }
 
 .footer-policies {
