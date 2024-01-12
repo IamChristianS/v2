@@ -208,13 +208,13 @@ function toggleMobileNav() {
 }
 //////////////////////////////////////////////////
 // Contact
-var contactBtn = document.getElementsByClassName(".contact-btn");
-var contactExpand = document.getElementsByClassName(".contact-expand");
 function toggleContact() {
-  if (contactExpand.style.display != "none") {
-    contactExpand.style.display = "none";
-  } else {
+  const contactExpand = document.getElementById("contact-expand");
+
+  if (contactExpand.style.display == "none") {
     contactExpand.style.display = "block";
+  } else {
+    contactExpand.style.display = "none";
   }
 }
 

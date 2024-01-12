@@ -8,8 +8,10 @@
     --gradient-color-light: #46789B;
     --gradient-color-dark: #356080;
 
-    --review-bottom-text: #356080;
-    --review-bottom-text-shadow: 0px 0px 15px rgba(0,0,0,.25);
+    --review-text: #356080;
+    --review-text-shadow: 0px 0px 15px rgba(0,0,0,.25);
+    --review-selection-bg: #356080;
+    --review-selection-text: #ffffff;
 
     --selection-bg: #ffffff;
     --selection-text: #356080;
@@ -21,8 +23,10 @@
     --gradient-color-light: #202020;
     --gradient-color-dark: #101010;
 
-    --review-bottom-text: #ffffff;
-    --review-bottom-text-shadow: 0px 0px 15px rgba(0,0,0,.75);
+    --review-text: #ffffff;
+    --review-text-shadow: 0px 0px 15px rgba(0,0,0,.75);
+    --review-selection-bg: #ffffff;
+    --review-selection-text: #000000;
 
     --selection-bg: #ffffff;
     --selection-text: #000000;
@@ -445,7 +449,7 @@ body {
 }
 
 /* Contact */
-.contact-btn, .contact-expand button {
+.contact-btn, #contact-expand button {
     position: fixed;
     z-index: 999;
     right: 0;
@@ -474,15 +478,12 @@ body {
 .contact-btn i:hover {
     color: var(--gradient-color-selected);
 }
-.contact-expand button i {
+#contact-expand button i {
     color: #444444;
     font-size: 1em;
     padding-left: .5vw;
 }
-.contact-expand {
-    display: none;
-    transition: .5 ease-out;
-}
+
 /* Footer */
 footer {
     width: 100vw;
