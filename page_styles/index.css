@@ -127,10 +127,15 @@
 
 .reviews h3, 
 .reviews h3 a {
-    color: var(--review-bottom-text);
-    text-shadow: var(--review-bottom-text-shadow);
+    color: var(--review-text);
+    text-shadow: var(--review-text-shadow);
     font-weight: 600;
     margin: 0.5vh 0.5vw;
+}
+.reviews h3::selection, 
+.reviews h3 a::selection {
+    background: var(--review-selection-bg); 
+    color: var(--review-selection-text); 
 }
 
 /* Mobile Reviews */
