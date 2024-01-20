@@ -33,6 +33,7 @@
         <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 
         <script src="scripts/main.js"></script>
+        <script src="scripts/games.js"></script> <!--Page Specific-->
         <script src="scripts/panic.js"></script>
         <script src="scripts/theme.js"></script>
 
@@ -178,15 +179,20 @@
         <!--Settings-->
 
         <!--Contact-->
-        <button class="contact-btn" style="aspect-ratio:1/1;" onclick="toggleContact()"><i class="fa-solid fa-hand"></i></button>
+        <button id="contact-btn" style="aspect-ratio:1/1;" onclick="toggleContact()"><i class="fa-solid fa-hand"></i></button>
         <div id="contact-expand" style="display:none;">
-            <button onclick="window.location.href='https://forms.gle/aZzEgBhKXLdkXdyx6','_blank'" style="transform: translateY(-17.5vh);">Game Request<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
-            <button onclick="window.location.href='https://forms.gle/CMrSGnxrJWjvyBKc9','_blank'" style="transform: translateY(-10.5vh);">Contact Form<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            <button onclick="window.location.href='https://forms.gle/aZzEgBhKXLdkXdyx6','_blank'" style="transform: translateY(-19.5vh);">Game Request<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            <button onclick="window.location.href='https://forms.gle/CMrSGnxrJWjvyBKc9','_blank'" style="transform: translateY(-11.5vh);">Contact Form<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
         </div>
         <!--Contact-->
 
         <!--Content-->
-        <div style="margin: 75vh 0;"></div>
+        <div class="games">
+            <div class="games-tab" onclick="window.location.href='index.html','_blank'">
+                <img src="img/games/placeholder.png" alt="Placeholder">
+                <h2>Placeholder</h2>
+            </div>
+        </div>
         <!--Content-->
 
         <!--Footer-->
