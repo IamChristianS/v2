@@ -11,8 +11,8 @@ async function addGames() {
         for (const game of games) {
             const tab = document.createElement("div");
             tab.className = "games-tab";
-            tab.onclick = "window.location.href='${cdn}${game.gameroot}','_blank'"; // Only for Testing
-            tab.innerHTML = `<img src="${cdn}Icons/${game.game.replace(/[.\s]/g, "")}.png"><h2>${game.game}</h2>`;
+            tab.onclick = "window.location.href='${cdn}${game.gameIndex}','_blank'"; // Only for Testing
+            tab.innerHTML = `<img src="${cdn}img/${game.gameImg}.png"><h2>${game.gameName}</h2>`;
             document.querySelector(".games").appendChild(tab);
         }
     } catch (error) {
