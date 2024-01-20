@@ -1,22 +1,19 @@
-const Frame = document.querySelector(".Projects-Frame");
+// ty to a random github user for this one
+// in case yall cant tell, my ass is NOT fluent in JS
+const Frame = document.querySelector(".games");
 
 async function addGames() {
     try {
-        const cdn = await (await fetch("./Hosting/CDN.json")).json();
-        const games = await (await fetch(cdn + "list.json")).json();
+        const cdn = await (await fetch("CDN.json")).json();
+        const games = await (await fetch(cdn + "list_games.json")).json();
         games.sort((a, b) => a.game.localeCompare(b.game));
 
         for (const game of games) {
-        const project = document.createElement("div");
-        project.className = "Projects-Project";
-        project.innerHTML = `<img src="${cdn}Icons/${game.game.replace(/[.\s]/g, "")}.png" loading="lazy" onerror="this.src='./Assests/Imgs/NoIcon.png'"><h1>${game.game}</h1>`;
-        document.querySelector(".Projects-Container").appendChild(project);
-
-        project.addEventListener("click", () => {
-            HAF.forEach((element) => element.classList.add("hidden"));
-            Frame.classList.remove("hidden");
-            IFrame.src = `${cdn}${game.gameroot}`;
-        });
+            const tab = document.createElement("div");
+            tab.className = "games-tab";
+            tab.onclick = "window.location.href='${cdn}${game.gameroot}','_blank'"; // Only for Testing
+            tab.innerHTML = `<img src="${cdn}Icons/${game.game.replace(/[.\s]/g, "")}.png"><h2>${game.game}</h2>`;
+            document.querySelector(".games").appendChild(tab);
         }
     } catch (error) {
         console.error(error);
