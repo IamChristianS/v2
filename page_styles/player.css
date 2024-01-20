@@ -1,0 +1,27 @@
+/* Player */
+.player {
+    height: 75vh;
+    margin: 5vh auto;
+    aspect-ratio: 16/9;
+
+    background: linear-gradient(
+        var(--gradient-color-light),
+        var(--gradient-color-dark)
+    );
+    border-radius: 1.5vh;
+}
+.player iframe {
+    height: 75vh;
+    aspect-ratio: 16/9;
+
+    padding: 1.5vh;
+    border-radius: 1.5vh;
+}
+
+/* Player Buttons */
+.player button {
+    position: fixed;
+    border: none;
+    background-color: #ffffff;
+    
+}
