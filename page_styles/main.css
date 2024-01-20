@@ -13,6 +13,8 @@
     --review-selection-bg: #356080;
     --review-selection-text: #ffffff;
 
+    --game-text-color: #000000;
+
     --selection-bg: #ffffff;
     --selection-text: #356080;
 }
@@ -27,6 +29,8 @@
     --review-text-shadow: 0px 0px 15px rgba(0,0,0,.75);
     --review-selection-bg: #ffffff;
     --review-selection-text: #000000;
+
+    --game-text-color: #ffffff;
 
     --selection-bg: #ffffff;
     --selection-text: #000000;
@@ -449,18 +453,19 @@ body {
 }
 
 /* Contact */
-.contact-btn, #contact-expand button {
+#contact-btn, #contact-expand button {
     position: fixed;
     z-index: 999;
     right: 0;
     bottom: 0;
     margin: 5vh;
-    padding: 1vh 1vw;
+    padding: 2vh;
     
     background-color: #efefef;
     color: #000000;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 1px;
     cursor: pointer;
     border: none;
     border-radius: 100vh;
@@ -468,20 +473,31 @@ body {
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
     transition: scale .15s;
 }
-.contact-btn:hover {
+#contact-btn:hover {
     scale: 105%;
 }
-.contact-btn i {
+#contact-btn i {
     color: var(--gradient-color-light);
     font-size: 1.75em;
 }
-.contact-btn i:hover {
+#contact-btn i:hover {
     color: var(--gradient-color-selected);
 }
 #contact-expand button i {
     color: #444444;
     font-size: 1em;
-    padding-left: .5vw;
+    padding-left: 1vh;
+}
+/* Mobile Contact */
+@media only screen and (max-width: 768px) {
+    #contact-btn {
+        padding: 2.5vh;
+        font-size: 1.25em;
+    }
+    #contact-expand button {
+        font-size: 1.25em;
+        padding: 1.5vh 5vh;
+    }
 }
 
 /* Footer */
@@ -549,6 +565,9 @@ footer {
 @media only screen and (max-width: 768px) {
     .footer-links {
         display: none;
+    }
+    .footer-policies a {
+        display: block;
     }
     .footer-disclaimer p {
         padding: 1vh 1vh;
