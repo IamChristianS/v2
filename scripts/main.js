@@ -186,25 +186,28 @@ function toggleTranslate() {
 //////////////////////////////////////////////////
 // Mobile
 function toggleMobileNav() {
-    const navOut = document.getElementById("mobile-nav-out");
-    const navBtn = document.getElementById("mobile-open-nav");
-    var navLink = document.querySelectorAll('.mobile-nav-link');
-    if (navOut.style.display == "block") {
-        navOut.style.display = "none";
-        document.body.style.overflowY = "auto";
-        navBtn.style.scale = "100%";
-        for (var i = 0; i < navLink.length; i++) {
-          navLink[i].style.display = "none";
-        }
-    } else {
-        navOut.style.display = "block";
-        window.scrollTo(0,0);
-        document.body.style.overflowY = "hidden";
-        navBtn.style.scale = "115%";
-        for (var i = 0; i < navLink.length; i++) {
-          navLink[i].style.display = "block";
-        }
+  const contactBtn = document.getElementById("contact-btn");
+  const navOut = document.getElementById("mobile-nav-out");
+  const navBtn = document.getElementById("mobile-open-nav");
+  var navLink = document.querySelectorAll('.mobile-nav-link');
+  if (navOut.style.display == "block") {
+    navOut.style.display = "none";
+    contactBtn.style.display = "block";
+    document.body.style.overflowY = "auto";
+    navBtn.style.scale = "100%";
+    for (var i = 0; i < navLink.length; i++) {
+      navLink[i].style.display = "none";
     }
+  } else {
+    navOut.style.display = "block";
+    contactBtn.style.display = "none";
+    window.scrollTo(0,0);
+    document.body.style.overflowY = "hidden";
+    navBtn.style.scale = "115%";
+    for (var i = 0; i < navLink.length; i++) {
+      navLink[i].style.display = "block";
+    }
+  }
 }
 //////////////////////////////////////////////////
 // Contact
