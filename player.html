@@ -34,6 +34,16 @@
         <script src="scripts/main.js"></script>
         <script src="scripts/panic.js"></script>
         <script src="scripts/theme.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const storedSource = localStorage.getItem('srcGame');
+
+                if (storedSource) {
+                    document.getElementById("player").src = storedSource;
+                    localStorage.removeItem('srcGame');
+                }
+            });
+        </script>
 
         <meta property="og:title" content="Project Hub V2">
         <meta property="og:description" content="Come browse our 90+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!">
@@ -76,7 +86,7 @@
             <button href="https://www.unbl0ck.github.io/v2/es/index.html"><span class="fi fi-es"></span>Español</button>
         </div>
 
-        <!--Mobile Version-->
+        <!--Mobile Nav-->
         <header class="mobile-nav">
             <div class="mobile-nav-top">
                 <a href="index.html" class="mobile-nav-title">Project-<span>Hub</span></a>
@@ -102,7 +112,6 @@
                 </div>
             </div>
         </header>
-        <!--Navbar-->
 
         <!--Settings-->
         <div class="settings-modal" id="settings-modal">
@@ -174,7 +183,6 @@
                 <p>This site uses the GPL-3.0 License. <a href="https://github.com/unbl0ck/v2/blob/main/LICENSE" target="_blank">Read more on our GitHub page.</a></p>
             </div>
         </div>
-        <!--Settings-->
 
         <!--Contact-->
         <button id="contact-btn" style="aspect-ratio:1/1;" onclick="toggleContact()"><i class="fa-solid fa-hand"></i></button>
@@ -182,16 +190,14 @@
             <button onclick="window.location.href='https://forms.gle/aZzEgBhKXLdkXdyx6','_blank'" style="transform: translateY(-19.5vh);">Game Request<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
             <button onclick="window.location.href='https://forms.gle/CMrSGnxrJWjvyBKc9','_blank'" style="transform: translateY(-11.5vh);">Contact Form<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
         </div>
-        <!--Contact-->
 
         <!--Content-->
-        <div class="player">
-            <iframe src="somesource" allowfullscreen="true">
+        <div class="playerFrame">
+            <iframe id="player" allowfullscreen="true">
 
             </iframe>
             <button>Fullscreen</button>
         </div>
-        <!--Content-->
 
         <!--Footer-->
         <footer>
@@ -217,6 +223,5 @@
                 <p>Christian Santangelo ©</p>
             </div>
         </footer>
-        <!--Footer-->
     </body>
 </html>

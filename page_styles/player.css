@@ -1,5 +1,5 @@
 /* Player */
-.player {
+.playerFrame {
     height: 75vh;
     margin: 5vh auto;
     aspect-ratio: 16/9;
@@ -10,7 +10,7 @@
     );
     border-radius: 1.5vh;
 }
-.player iframe {
+#player {
     height: 75vh;
     aspect-ratio: 16/9;
 
@@ -19,7 +19,7 @@
 }
 
 /* Player Buttons */
-.player button {
+.playerFrame button {
     position: fixed;
     border: none;
     background-color: #ffffff;
