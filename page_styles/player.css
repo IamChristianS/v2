@@ -1,27 +1,46 @@
 /* Player */
 .playerFrame {
-    height: 75vh;
     margin: 5vh auto;
-    aspect-ratio: 16/9;
 
     background: linear-gradient(
         var(--gradient-color-light),
         var(--gradient-color-dark)
     );
     border-radius: 1.5vh;
+
+    position: relative;
+	padding-bottom: 33.2189%; /* 16/9 Aspect Ratio*/
+	height: 0;
+    width: 60%;
+    position: relative;
 }
 #player {
-    height: 75vh;
-    aspect-ratio: 16/9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-    padding: 1.5vh;
-    border-radius: 1.5vh;
+    padding: 1vh;
+    border: none;
+    border-radius: 2vh;
 }
 
 /* Player Buttons */
 .playerFrame button {
-    position: fixed;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 3vh 4vh;
+
+
+    padding: 1vh 1.5vh;
+    color: #356080;
+    font-weight: 600;
+    letter-spacing: 2px;
     border: none;
-    background-color: #ffffff;
-    
+    border-radius: 1.5vh;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
