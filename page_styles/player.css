@@ -9,8 +9,8 @@
     border-radius: 1.5vh;
 
     position: relative;
-	padding-bottom: 33.2189%; /* 16/9 Aspect Ratio*/
-	height: 0;
+    padding-bottom: 33.2189%; /* 16/9 Aspect Ratio*/
+    height: 0;
     width: 60%;
     position: relative;
 }
