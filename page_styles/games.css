@@ -18,7 +18,7 @@
 .games-tab h2 {
     font-size: 1.5em;
     font-weight: 600;
-    color: var(--game-text-color);
+    color: var(--dark-text-color);
     text-align: center;
     transform: translateX(1.25vh);
 }
