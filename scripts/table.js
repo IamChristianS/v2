@@ -1,28 +1,26 @@
 // ty to a random github user for some of the code on this one
 // in case yall cant tell, my ass is NOT fluent in JS
-async function randomGames() {
-    print("function")
+async function addRandomGames() {
     try {
         const cdn = "https://IamChristianS.github.io/assets/";
         const games = await (await fetch(cdn + "list_games.json")).json();
-        var randomGame = document.querySelectorAll('.random-game');
-        print("ran")
+        games.sort((a, b) => a.gameName.localeCompare(b.gameName));
 
-        randomGame.forEach((gameElement) => {
-            const randomIndex = Math.floor(Math.random() * games.length);
-            const game = games[randomIndex];
-
-            gameElement.innerHTML = `
+        for (const game of games) {
+            const tab = document.createElement("div");
+            tab.className = "random-game";
+            tab.innerHTML = `
                 <img src="${cdn}img/games/${game.gameName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}.png" loading="lazy" onerror="this.src='../img/placeholder.png'">
                 <h2>${game.gameName}</h2>
             `;
-            print("each")
 
-            gameElement.addEventListener('click', () => {
+            tab.addEventListener('click', () => {
                 localStorage.setItem('srcGame', `${cdn}${game.gameIndex}`);
                 window.location.href = 'player.html';
             });
-        });
+
+            document.getElementById("random").appendChild(tab);
+        }
     } catch (error) {
         console.error("RANDOM GAMES ERROR:" + error);
     }

@@ -155,7 +155,7 @@
 }
 
 /* Random Games */
-.random {
+#random {
     width: 100vw;
     display: flex;
     justify-content: space-around;
@@ -193,7 +193,7 @@
 
 /* Mobile Random Games */
 @media only screen and (max-width: 1000px) {
-    .random {
+    #random {
         width: 100vw;
         display: block;
         margin: 5vh 0;
