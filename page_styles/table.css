@@ -1,8 +1,8 @@
-#games {
+#table {
     display: flex;
     flex-wrap: wrap;
 }
-.games-tab {
+.table-tab {
     border-radius: 1.5vh;
     display: block;
     cursor: pointer;
@@ -11,28 +11,28 @@
     padding: 1.5vh;
     max-width: 40vh;
 }
-.games-tab img {
+.table-tab img {
     max-width: 40vh;
     aspect-ratio: 1.25/1;
 }
-.games-tab h2 {
+.table-tab h2 {
     font-size: 1.5em;
     font-weight: 600;
     color: var(--dark-text-color);
     text-align: center;
     transform: translateX(1.25vh);
 }
-.games-tab img::selection, 
-.games-tab h2::selection {
+.table-tab img::selection, 
+.table-tab h2::selection {
     background: var(--review-selection-bg); 
     color: var(--review-selection-text); 
 }
 /* Mobile Games */
 @media only screen and (max-width: 1000px) {
-    .games-tab {
+    .table-tab {
         max-width: 30vh;
     }
-    .games-tab img {
+    .table-tab img {
         max-width: 30vh;
     }
 }

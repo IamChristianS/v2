@@ -127,7 +127,7 @@
 
 .reviews h3, 
 .reviews h3 a {
-    color: var(--review-text);
+    color: var(--review-text-color);
     text-shadow: var(--review-text-shadow);
     font-weight: 600;
     margin: 0.5vh 0.5vw;
@@ -155,12 +155,12 @@
 }
 
 /* Random Games */
-.random-games {
+.random {
     width: 100vw;
     display: flex;
     justify-content: space-around;
 }
-.random-games div {
+.random-game {
     width: 25vw;
     margin: 3vw;
 
@@ -174,17 +174,17 @@
     cursor: pointer;
     transition: scale .15s;
 }
-.random-games div:hover {
+.random-game:hover {
     background: var(--gradient-color-light);
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
     scale: 102%;
 }
 
-.random-games div img {
+.random-game img {
     width: 25vw;
     padding: 1vw;
 }
-.random-games div h2 {
+.random-game h2 {
     text-align: center;
     font-size: 2em;
     font-weight: 500;
@@ -193,20 +193,20 @@
 
 /* Mobile Random Games */
 @media only screen and (max-width: 1000px) {
-    .random-games {
+    .random {
         width: 100vw;
         display: block;
         margin: 5vh 0;
     }
-    .random-games div {
+    .random-game {
         width: 60vw;
         margin: 5vh auto;
     } 
-    .random-games div img {
+    .random-game img {
         width: 60vw;
         height: 50vw;
     }
-    .random-games div h2 {
+    .random-game h2 {
         font-size: 2.5em;
         padding-bottom: 2.5vh;
     }
@@ -239,9 +239,11 @@
     background: var(--gradient-color-selected);
 }
 .faq-bg i {
-    margin: 1vw 0;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     margin-right: 1vw;
 }
+
 .faq-reveal {
     font-size: 1.25em;
     font-weight: 400;
@@ -249,6 +251,9 @@
     max-height: 0vh;
     overflow: hidden;
     transition: 0.2s ease;
+}
+.faq-reveal i {
+    margin-bottom: 0;
 }
 
 /* Mobile FAQ */

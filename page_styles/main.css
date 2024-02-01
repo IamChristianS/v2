@@ -9,7 +9,7 @@
     --gradient-color-light: #46789B;
     --gradient-color-dark: #356080;
 
-    --review-text: #356080;
+    --review-text-color: #356080;
     --review-text-shadow: 0px 0px 15px rgba(0,0,0,.25);
     --review-selection-bg: #356080;
     --review-selection-text: #ffffff;
@@ -25,7 +25,7 @@
     --gradient-color-light: #202020;
     --gradient-color-dark: #101010;
 
-    --review-text: #ffffff;
+    --review-text-color: #ffffff;
     --review-text-shadow: 0px 0px 15px rgba(0,0,0,.75);
     --review-selection-bg: #ffffff;
     --review-selection-text: #000000;
@@ -280,14 +280,15 @@ body {
     color: var(--text-color);
     text-align: center;
 }
-.settings::-webkit-scrollbar, .settings::-webkit-scrollbar-track {
+.settings::-webkit-scrollbar, 
+.settings::-webkit-scrollbar-track {
     background: transparent; 
-    width: 10px;
+    width: 7.5px;
     margin: 1vw 0;
 }
 .settings::-webkit-scrollbar-thumb {
     border-radius: 1vh;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .settings-close {
@@ -307,7 +308,8 @@ body {
     cursor: auto;
 }
 .settings h3 {
-    margin: .6vw;
+    margin: 1.5vh;
+    margin-top: 2vh;
     font-size: 1.35em;
     font-weight: 600;
     cursor: auto;
@@ -318,11 +320,12 @@ body {
     cursor: auto;
 }
 .settings hr {
-    margin: 1vw 5vw;
+    margin: 3vh 5vw;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .settings-btn {
     background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: .5vh;
     display: block;
     justify-content: center;
@@ -367,9 +370,10 @@ body {
 }
 
 /* Tab Masking */
-.name-masking input, .favicon-masking input {
+.name-masking input, 
+.favicon-masking input {
     background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: .25vh;
     width: 35%;
     padding: .3vw;
@@ -379,13 +383,15 @@ body {
     font-size: 1.2em;
     font-weight: 500;
 }
-.name-masking input::placeholder, .favicon-masking input::placeholder {
+.name-masking input::placeholder, 
+.favicon-masking input::placeholder {
     color: var(--text-color);
     text-align: center;
 }
-.name-masking button, .favicon-masking button {
+.name-masking button, 
+.favicon-masking button {
     background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid var(--text-color);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: .5vh;
     min-width: 15%;
     padding: .3vw;
@@ -396,7 +402,8 @@ body {
     font-weight: 500;
     cursor: pointer;
 }
-.name-masking button:hover, .favicon-masking button:hover {
+.name-masking button:hover, 
+.favicon-masking button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -407,6 +414,7 @@ body {
 }
 .settings-presets div {
     margin: 0 1vw;
+    aspect-ratio: 1/1;
     cursor: pointer;
     transition: scale .15s;
 }
@@ -417,8 +425,8 @@ body {
 .settings-presets div img {
     background-color: rgba(255, 255, 255, 0.15);
     max-height: 100%;
-    max-width: 6vw;
-    border: 2px solid var(--text-color);
+    max-width: 12vh;
+    border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 2vh;
 }
 .settings-presets div p {
@@ -441,7 +449,7 @@ body {
 }
 .credits-expand {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid var(--text-color);
+    border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: .5vh;
     width: 50%;
     display: none;
