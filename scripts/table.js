@@ -1,22 +1,28 @@
 // ty to a random github user for some of the code on this one
 // in case yall cant tell, my ass is NOT fluent in JS
 async function randomGames() {
+    print("function")
     try {
-        const cdn = "https://IamChristian.github.io/assets/";
+        const cdn = "https://IamChristianS.github.io/assets/";
         const games = await (await fetch(cdn + "list_games.json")).json();
         var randomGame = document.querySelectorAll('.random-game');
+        print("ran")
 
-        for (var i = 0; i < randomGame.length; i++) {
-            randomGame.innerHTML = `
+        randomGame.forEach((gameElement) => {
+            const randomIndex = Math.floor(Math.random() * games.length);
+            const game = games[randomIndex];
+
+            gameElement.innerHTML = `
                 <img src="${cdn}img/games/${game.gameName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}.png" loading="lazy" onerror="this.src='../img/placeholder.png'">
                 <h2>${game.gameName}</h2>
             `;
+            print("each")
 
-            randomGame.addEventListener('click', () => {
+            gameElement.addEventListener('click', () => {
                 localStorage.setItem('srcGame', `${cdn}${game.gameIndex}`);
                 window.location.href = 'player.html';
             });
-          }
+        });
     } catch (error) {
         console.error("RANDOM GAMES ERROR:" + error);
     }
@@ -24,7 +30,7 @@ async function randomGames() {
 
 async function addGames() {
     try {
-        const cdn = "https://IamChristian.github.io/assets/";
+        const cdn = "https://IamChristianS.github.io/assets/";
         const games = await (await fetch(cdn + "list_games.json")).json();
         games.sort((a, b) => a.gameName.localeCompare(b.gameName));
 
@@ -50,7 +56,7 @@ async function addGames() {
 
 async function addApps() {
     try {
-        const cdn = "https://IamChristian.github.io/assets/";
+        const cdn = "https://IamChristianS.github.io/assets/";
         const apps = await (await fetch(cdn + "list_apps.json")).json();
         apps.sort((a, b) => a.appName.localeCompare(b.appName));
 
