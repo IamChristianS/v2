@@ -128,5 +128,6 @@ var navbar = `
                 <p>This site uses the GPL-3.0 License. <a href="https://github.com/IamChristianS/v2/blob/main/LICENSE" target="_blank">Read more on our GitHub page.</a></p>
             </div>
         </div>`;
-
-document.body.insertAdjacentHTML("afterbegin", navbar);
+document.addEventListener('DOMContentLoaded', function () {
+    document.body.insertAdjacentHTML("afterbegin", navbar);
+});
