@@ -136,225 +136,225 @@ var navbar = `
             <button onclick="window.open('https://forms.gle/CMrSGnxrJWjvyBKc9')" style="transform: translateY(-11.5vh);">Contact Form<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
         </div>`;
 document.addEventListener('DOMContentLoaded', function () {
-    document.body.insertAdjacentHTML("afterbegin", navbar); // Appends Nav
+    document.body.insertAdjacentHTML("afterbegin", navbar);
+});
 
-    //////////////////////////////////////////////////
-    // Settings Menu
-    function toggleSettings() {
-        const settingsModal = document.getElementById("settings-modal");
-        if (settingsModal.style.display == "block") {
-        settingsModal.style.display = "none";
-        document.body.style.overflowY = "auto";
-        } else {
-        settingsModal.style.display = "block";
-        document.body.style.overflowY = "hidden";
-        window.scrollTo(0, 0);
-        }
+//////////////////////////////////////////////////
+// Settings Menu
+function toggleSettings() {
+    const settingsModal = document.getElementById("settings-modal");
+    if (settingsModal.style.display == "block") {
+      settingsModal.style.display = "none";
+      document.body.style.overflowY = "auto";
+    } else {
+      settingsModal.style.display = "block";
+      document.body.style.overflowY = "hidden";
+      window.scrollTo(0, 0);
     }
-    
-    document.addEventListener('click', function(event) {
-        const settingsModal = document.getElementById("settings-modal");
-        const settingsMenu = document.getElementById("settings");
-        if (settingsModal.contains(event.target) && !settingsMenu.contains(event.target)) {
-        toggleSettings()
-        }
-    });
-    
-    // Tab Masking (I wrote half of this at 3am, so only god knows how this works now)
-    function updateTitle() {
-        const title = document.getElementById('tabNameInput').value;
-        document.title = title;
-        localStorage.setItem('tabTitle', title);
-    }
-    
-    function updateFavicon() {
-        const faviconUrl = document.getElementById('faviconInput').value;
-        const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
-        favicon.rel = 'icon';
-        favicon.type = 'image/png';
-        favicon.href = faviconUrl;
-        document.head.appendChild(favicon);
-        localStorage.setItem('faviconUrl', faviconUrl);
-    }
-    
-    function applyPreset(presetButton) {
-        const presetName = presetButton.getAttribute('data-name');
-        const presetFaviconUrl = presetButton.getAttribute('data-favicon');
-    
-        document.title = presetName;
-        document.getElementById('tabNameInput').value = presetName;
-        localStorage.setItem('tabTitle', presetName);
-    
-        const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
-        favicon.rel = 'icon';
-        favicon.type = 'image/png';
-        favicon.href = presetFaviconUrl;
-        document.head.appendChild(favicon);
-        document.getElementById('faviconInput').value = presetFaviconUrl;
-        localStorage.setItem('faviconUrl', presetFaviconUrl);
-    }
-    
-    function addPreset() {
-        const title = document.getElementById('tabNameInput').value;
-        const favicon = document.getElementById('faviconInput').value;
-        const presetTxt = document.getElementById("presetTitle");
-        const presetImg = document.getElementById("presetFavicon");
-        const presetBtn = document.getElementById("presetBtn");
-        
-        if (title != '' && favicon != '' && presetBtn.innerText != "Remove Custom Preset") {
-        localStorage.setItem('presetTabTitle', title);
-        localStorage.setItem('presetFaviconUrl', favicon);
-        presetTxt.innerText = title;
-        presetImg.src = favicon;
-        presetImg.width = 200;
-        presetImg.style.padding = ".5vw"
-        presetBtn.innerText = "Remove Custom Preset"
-        } else {
-        localStorage.removeItem('presetTabTitle');
-        localStorage.removeItem('presetFaviconUrl');
-    
-        presetTxt.innerText = "Custom Preset";
-        presetImg.src = "https://i.ibb.co/VjNwzxv/custom-Preset.png";
-        presetBtn.innerText = "Add Custom Preset"
-        }
-    }
-    function usePreset() {
-        const savedPresetTitle = localStorage.getItem('presetTabTitle');
-        const savedPresetFavicon = localStorage.getItem('presetFaviconUrl');
-        if (savedPresetTitle && savedPresetFavicon) {
-        document.title = savedPresetTitle;
-        document.getElementById('tabNameInput').value = savedPresetTitle;
-        localStorage.setItem('tabTitle', savedPresetTitle);
-    
-        const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
-        favicon.rel = 'icon';
-        favicon.type = 'image/png';
-        favicon.href = savedPresetFavicon;
-        document.head.appendChild(favicon);
-        document.getElementById('faviconInput').value = savedPresetFavicon;
-        localStorage.setItem('faviconUrl', savedPresetFavicon);
-        }
-    }
-    
-    function resetMasking() {
-        localStorage.removeItem('tabTitle');
-        localStorage.removeItem('faviconUrl');
-    
-        location.reload();
-    }
-    
-    const savedTitle = localStorage.getItem('tabTitle');
-    const savedFaviconUrl = localStorage.getItem('faviconUrl');
-    const savedPresetTitle = localStorage.getItem('presetTabTitle');
-    const savedPresetFavicon = localStorage.getItem('presetFaviconUrl');
-    
-    if (savedTitle) {
-        document.title = savedTitle;
-        document.getElementById('tabNameInput').value = savedTitle;
-    }
-    if (savedFaviconUrl) {
-        const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
-        favicon.rel = 'icon';
-        favicon.type = 'image/png';
-        favicon.href = savedFaviconUrl;
-        document.head.appendChild(favicon);
-        document.getElementById('faviconInput').value = savedFaviconUrl;
-    }
-    
-    if (savedPresetTitle && savedPresetFavicon) {
-        const presetTxt = document.getElementById("presetTitle");
-        const presetImg = document.getElementById("presetFavicon");
-        const presetBtn = document.getElementById("presetBtn");
-    
-        presetTxt.innerText = savedPresetTitle;
-        presetImg.src = savedPresetFavicon;
-        presetImg.width = 200;
-        presetImg.style.padding = ".5vw"
-        presetBtn.innerText = "Remove Custom Preset"
-    }
-    
-    // About:Blank Cloak
-    function toggleABCloak(url) {
-        var win = window.open('', '_blank', 'menubar=no,toolbar=no,location=no,status=no')
-        var iframe = win.document.createElement('iframe')
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.border = "none";
-        iframe.src = url
-        win.document.body.appendChild(iframe)
-    }
-    
-    // Credits (ty stackoverflow user <3)
-    function toggleCredits() {
-        const creditsDropdown = document.getElementById("credits-expand");
-        var creditsArrows = document.querySelectorAll('.settings-btn i');
-        if (creditsDropdown.style.display == "block") {
-            creditsDropdown.style.display = "none";
-            for (var i = 0; i < creditsArrows.length; i++) {
-                creditsArrows[i].classList.remove("fa-angles-up");
-                creditsArrows[i].classList.add("fa-angles-down");
-            }
-        } else {
-            creditsDropdown.style.display = "block";
-            for (var i = 0; i < creditsArrows.length; i++) {
-                creditsArrows[i].classList.remove("fa-angles-down");
-                creditsArrows[i].classList.add("fa-angles-up");
-            }
-        }
-    }
-    //////////////////////////////////////////////////
-    // Theme Changer
-    function toggleTheme() {
-        const currentTheme = document.documentElement.getAttribute("data-theme");
-        const newTheme = currentTheme === "light" ? "dark" : "light";
-        document.documentElement.setAttribute("data-theme", newTheme);
-    
-        localStorage.setItem("theme", newTheme);
-    }
-    //////////////////////////////////////////////////
-    // Language Selector
-    function toggleTranslate() {
-        const translateMenu = document.getElementById("translate");
-        if (translateMenu.style.display == "block") {
-            translateMenu.style.display = "none";
-        } else {
-            translateMenu.style.display = "block";
-        }
-    }
-    //////////////////////////////////////////////////
-    // Mobile
-    function toggleMobileNav() {
-        const contactBtn = document.getElementById("contact-btn");
-        const navOut = document.getElementById("mobile-nav-out");
-        const navBtn = document.getElementById("mobile-open-nav");
-        var navLink = document.querySelectorAll('.mobile-nav-link');
-        if (navOut.style.display == "block") {
-            navOut.style.display = "none";
-            contactBtn.style.display = "block";
-            document.body.style.overflowY = "auto";
-            navBtn.style.scale = "100%";
-            for (var i = 0; i < navLink.length; i++) {
-                navLink[i].style.display = "none";
-            }
-        } else {
-            navOut.style.display = "block";
-            contactBtn.style.display = "none";
-            window.scrollTo(0,0);
-            document.body.style.overflowY = "hidden";
-            navBtn.style.scale = "115%";
-            for (var i = 0; i < navLink.length; i++) {
-                navLink[i].style.display = "block";
-            }
-        }
-    }
-    //////////////////////////////////////////////////
-    // Contact
-    function toggleContact() {
-        const contactExpand = document.getElementById("contact-expand");
-        if (contactExpand.style.display == "none") {
-            contactExpand.style.display = "block";
-        } else {
-            contactExpand.style.display = "none";
-        }
+}
+  
+document.addEventListener('click', function(event) {
+    const settingsModal = document.getElementById("settings-modal");
+    const settingsMenu = document.getElementById("settings");
+    if (settingsModal.contains(event.target) && !settingsMenu.contains(event.target)) {
+      toggleSettings()
     }
 });
+  
+// Tab Masking (I wrote half of this at 3am, so only god knows how this works now)
+function updateTitle() {
+    const title = document.getElementById('tabNameInput').value;
+    document.title = title;
+    localStorage.setItem('tabTitle', title);
+}
+  
+function updateFavicon() {
+    const faviconUrl = document.getElementById('faviconInput').value;
+    const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
+    favicon.href = faviconUrl;
+    document.head.appendChild(favicon);
+    localStorage.setItem('faviconUrl', faviconUrl);
+}
+  
+function applyPreset(presetButton) {
+    const presetName = presetButton.getAttribute('data-name');
+    const presetFaviconUrl = presetButton.getAttribute('data-favicon');
+  
+    document.title = presetName;
+    document.getElementById('tabNameInput').value = presetName;
+    localStorage.setItem('tabTitle', presetName);
+  
+    const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
+    favicon.href = presetFaviconUrl;
+    document.head.appendChild(favicon);
+    document.getElementById('faviconInput').value = presetFaviconUrl;
+    localStorage.setItem('faviconUrl', presetFaviconUrl);
+}
+  
+function addPreset() {
+    const title = document.getElementById('tabNameInput').value;
+    const favicon = document.getElementById('faviconInput').value;
+    const presetTxt = document.getElementById("presetTitle");
+    const presetImg = document.getElementById("presetFavicon");
+    const presetBtn = document.getElementById("presetBtn");
+    
+    if (title != '' && favicon != '' && presetBtn.innerText != "Remove Custom Preset") {
+      localStorage.setItem('presetTabTitle', title);
+      localStorage.setItem('presetFaviconUrl', favicon);
+      presetTxt.innerText = title;
+      presetImg.src = favicon;
+      presetImg.width = 200;
+      presetImg.style.padding = ".5vw"
+      presetBtn.innerText = "Remove Custom Preset"
+    } else {
+      localStorage.removeItem('presetTabTitle');
+      localStorage.removeItem('presetFaviconUrl');
+  
+      presetTxt.innerText = "Custom Preset";
+      presetImg.src = "https://i.ibb.co/VjNwzxv/custom-Preset.png";
+      presetBtn.innerText = "Add Custom Preset"
+    }
+}
+function usePreset() {
+    const savedPresetTitle = localStorage.getItem('presetTabTitle');
+    const savedPresetFavicon = localStorage.getItem('presetFaviconUrl');
+    if (savedPresetTitle && savedPresetFavicon) {
+      document.title = savedPresetTitle;
+      document.getElementById('tabNameInput').value = savedPresetTitle;
+      localStorage.setItem('tabTitle', savedPresetTitle);
+  
+      const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
+      favicon.rel = 'icon';
+      favicon.type = 'image/png';
+      favicon.href = savedPresetFavicon;
+      document.head.appendChild(favicon);
+      document.getElementById('faviconInput').value = savedPresetFavicon;
+      localStorage.setItem('faviconUrl', savedPresetFavicon);
+    }
+}
+  
+function resetMasking() {
+    localStorage.removeItem('tabTitle');
+    localStorage.removeItem('faviconUrl');
+  
+    location.reload();
+}
+  
+const savedTitle = localStorage.getItem('tabTitle');
+const savedFaviconUrl = localStorage.getItem('faviconUrl');
+const savedPresetTitle = localStorage.getItem('presetTabTitle');
+const savedPresetFavicon = localStorage.getItem('presetFaviconUrl');
+  
+if (savedTitle) {
+    document.title = savedTitle;
+    document.getElementById('tabNameInput').value = savedTitle;
+}
+if (savedFaviconUrl) {
+    const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
+    favicon.href = savedFaviconUrl;
+    document.head.appendChild(favicon);
+    document.getElementById('faviconInput').value = savedFaviconUrl;
+}
+  
+if (savedPresetTitle && savedPresetFavicon) {
+    const presetTxt = document.getElementById("presetTitle");
+    const presetImg = document.getElementById("presetFavicon");
+    const presetBtn = document.getElementById("presetBtn");
+  
+    presetTxt.innerText = savedPresetTitle;
+    presetImg.src = savedPresetFavicon;
+    presetImg.width = 200;
+    presetImg.style.padding = ".5vw"
+    presetBtn.innerText = "Remove Custom Preset"
+}
+  
+// About:Blank Cloak
+function toggleABCloak(url) {
+    var win = window.open('', '_blank', 'menubar=no,toolbar=no,location=no,status=no')
+    var iframe = win.document.createElement('iframe')
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.border = "none";
+    iframe.src = url
+    win.document.body.appendChild(iframe)
+}
+  
+// Credits (ty stackoverflow user <3)
+function toggleCredits() {
+    const creditsDropdown = document.getElementById("credits-expand");
+    var creditsArrows = document.querySelectorAll('.settings-btn i');
+    if (creditsDropdown.style.display == "block") {
+        creditsDropdown.style.display = "none";
+        for (var i = 0; i < creditsArrows.length; i++) {
+            creditsArrows[i].classList.remove("fa-angles-up");
+            creditsArrows[i].classList.add("fa-angles-down");
+        }
+    } else {
+        creditsDropdown.style.display = "block";
+        for (var i = 0; i < creditsArrows.length; i++) {
+            creditsArrows[i].classList.remove("fa-angles-down");
+            creditsArrows[i].classList.add("fa-angles-up");
+        }
+    }
+}
+//////////////////////////////////////////////////
+// Theme Changer
+function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", newTheme);
+  
+    localStorage.setItem("theme", newTheme);
+}
+//////////////////////////////////////////////////
+// Language Selector
+function toggleTranslate() {
+    const translateMenu = document.getElementById("translate");
+    if (translateMenu.style.display == "block") {
+        translateMenu.style.display = "none";
+    } else {
+        translateMenu.style.display = "block";
+    }
+}
+//////////////////////////////////////////////////
+// Mobile
+function toggleMobileNav() {
+    const contactBtn = document.getElementById("contact-btn");
+    const navOut = document.getElementById("mobile-nav-out");
+    const navBtn = document.getElementById("mobile-open-nav");
+    var navLink = document.querySelectorAll('.mobile-nav-link');
+    if (navOut.style.display == "block") {
+        navOut.style.display = "none";
+        contactBtn.style.display = "block";
+        document.body.style.overflowY = "auto";
+        navBtn.style.scale = "100%";
+        for (var i = 0; i < navLink.length; i++) {
+            navLink[i].style.display = "none";
+        }
+    } else {
+        navOut.style.display = "block";
+        contactBtn.style.display = "none";
+        window.scrollTo(0,0);
+        document.body.style.overflowY = "hidden";
+        navBtn.style.scale = "115%";
+        for (var i = 0; i < navLink.length; i++) {
+            navLink[i].style.display = "block";
+        }
+    }
+}
+//////////////////////////////////////////////////
+// Contact
+function toggleContact() {
+    const contactExpand = document.getElementById("contact-expand");
+    if (contactExpand.style.display == "none") {
+        contactExpand.style.display = "block";
+    } else {
+        contactExpand.style.display = "none";
+    }
+}
