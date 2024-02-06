@@ -243,36 +243,38 @@ function resetMasking() {
   
     location.reload();
 }
-  
-const savedTitle = localStorage.getItem('tabTitle');
-const savedFaviconUrl = localStorage.getItem('faviconUrl');
-const savedPresetTitle = localStorage.getItem('presetTabTitle');
-const savedPresetFavicon = localStorage.getItem('presetFaviconUrl');
-  
-if (savedTitle) {
-    document.title = savedTitle;
-    document.getElementById('tabNameInput').value = savedTitle;
-}
-if (savedFaviconUrl) {
-    const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
-    favicon.rel = 'icon';
-    favicon.type = 'image/png';
-    favicon.href = savedFaviconUrl;
-    document.head.appendChild(favicon);
-    document.getElementById('faviconInput').value = savedFaviconUrl;
-}
-  
-if (savedPresetTitle && savedPresetFavicon) {
-    const presetTxt = document.getElementById("presetTitle");
-    const presetImg = document.getElementById("presetFavicon");
-    const presetBtn = document.getElementById("presetBtn");
-  
-    presetTxt.innerText = savedPresetTitle;
-    presetImg.src = savedPresetFavicon;
-    presetImg.width = 200;
-    presetImg.style.padding = ".5vw"
-    presetBtn.innerText = "Remove Custom Preset"
-}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const savedTitle = localStorage.getItem('tabTitle');
+    const savedFaviconUrl = localStorage.getItem('faviconUrl');
+    const savedPresetTitle = localStorage.getItem('presetTabTitle');
+    const savedPresetFavicon = localStorage.getItem('presetFaviconUrl');
+    
+    if (savedTitle) {
+        document.title = savedTitle;
+        document.getElementById('tabNameInput').value = savedTitle;
+    }
+    if (savedFaviconUrl) {
+        const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
+        favicon.rel = 'icon';
+        favicon.type = 'image/png';
+        favicon.href = savedFaviconUrl;
+        document.head.appendChild(favicon);
+        document.getElementById('faviconInput').value = savedFaviconUrl;
+    }
+    
+    if (savedPresetTitle && savedPresetFavicon) {
+        const presetTxt = document.getElementById("presetTitle");
+        const presetImg = document.getElementById("presetFavicon");
+        const presetBtn = document.getElementById("presetBtn");
+    
+        presetTxt.innerText = savedPresetTitle;
+        presetImg.src = savedPresetFavicon;
+        presetImg.width = 200;
+        presetImg.style.padding = ".5vw"
+        presetBtn.innerText = "Remove Custom Preset"
+    }
+});
   
 // About:Blank Cloak
 function toggleABCloak(url) {
