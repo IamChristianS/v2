@@ -10,8 +10,6 @@ var navbar = `
                 <a class="animate__animated animate__fadeInDown"
                     onclick="window.location.href='apps.html'">Apps</a>
                 <a class="animate__animated animate__fadeInDown"
-                    onclick="window.location.href='proxies.html'">Proxies</a>
-                <a class="animate__animated animate__fadeInDown"
                     onclick="window.open('https://github.com/IamChristianS/v2')">GitHub</a>
             </div>
 
@@ -42,8 +40,6 @@ var navbar = `
                     onclick="window.location.href='games.html'">Games</a>
                 <a class="animate__animated animate__fadeInDown mobile-nav-link"
                     onclick="window.location.href='apps.html'">Apps</a>
-                <a class="animate__animated animate__fadeInDown mobile-nav-link"
-                    onclick="window.location.href='proxies.html'">Proxies</a>
                 <a class="animate__animated animate__fadeInDown mobile-nav-link"
                     onclick="window.open('https://github.com/IamChristianS/v2')">GitHub</a>
                 <div class="mobile-out-tools">

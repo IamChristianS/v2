@@ -5,7 +5,6 @@ var footer = `
                     <li><a href="index.html">Home</a></li>
                     <li><a href="games.html">Games</a></li>
                     <li><a href="apps.html">Apps</a></li>
-                    <li><a href="proxies.html">Proxies</a></li>
                     <li><a href="https://github.com/IamChristianS/v2" target="_blank">GitHub</a></li>
                 </div>
                 <div class="footer-description">

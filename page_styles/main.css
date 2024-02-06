@@ -5,33 +5,23 @@
     --background-color: rgba(0,0,0,0);
     --text-color: #ffffff;
     --dark-text-color: #000000;
+    --selection-bg: #ffffff;
+    --selection-text: #356080;
+
     --gradient-color-selected: #5182a5;
     --gradient-color-light: #46789B;
     --gradient-color-dark: #356080;
-
-    --review-text-color: #356080;
-    --review-text-shadow: 0px 0px 15px rgba(0,0,0,.25);
-    --review-selection-bg: #356080;
-    --review-selection-text: #ffffff;
-
-    --selection-bg: #ffffff;
-    --selection-text: #356080;
 }
 [data-theme="dark"] {
     --background-color: rgba(0,0,0,0.5);
     --text-color: #ffffff;
     --dark-text-color: #ffffff;
+    --selection-bg: #ffffff;
+    --selection-text: #000000;
+
     --gradient-color-selected: #525252;
     --gradient-color-light: #202020;
     --gradient-color-dark: #101010;
-
-    --review-text-color: #ffffff;
-    --review-text-shadow: 0px 0px 15px rgba(0,0,0,.75);
-    --review-selection-bg: #ffffff;
-    --review-selection-text: #000000;
-
-    --selection-bg: #ffffff;
-    --selection-text: #000000;
 }
 
 * {
@@ -44,7 +34,7 @@
 *::selection { 
     background: var(--selection-bg); 
     color: var(--selection-text); 
-} 
+}
 body {
     background: linear-gradient(
         var(--background-color),

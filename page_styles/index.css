@@ -1,3 +1,15 @@
+[data-theme="light"] {
+    --review-text-color: #356080;
+    --review-text-shadow: 0px 0px 15px rgba(0,0,0,.25);
+    --review-selection-bg: #356080;
+    --review-selection-text: #ffffff;
+}
+[data-theme="dark"] {
+    --review-text-color: #ffffff;
+    --review-text-shadow: 0px 0px 15px rgba(0,0,0,.75);
+    --review-selection-bg: #ffffff;
+    --review-selection-text: #000000;
+}
 /* About Cards */
 .about {
     display: flex;
