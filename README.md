@@ -1,6 +1,6 @@
 <!-- Project Logo -->
 <p align="center">
-  <img src="img/logoTextIcon.png" alt="Project-Hub Logo">
+  <img src="img/readme/logo.png" alt="Project-Hub Logo">
 </p>
 
 <!-- Badges -->
@@ -42,7 +42,7 @@ Contributions are welcome! If you have any bug reports, feature requests, or sug
 You can also submit a [contact](https://forms.gle/xeeYJHio4kYfChm18) or [game request](https://forms.gle/3E58KvuY45vdWi6n9) form through their respective links.
 
 ## Acknowledgements
-Each game I curate can be found and seen in the [assets repo available here](https://github.com/IamChristianS/assets).
+Each game I curate can be found and seen in the [assets repo available here]().
 
 Special thanks to the following projects and libraries:
 - [Ruffle](https://ruffle.rs) - Flash Emulator

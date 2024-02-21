@@ -30,6 +30,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', Courier, Helvetica, Arial, sans-serif;
     color: var(--text-color);
+    transition: .5s ease-in-out;
 }
 *::selection { 
     background: var(--selection-bg); 
@@ -42,9 +43,6 @@ body {
     ), url(../img/pageBackground.png);
     background-repeat: repeat;
     overflow-x: hidden;
-}
-#incomplete {
-    display: none;
 }
 
 /* Navbar */
@@ -242,7 +240,6 @@ body {
 
     display: none;
     background-color: rgba(0,0,0,0.4);
-    transition: 2s ease-in;
 
     overflow: auto;
     z-index: 9999;
@@ -284,13 +281,12 @@ body {
 .settings-close {
     position: absolute;
     right: 1.25vw;
-    transition: .5s ease-in;
     font-size: 1.25em;
     font-weight: 600;
     cursor: pointer;
 }
 .settings-close:hover {
-    text-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    text-shadow: 0px 0px 5px rgba(0,0,0,.75);
 }
 .settings h2 {
     font-size: 1.6em;

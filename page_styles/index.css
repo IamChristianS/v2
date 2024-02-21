@@ -21,7 +21,6 @@
     min-height: 40vh;
     margin: 0 1.5vw;
     padding: 2vw;
-
     background: linear-gradient(
         var(--gradient-color-light),
         var(--gradient-color-dark)
@@ -29,16 +28,11 @@
     border-radius: 1.5vh;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
-    transition: scale .15s;
 
     color: var(--text-color);
     text-align: center;
     word-spacing: .2em;
     line-height: 2em;
-}
-.about div:hover {
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
-    scale: 102%;
 }
 
 #about-goal {
@@ -173,7 +167,7 @@
     justify-content: space-around;
 }
 .random-game {
-    width: 25vw;
+    width: 20vw;
     margin: 3vw;
 
     background: linear-gradient(
@@ -193,7 +187,7 @@
 }
 
 .random-game img {
-    width: 25vw;
+    width: 20vw;
     padding: 1vw;
 }
 .random-game h2 {
