@@ -126,7 +126,7 @@ var navbar = `
         </div>
         
         <!--Contact-->
-        <button id="contact-btn" style="aspect-ratio:1/1;" onclick="toggleContact()"><i class="fa-solid fa-hand"></i></button>
+        <button id="contact-btn" style="aspect-ratio:1/1;" onclick="toggleContact()"><i class="fa-solid fa-paper-plane"></i></button>
         <div id="contact-expand" style="display:none;">
             <button onclick="window.open('https://forms.gle/aZzEgBhKXLdkXdyx6')" style="transform: translateY(-19.5vh);">Game Request<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
             <button onclick="window.open('https://forms.gle/CMrSGnxrJWjvyBKc9')" style="transform: translateY(-11.5vh);">Contact Form<i class="fa-solid fa-arrow-up-right-from-square"></i></button>

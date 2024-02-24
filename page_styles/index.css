@@ -172,18 +172,19 @@
 
     background: linear-gradient(
         var(--gradient-color-light),
-        var(--gradient-color-dark)
+        var(--gradient-color-light)
     );
     border-radius: 1.5vh;
     box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: scale .15s;
 }
 .random-game:hover {
-    background: var(--gradient-color-light);
+    background: linear-gradient(
+        var(--gradient-color-selected),
+        var(--gradient-color-light)
+    );
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
-    scale: 102%;
 }
 
 .random-game img {
@@ -220,7 +221,10 @@
 
 /* FAQ */
 .faq-bg {
-    background: var(--gradient-color-dark);
+    background: linear-gradient(
+        var(--gradient-color-light),
+        var(--gradient-color-dark)
+    );
     width: 100vh;
     max-width: 90vw;
     border-radius: 1.5vh;

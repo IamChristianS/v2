@@ -12,11 +12,6 @@ var footer = `
                 </div>
             </div> 
             <br><hr><br>
-            <div class="footer-policies">
-                <a href="tos.html">Terms of Service</a>
-                <a href="cookies.html">Cookie Policy</a>
-                <a href="https://github.com/IamChristianS/v2/blob/main/LICENSE" target="_blank">Site License</a>
-            </div>
             <div class="footer-disclaimer">
                 <p>This site should not be used in environments where it is disallowed. By using this site, you agree that you are in a location that allows its usage, and any discretion is up to the user.</p>
                 <p>Christian Santangelo ©</p>

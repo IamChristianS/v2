@@ -66,13 +66,20 @@ h2::selection {
     cursor: pointer;
     text-align: center;
 
-    background-color: var(--gradient-color-light);
+    background: linear-gradient(
+        var(--gradient-color-light),
+        var(--gradient-color-light)
+    );
     margin: 1.5vh auto;
     padding: 1.5vh;
     max-width: 225px;
 }
 .table-tab:hover {
-    background-color: var(--gradient-color-selected);
+    background: linear-gradient(
+        var(--gradient-color-selected),
+        var(--gradient-color-light)
+    );
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
 }
 .table-tab img {
     border-radius: 1.5vh;
