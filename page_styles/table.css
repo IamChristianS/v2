@@ -1,129 +1,91 @@
-[data-theme="light"] {
-    --table-selection-bg: #ffffff;
-    --table-selection-text: #000000;
+[data-theme='light'] {
+	--table-selection-bg: #ffffff;
+	--table-selection-text: #000000;
 }
-[data-theme="dark"] {
-    --table-selection-bg: #000000;
-    --table-selection-text: #ffffff;
+[data-theme='dark'] {
+	--table-selection-bg: #000000;
+	--table-selection-text: #ffffff;
 }
 img::selection,
 h2::selection {
-    background: var(--table-selection-bg); 
-    color: var(--table-selection-text); 
+	background: var(--table-selection-bg);
+	color: var(--table-selection-text);
 }
 
 /* Games Table */
 .title {
-    font-size: 2em;
-    font-weight: 600;
-    color: var(--dark-text-color);
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 5vh;
+	font-size: 2em;
+	font-weight: 600;
+	color: var(--dark-text-color);
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 5vh;
 }
 
 #table {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1.5vh 2.5vw;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1.5vh 2.5vw;
 }
-
-/* Old Version for Old Icons
-.table-tab {
-    display: block;
-    cursor: pointer;
-
-    margin: 1.5vh auto;
-    padding: 1.5vh;
-    max-width: 40vh;
-}
-.table-tab img {
-    max-width: 40vh;
-    aspect-ratio: 1.25/1;
-    transform: translateX(-1.25vh);
-}
-.table-tab h2 {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: var(--dark-text-color);
-    text-align: center;
-}
-
-/* Mobile Games *
-@media only screen and (max-width: 1000px) {
-    .table-tab {
-        max-width: 30vh;
-    }
-    .table-tab img {
-        max-width: 30vh;
-    }
-}
-*/
 
 .table-tab {
-    border-radius: 1.5vh;
-    display: block;
-    cursor: pointer;
-    text-align: center;
+	border-radius: 1.5vh;
+	display: block;
+	cursor: pointer;
+	text-align: center;
 
-    background: linear-gradient(
-        var(--gradient-color-light),
-        var(--gradient-color-light)
-    );
-    margin: 1.5vh auto;
-    padding: 1.5vh;
-    max-width: 225px;
+	background: linear-gradient(var(--gradient-color-light), var(--gradient-color-light));
+	margin: 1.5vh auto;
+	padding: 1.5vh;
+	max-width: 225px;
 }
 .table-tab:hover {
-    background: linear-gradient(
-        var(--gradient-color-selected),
-        var(--gradient-color-light)
-    );
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
+	background: linear-gradient(var(--gradient-color-selected), var(--gradient-color-light));
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
 }
 .table-tab img {
-    border-radius: 1.5vh;
-    max-width: 200px;
-    aspect-ratio: 1/1;
+	border-radius: 1.5vh;
+	max-width: 200px;
+	aspect-ratio: 1/1;
 }
 .table-tab h2 {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: var(--text-color);
+	font-size: 1.5em;
+	font-weight: 600;
+	color: var(--text-color);
 }
 
 /* Proxy */
 .proxy {
-    margin: 2vh;
-    text-align: center;
+	margin: 2vh;
+	text-align: center;
 }
-.proxy input{
-    background-color: var(--gradient-color-selected);
-    border: 3px solid var(--gradient-color-dark);
-    border-radius: .5vh;
-    width: 35vw;
-    height: 5.5vh;
-    padding: 1vw;
+.proxy input {
+	background-color: var(--gradient-color-selected);
+	border: 3px solid var(--gradient-color-dark);
+	border-radius: 0.5vh;
+	width: 35vw;
+	height: 5.5vh;
+	padding: 1vw;
 
-    color: var(--text-color);
-    font-size: 1.2em;
-    font-weight: 500;
+	color: var(--text-color);
+	font-size: 1.2em;
+	font-weight: 500;
 }
 .proxy input::placeholder {
-    color: var(--text-color);
-    text-align: center;
+	color: var(--text-color);
+	text-align: center;
 }
 .proxy button {
-    background-color: var(--gradient-color-selected);
-    border: 3px solid var(--gradient-color-dark);
-    border-radius: .5vh;
-    width: 10vw;
-    height: 5.5vh;
+	background-color: var(--gradient-color-selected);
+	border: 3px solid var(--gradient-color-dark);
+	border-radius: 0.5vh;
+	width: 10vw;
+	height: 5.5vh;
 
-    color: var(--text-color);
-    font-size: 1.2em;
-    font-weight: 500;
+	color: var(--text-color);
+	font-size: 1.2em;
+	font-weight: 500;
 }
 .proxy button:hover {
-    background-color: #79a7be;
+	background-color: #79a7be;
 }

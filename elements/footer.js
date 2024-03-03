@@ -18,5 +18,5 @@ var footer = `
             </div>
         </footer>`;
 document.addEventListener('DOMContentLoaded', function () {
-    document.body.insertAdjacentHTML("beforeend", footer);
+	document.body.insertAdjacentHTML('beforeend', footer);
 });

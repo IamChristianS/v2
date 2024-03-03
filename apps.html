@@ -14,46 +14,46 @@
 -->
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <title>Project-Hub V2 | Apps</title>
-        <link rel="icon" href="favicon.png">
-        <link rel="apple-touch-icon" href="favicon.png">
+	<head>
+		<title>Project-Hub V2 | Apps</title>
+		<link rel="icon" href="favicon.png" />
+		<link rel="apple-touch-icon" href="favicon.png" />
 
-        <meta charset="UTF-8">
-        <meta name="language" content="en">
-        <meta name="robots" content="index,nofollow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
+		<meta name="language" content="en" />
+		<meta name="robots" content="index,nofollow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="page_styles/main.css">
-        <link rel="stylesheet" href="page_styles/table.css">
-        <link rel="stylesheet" href="page_styles/player.css">
-        <link rel="stylesheet" href="page_styles/animate.css"> 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css">
-        <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="page_styles/main.css" />
+		<link rel="stylesheet" href="page_styles/table.css" />
+		<link rel="stylesheet" href="page_styles/player.css" />
+		<link rel="stylesheet" href="page_styles/animate.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+		<script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 
-        <script src="elements/navbar.js"></script>
-        <script src="elements/footer.js"></script>
-        <script src="scripts/panic.js"></script>
-        <script src="scripts/theme.js"></script>
-        <script src="scripts/table.js"></script>
-    </head>
-    <body onload="addApps()">
-        <h2 class="title">Apps</h2>
-        <div id="table">
-            <div class="table-tab" onclick="window.open('player.html')">
-                <img src="img/placeholder.png" alt="Placeholder">
-                <h2>Placeholder</h2>
-            </div>
-        </div>
+		<script src="elements/navbar.js"></script>
+		<script src="elements/footer.js"></script>
+		<script src="scripts/panic.js"></script>
+		<script src="scripts/theme.js"></script>
+		<script src="scripts/table.js"></script>
+	</head>
+	<body onload="addApps()">
+		<h2 class="title">Apps</h2>
+		<div id="table">
+			<div class="table-tab" onclick="window.open('player.html')">
+				<img src="img/placeholder.png" alt="Placeholder" />
+				<h2>Placeholder</h2>
+			</div>
+		</div>
 
-        <h2 class="title">Proxy</h2>
-        <div class="proxy">
-            <input type="text" placeholder="Enter Link Here...">
-            <button onclick="something()">Submit</button>
-        </div>
-        <div class="playerFrame" style="margin-top: 1vh;">
-            <iframe id="player" allowfullscreen></iframe>
-            <button onclick="document.getElementById('player').requestFullscreen()">Fullscreen</button>
-        </div>
-    </body>
+		<h2 class="title">Proxy</h2>
+		<div class="proxy">
+			<input type="text" placeholder="Enter Link Here..." />
+			<button onclick="something()">Submit</button>
+		</div>
+		<div class="playerFrame" style="margin-top: 1vh">
+			<iframe id="player" allowfullscreen></iframe>
+			<button onclick="document.getElementById('player').requestFullscreen()">Fullscreen</button>
+		</div>
+	</body>
 </html>
