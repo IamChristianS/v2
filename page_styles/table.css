@@ -1,22 +1,14 @@
-[data-theme='light'] {
-	--table-selection-bg: #ffffff;
-	--table-selection-text: #000000;
-}
-[data-theme='dark'] {
-	--table-selection-bg: #000000;
-	--table-selection-text: #ffffff;
-}
 img::selection,
 h2::selection {
-	background: var(--table-selection-bg);
-	color: var(--table-selection-text);
+	background: var(--selection-bg);
+	color: var(--selection-text);
 }
 
 /* Games Table */
 .title {
 	font-size: 2em;
 	font-weight: 600;
-	color: var(--dark-text-color);
+	color: #000;
 	letter-spacing: 2px;
 	text-align: center;
 	margin-top: 5vh;
@@ -34,13 +26,13 @@ h2::selection {
 	cursor: pointer;
 	text-align: center;
 
-	background: linear-gradient(var(--gradient-color-light), var(--gradient-color-light));
+	background: linear-gradient(var(--blue-color-light), var(--blue-color-light));
 	margin: 1.5vh auto;
 	padding: 1.5vh;
 	max-width: 225px;
 }
 .table-tab:hover {
-	background: linear-gradient(var(--gradient-color-selected), var(--gradient-color-light));
+	background: linear-gradient(var(--blue-color-selected), var(--blue-color-light));
 	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
 }
 .table-tab img {
@@ -51,7 +43,7 @@ h2::selection {
 .table-tab h2 {
 	font-size: 1.5em;
 	font-weight: 600;
-	color: var(--text-color);
+	color: #fff;
 }
 
 /* Proxy */
@@ -60,29 +52,29 @@ h2::selection {
 	text-align: center;
 }
 .proxy input {
-	background-color: var(--gradient-color-selected);
-	border: 3px solid var(--gradient-color-dark);
+	background-color: var(--blue-color-selected);
+	border: 3px solid var(--blue-color-dark);
 	border-radius: 0.5vh;
 	width: 35vw;
 	height: 5.5vh;
 	padding: 1vw;
 
-	color: var(--text-color);
+	color: #fff;
 	font-size: 1.2em;
 	font-weight: 500;
 }
 .proxy input::placeholder {
-	color: var(--text-color);
+	color: #fff;
 	text-align: center;
 }
 .proxy button {
-	background-color: var(--gradient-color-selected);
-	border: 3px solid var(--gradient-color-dark);
+	background-color: var(--blue-color-selected);
+	border: 3px solid var(--blue-color-dark);
 	border-radius: 0.5vh;
 	width: 10vw;
 	height: 5.5vh;
 
-	color: var(--text-color);
+	color: #fff;
 	font-size: 1.2em;
 	font-weight: 500;
 }

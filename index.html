@@ -14,12 +14,12 @@
 -->
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
+	<head>
 		<title>Project-Hub V2 | Home</title>
 		<link rel="icon" href="favicon.png" />
 		<link rel="apple-touch-icon" href="favicon.png" />
 		<link rel="canonical" href="changeurl" />
-		<meta name="description" content="Come browse our 90+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more! We have Kahoot and other Game Hacks coming soon." />
+		<meta name="description" content="Come browse our growing, large library of Unblocked Games! Use our FREE Proxy Services to Cloak your browser." />
 		<meta name="keywords" content="unblocked, games, google sites, unblocked games mom, ublocked, project-hub, project, hub, project hub, unbl0ck, github, unbl0ck.github.io, unblock.github.io, unblock, g@mes, unblocked games school" />
 
 		<meta charset="UTF-8" />
@@ -38,26 +38,33 @@
 		<script src="scripts/panic.js"></script>
 		<script src="scripts/theme.js"></script>
 		<script src="scripts/table.js"></script>
+		<script src="scripts/reviews.js"></script>
 
 		<meta property="og:title" content="Project Hub V2" />
-		<meta property="og:description" content="Come browse our 90+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!" />
+		<meta property="og:description" content="Come browse our growing, large library of Unblocked Games! Use our FREE Proxy Services to Cloak your browser." />
 		<meta property="og:type" content="website" />
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="Project Hub V2" />
-		<meta name="twitter:description" content="Come browse our 90+ Unblocked Games! Use our FREE Proxy Services to Cloak your browser. We have ChatGPT, Mathway, and much more!" />
+		<meta name="twitter:description" content="Come browse our growing, large library of Unblocked Games! Use our FREE Proxy Services to Cloak your browser." />
 	</head>
-	<body onload="addRandomGames()">
+	<body onload="addRandomGames(); addReviews()">
 		<!--Hero-->
 		<div class="hero">
 			<img src="img/placeholder.png" />
 			<div class="hero-text">
 				<h3><span>Game</span> with a</h3>
 				<h3>Level of <span>Privacy</span></h3>
+				<a href="games.html">Press <span>START</span><i class="fa-solid fa-caret-right"></i></a>
 			</div>
 		</div>
 
 		<!--User Reviews-->
-		<div class="reviews">
+		<div id="reviews">
+			<div class="reviews-info">
+				<h3><span>Trusted</span> by all</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ante mattis, rutrum elit id, lobortis tortor. Donec faucibus leo luctus, mollis nisi et, sollicitudin risus. Praesent accumsan porttitor dui in mattis.</p>
+			</div>
+            <!--
 			<div class="reviews-slides slides1">
 				<img src="img/reviews/bigbananna.png" alt="Unloaded Picture" />
 				<div class="reviews-slides-text">
@@ -93,7 +100,7 @@
 					<p>- "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lo." #/10</p>
 				</div>
 			</div>
-			<h3>Want to see yourself here? <a href="https://forms.gle/YZSapScWn58kaVs69" target="_blank">Fill out a form for a chance to get featured.</a></h3>
+        -->
 		</div>
 
 		<!--Random Games-->
@@ -107,7 +114,7 @@
 				<h2>GameTitle</h2>
 			</div>
 			<div class="random-game" onclick="window.location.href='games/gamePath/index.html'">
-			    <img src="img/placeholder.png" alt="Unloaded Picture" />
+				<img src="img/placeholder.png" alt="Unloaded Picture" />
 				<h2>GameTitle</h2>
 			</div>
 		</div>

@@ -16,8 +16,8 @@ var navbar = `
             <div class="nav-tools">
                 <!--
                 <i class="fa-solid fa-globe" onclick="toggleTranslate()"></i>
-                -->
                 <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
+                -->
                 <i class="fa-solid fa-gear" onclick="toggleSettings()"></i>
             </div>
         </header>

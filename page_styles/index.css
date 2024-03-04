@@ -1,228 +1,281 @@
-[data-theme='light'] {
-	--review-text-color: #356080;
-	--review-text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-	--review-selection-bg: #356080;
-	--review-selection-text: #ffffff;
-}
-[data-theme='dark'] {
-	--review-text-color: #ffffff;
-	--review-text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
-	--review-selection-bg: #ffffff;
-	--review-selection-text: #000000;
-}
-
 /* Hero Section */
 .hero {
-	height: 75vh;
-	display: flex;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
 }
-.hero img {
-	margin: 5vh;
-	aspect-ratio: 1/1;
-}
-.hero-text {
-	margin: auto 0;
-}
-.hero-text * {
-	color: var(--review-text-color);
-	font-size: 4em;
-	font-weight: 600;
-}
-.hero h3 span {
-	margin: auto 0;
 
-	font-size: 1em;
-	font-weight: 1000;
+.hero img {
+    margin: 10vh;
+    aspect-ratio: 1/1;
+    border-radius: 2vh;
+}
+
+.hero-text {
+    margin: auto 2vw;
+}
+
+.hero-text * {
+    color: var(--blue-color-dark);
+    font-size: 6em;
+    font-weight: 600;
+}
+
+.hero-text *::selection {
+    background-color: var(--invert-selection-bg);
+    color: var(--invert-selection-text);
+}
+
+.hero-text h3 span {
+    margin: auto 0;
+
+    font-size: 1em;
+    font-weight: 1000;
+}
+
+.hero-text a * {
+    font-size: 1em;
+}
+
+.hero-text a {
+    margin: 2.5vh 0;
+    font-size: 2.5em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-text a span {
+    color: #fff;
+    background-color: var(--blue-color-light);
+    border-radius: 1.5vh;
+    padding: 1vh 1vw;
+}
+
+.hero-text a span::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
+}
+
+.hero-text a:hover i {
+    color: var(--blue-color-selected);
+    transform: translateX(.5vh);
+}
+
+.hero-text a:hover span {
+    background-color: var(--blue-color-selected);
 }
 
 /* Reviews */
-.reviews {
-	text-align: center;
+#reviews {
+    display: flex;
+    justify-content: space-around;
+    padding: 7.5vh 5vw;
+    background-color: var(--blue-color-light);
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
-.reviews-slides {
-	background: linear-gradient(var(--gradient-color-light), var(--gradient-color-dark));
-	border-radius: 1.5vh;
-	box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
-	width: 100vh;
-	max-width: 90vw;
 
-	animation: fade 0.5s;
-	display: none;
-	cursor: default;
+.reviews-info,
+.reviews-slides {
+    width: 40vw;
+    margin: auto 3.5vw;
 }
-.reviews-slides:hover {
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+
+.reviews-info * {
+    font-size: 1em;
 }
+
+.reviews-info h3 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.reviews-info h3 span {
+    font-weight: 800;
+}
+
+.reviews-info p {
+    font-size: 1.25em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.reviews-slides {
+    animation: fade 0.5s;
+    display: none;
+    cursor: default;
+}
+
 @keyframes fade {
-	from {
-		opacity: 0.5;
-	}
-	to {
-		opacity: 1;
-	}
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .reviews-slides img {
-	width: 12vh;
-	height: 12vh;
-	margin: 2vh 2vh;
-	vertical-align: middle;
-	border-radius: 1.5vh;
-}
-.reviews-slides-text {
-	margin: auto 0;
-	margin: 1vw;
-	text-align: left;
-}
-.reviews-slides h2 {
-	font-weight: 650;
-	font-size: 2em;
-	cursor: auto;
-}
-.reviews-slides p {
-	font-size: 1.5em;
-	font-weight: 500;
-	cursor: auto;
+    width: 12vh;
+    height: 12vh;
+    margin: 2vh 2vh;
+    vertical-align: middle;
+    border-radius: 1.5vh;
 }
 
-.reviews h3,
-.reviews h3 a {
-	color: var(--review-text-color);
-	text-shadow: var(--review-text-shadow);
-	font-weight: 650;
-	font-size: 1.15em;
-	margin: 0.5vh 0.5vw;
+.reviews-slides-text {
+    margin: auto 0;
+    margin: 1vw;
+    text-align: left;
 }
-.reviews h3 a {
-	font-size: 1em;
+
+.reviews-slides h2 {
+    font-weight: 650;
+    font-size: 2em;
+    cursor: auto;
 }
-.reviews h3::selection,
-.reviews h3 a::selection {
-	background: var(--review-selection-bg);
-	color: var(--review-selection-text);
+
+.reviews-slides p {
+    font-size: 1.5em;
+    font-weight: 500;
+    cursor: auto;
 }
 
 /* Mobile Reviews */
 @media only screen and (max-width: 1000px) {
-	.reviews-slides h2 {
-		font-size: 1.4em;
-	}
-	.reviews-slides p {
-		font-size: 1.25em;
-	}
-	.reviews-slides img {
-		margin: 2vh 2vh;
-	}
-	.reviews-slides-text {
-		margin: 2vw;
-	}
+    .reviews-slides h2 {
+        font-size: 1.4em;
+    }
+
+    .reviews-slides p {
+        font-size: 1.25em;
+    }
+
+    .reviews-slides img {
+        margin: 2vh 2vh;
+    }
+
+    .reviews-slides-text {
+        margin: 2vw;
+    }
 }
 
 /* Random Games */
 #random {
-	width: 100vw;
-	display: flex;
-	justify-content: space-around;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
 }
-.random-game {
-	width: 20vw;
-	margin: 3vw;
 
-	background: linear-gradient(var(--gradient-color-light), var(--gradient-color-dark));
-	border-radius: 1.5vh;
-	box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
-	cursor: pointer;
-	transition: scale 0.15s;
+.random-game {
+    width: 20vw;
+    margin: 3vw;
+
+    background: linear-gradient(var(--blue-color-light), var(--blue-color-dark));
+    border-radius: 1.5vh;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: scale 0.15s;
 }
+
 .random-game:hover {
-	background: var(--gradient-color-light);
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
-	scale: 102%;
+    background: var(--blue-color-light);
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+    scale: 102%;
 }
 
 .random-game img {
-	width: 20vw;
-	padding: 1vw;
+    width: 20vw;
+    padding: 2.5vh;
+    border-radius: 4vh;
 }
+
 .random-game h2 {
-	text-align: center;
-	font-size: 2em;
-	font-weight: 500;
-	margin-bottom: 1vw;
-	letter-spacing: 1px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 1vw;
+    letter-spacing: 1px;
 }
 
 /* Mobile Random Games */
 @media only screen and (max-width: 1000px) {
-	#random {
-		width: 100vw;
-		display: block;
-		margin: 5vh 0;
-	}
-	.random-game {
-		width: 60vw;
-		margin: 5vh auto;
-	}
-	.random-game img {
-		width: 60vw;
-		height: 50vw;
-	}
-	.random-game h2 {
-		font-size: 2.5em;
-		padding-bottom: 2.5vh;
-	}
+    #random {
+        width: 100vw;
+        display: block;
+        margin: 5vh 0;
+    }
+
+    .random-game {
+        width: 60vw;
+        margin: 5vh auto;
+    }
+
+    .random-game img {
+        width: 60vw;
+        height: 50vw;
+    }
+
+    .random-game h2 {
+        font-size: 2.5em;
+        padding-bottom: 2.5vh;
+    }
 }
 
 /* FAQ */
 .faq-bg {
-	background: var(--gradient-color-dark);
-	width: 100vh;
-	max-width: 90vw;
-	border-radius: 1.5vh;
-	margin: 2vh auto;
+    background: var(--blue-color-dark);
+    width: 100vh;
+    max-width: 90vw;
+    border-radius: 1.5vh;
+    margin: 2vh auto;
 }
+
 .faq-btn {
-	background: var(--gradient-color-light);
-	border: none;
-	border-radius: 1.5vh;
-	box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+    background: var(--blue-color-light);
+    border: none;
+    border-radius: 1.5vh;
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 
-	width: 100vh;
-	max-width: 90vw;
-	padding: 5vh 5vh;
+    width: 100vh;
+    max-width: 90vw;
+    padding: 5vh 5vh;
 
-	text-align: left;
-	font-size: 1.5em;
-	font-weight: 500;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 500;
 }
+
 .faq-btn:hover {
-	background: var(--gradient-color-selected);
+    background: var(--blue-color-selected);
 }
+
 .faq-bg i {
-	margin-top: 1vh;
-	margin-bottom: 1vh;
-	margin-right: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
 }
 
 .faq-reveal {
-	font-size: 1.25em;
-	font-weight: 400;
-	padding: 0 5vh;
-	max-height: 0vh;
-	overflow: hidden;
-	transition: 0.2s ease;
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: 0 5vh;
+    max-height: 0vh;
+    overflow: hidden;
+    transition: 0.2s ease;
 }
+
 .faq-reveal i {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* Mobile FAQ */
 @media only screen and (max-width: 1000px) {
-	.faq div {
-		margin: 2.5vh auto;
-		margin-bottom: 5vh;
-	}
+    .faq div {
+        margin: 2.5vh auto;
+        margin-bottom: 5vh;
+    }
 }

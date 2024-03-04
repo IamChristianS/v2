@@ -2,7 +2,7 @@
 .playerFrame {
 	margin: 5vh auto;
 
-	background: linear-gradient(var(--gradient-color-light), var(--gradient-color-dark));
+	background: linear-gradient(var(--blue-color-light), var(--blue-color-dark));
 	border-radius: 1.5vh;
 
 	position: relative;
