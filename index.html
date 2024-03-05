@@ -47,7 +47,7 @@
 		<meta name="twitter:title" content="Project Hub V2" />
 		<meta name="twitter:description" content="Come browse our growing, large library of Unblocked Games! Use our FREE Proxy Services to Cloak your browser." />
 	</head>
-	<body onload="addRandomGames(); addReviews()">
+	<body onload="addRandomGames(); addReviews();">
 		<!--Hero-->
 		<div class="hero">
 			<img src="img/placeholder.png" />
@@ -57,14 +57,13 @@
 				<a href="games.html">Press <span>START</span><i class="fa-solid fa-caret-right"></i></a>
 			</div>
 		</div>
-
 		<!--User Reviews-->
 		<div id="reviews">
 			<div class="reviews-info">
 				<h3><span>Trusted</span> by all</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et ante mattis, rutrum elit id, lobortis tortor. Donec faucibus leo luctus, mollis nisi et, sollicitudin risus. Praesent accumsan porttitor dui in mattis.</p>
 			</div>
-            <!--
+			<!--
 			<div class="reviews-slides slides1">
 				<img src="img/reviews/bigbananna.png" alt="Unloaded Picture" />
 				<div class="reviews-slides-text">
@@ -97,14 +96,14 @@
 				<img src="img/reviews/anonymous.png" alt="Unloaded Picture" />
 				<div class="reviews-slides-text">
 					<h2>userName1</h2>
-					<p>- "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lo." #/10</p>
+					<p>- "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis luctus fermentum. Nullam ultrices tristique." ##/10</p>
 				</div>
 			</div>
-        -->
-		</div>
+        --></div>
 
 		<!--Random Games-->
 		<div id="random">
+			<!--
 			<div class="random-game">
 				<img src="img/placeholder.png" alt="Unloaded Picture" />
 				<h2>GameTitle</h2>
@@ -117,6 +116,7 @@
 				<img src="img/placeholder.png" alt="Unloaded Picture" />
 				<h2>GameTitle</h2>
 			</div>
+            -->
 		</div>
 
 		<!--FAQ-->
@@ -134,34 +134,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!--Review Sliding-->
-		<script>
-			var currentSlide = 1;
-			var secondsTilSwitch = 5;
-
-			function showSlide(slideIndex) {
-				const slides = document.getElementsByClassName('reviews-slides');
-				if (slideIndex > slides.length) {
-					currentSlide = 1;
-				}
-				if (slideIndex < 1) {
-					currentSlide = slides.length;
-				}
-				for (var i = 0; i < slides.length; i++) {
-					slides[i].style.display = 'none';
-				}
-				slides[currentSlide - 1].style.display = 'inline-flex';
-			}
-			function nextSlide() {
-				showSlide((currentSlide += 1));
-			}
-
-			window.onload = function () {
-				showSlide(currentSlide);
-				setInterval(nextSlide, secondsTilSwitch * 1000);
-			};
-		</script>
 
 		<!--FAQ Accordion-->
 		<script>

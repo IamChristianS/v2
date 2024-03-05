@@ -6,7 +6,13 @@ async function addRandomGames() {
 		const games = await (await fetch(cdn + 'list_games.json')).json();
 		games.sort((a, b) => a.gameName.localeCompare(b.gameName));
 
-		for (const game of games) {
+		for (let i = games.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[games[i], games[j]] = [games[j], games[i]];
+		}
+		const randomGames = games.splice(0, 3);
+
+		for (const game of randomGames) {
 			const tab = document.createElement('div');
 			tab.className = 'random-game';
 			tab.innerHTML = `

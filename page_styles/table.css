@@ -17,6 +17,7 @@ h2::selection {
 #table {
 	display: flex;
 	flex-wrap: wrap;
+    justify-content: space-evenly;
 	margin: 1.5vh 2.5vw;
 }
 
@@ -27,7 +28,7 @@ h2::selection {
 	text-align: center;
 
 	background: linear-gradient(var(--blue-color-light), var(--blue-color-light));
-	margin: 1.5vh auto;
+    margin: 1.5vh;
 	padding: 1.5vh;
 	max-width: 225px;
 }
