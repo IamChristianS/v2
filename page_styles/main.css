@@ -29,7 +29,7 @@
 body {
     background: url(../img/pageBackground.png);
     background-repeat: repeat;
-    overflow-x: hidden;
+
 }
 
 /* Navbar */
@@ -278,7 +278,7 @@ body {
 .settings::-webkit-scrollbar,
 .settings::-webkit-scrollbar-track {
     background: transparent;
-    width: 7.5px;
+    width: 5px;
     margin: 1vw 0;
 }
 
@@ -300,7 +300,7 @@ body {
 }
 
 .settings h2 {
-    font-size: 1.6em;
+    font-size: 1.75em;
     font-weight: 700;
     cursor: auto;
 }
@@ -308,8 +308,8 @@ body {
 .settings h3 {
     margin: 1.5vh;
     margin-top: 2vh;
-    font-size: 1.35em;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 650;
     cursor: auto;
 }
 
@@ -324,24 +324,23 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.settings-btn {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0.5vh;
-    display: block;
-    justify-content: center;
-    width: 35%;
-    padding: 0.3vw;
-    margin: 0.75vw auto;
-
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 500;
+.white-btn {
     cursor: pointer;
+    padding: 1.5vh;
+    margin: .75vh 0vh;
+    border: 1px none transparent;
+    border-radius: 1.5vh;
+
+    text-align: center;
+    font-size: 1em;
+    font-weight: 650;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #4f677d;
 }
 
-.settings-btn:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.white-btn i {
+    margin: auto 0.75vw;
+    color: #4f677d;
 }
 
 /* Mobile Settings */
@@ -378,42 +377,17 @@ body {
 /* Tab Masking */
 .name-masking input,
 .favicon-masking input {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0.25vh;
-    width: 35%;
-    padding: 0.3vw;
-    margin: 0.15vw;
+    width: 50%;
+    padding: 1vh 2.5vh;
+    margin: .75vh;
+    border: 1px none transparent;
+    border-radius: 1.5vh;
 
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.name-masking input::placeholder,
-.favicon-masking input::placeholder {
-    color: #fff;
     text-align: center;
-}
-
-.name-masking button,
-.favicon-masking button {
-    background-color: rgba(255, 255, 255, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0.5vh;
-    min-width: 15%;
-    padding: 0.3vw;
-    margin: 0 0.25vw;
-
-    color: #fff;
-    font-size: 1.25em;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.name-masking button:hover,
-.favicon-masking button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    font-size: .95em;
+    font-weight: 600;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #4f677d;
 }
 
 /* Presets */
@@ -434,16 +408,17 @@ body {
 }
 
 .settings-presets div img {
-    background-color: rgba(255, 255, 255, 0.15);
     max-height: 100%;
     max-width: 12vh;
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    border-radius: 2vh;
+    padding: 1vh;
+    border-radius: 4vh;
+    background-color: rgba(255, 255, 255, .15);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .settings-presets div p {
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 550;
     cursor: pointer;
 }
 
@@ -456,17 +431,13 @@ body {
 }
 
 /* Credits */
-.settings-btn i {
-    margin: auto 0.75vw;
-}
-
 .credits-expand {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    border-radius: 0.5vh;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2.5vh;
     width: 50%;
     display: none;
-    padding: 0.25vw;
+    padding: 1.5vh;
     margin: 0.5vw auto;
     font-weight: 400;
 }
@@ -491,11 +462,6 @@ body {
     border-radius: 100vh;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
-    transition: scale 0.15s;
-}
-
-#contact-btn:hover {
-    scale: 105%;
 }
 
 #contact-btn i {
@@ -504,6 +470,7 @@ body {
 }
 
 #contact-btn i:hover {
+
     color: var(--blue-color-selected);
 }
 

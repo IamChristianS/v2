@@ -61,15 +61,15 @@ var navbar = `
                 <h3>Tab Masking</h3>
                 <div class="name-masking">
                     <input type="text" placeholder="Enter Tab Name..." id="tabNameInput">
-                    <button onclick="updateTitle()">Submit</button>
                 </div>
                 <div class="favicon-masking">
                     <input type="text" placeholder="Enter Image Link..." id="faviconInput" aria-label="https://example.com/image.png">
-                    <button onclick="updateFavicon()">Submit</button>
                 </div>
-
-                <button class="settings-btn" id="presetBtn" onclick="addPreset()">Add Custom Preset</button>
-                <button class="settings-btn" onclick="resetMasking()">Reset</button>
+                <div style="width=40%">
+                    <button class="white-btn" style="width:20%" onclick="updateFavicon()">Submit</button>
+                    <button class="white-btn" style="width:30%" id="presetBtn" onclick="addPreset()">Add Custom Preset</button>
+                </div>
+                <button class="white-btn" style="width:50%" onclick="resetMasking()">Reset</button>
 
                 <h3>Tab Presets:</h3>
                 <div class="settings-presets">
@@ -100,14 +100,14 @@ var navbar = `
                 </div><hr>
 
                 <h3>About:Blank Cloaking</h3>
-                <button class="settings-btn" style="margin:.25vw auto" onclick="toggleABCloak('https://IamChristianS.github.io')">Enable</button><hr>
+                <button class="white-btn" style="margin:.5vh auto;width:30%;" onclick="toggleABCloak('https://IamChristianS.github.io/v1')">Enable</button><hr>
 
                 <h3>Panic Button</h3>
-                <button id="recordPanic" class="settings-btn" style="display:inline;margin:0;">Press to Record Key...</button>
-                <button id="resetPanic" class="settings-btn" style="display:inline;width:15%;margin:0;">Reset</button>
+                <button id="recordPanic" class="white-btn" style="width:30%;display:block;margin:1.5vh auto;">Press to Record Key...</button>
+                <button id="resetPanic" class="white-btn" style="width:30%;display:block;margin:1.5vh auto;">Reset</button>
                 <p class="panic-key-display">Current Panic Key: Not Set</p><hr>
 
-                <button class="settings-btn" onclick="toggleCredits()"><i class="fa-solid fa-angles-down"></i>Credits<i class="fa-solid fa-angles-down"></i></button>
+                <button class="white-btn" style="width:30%;" onclick="toggleCredits()"><i class="fa-solid fa-angles-down"></i>Credits<i class="fa-solid fa-angles-down"></i></button>
                 <div class="credits-expand" id="credits-expand">
                     <p>Ruffle Flash Player - <a href="https://www.ruffle.rs" target="_blank">Ruffle Team</a></p>
                     <p>WAFlash - <a href="https://github.com/vidkidz/waflash" target="_blank">Vidkidz</a></p>
@@ -284,7 +284,7 @@ function toggleABCloak(url) {
 // Credits (ty stackoverflow user <3)
 function toggleCredits() {
 	const creditsDropdown = document.getElementById('credits-expand');
-	var creditsArrows = document.querySelectorAll('.settings-btn i');
+	var creditsArrows = document.querySelectorAll('.white-btn i');
 	if (creditsDropdown.style.display == 'block') {
 		creditsDropdown.style.display = 'none';
 		for (var i = 0; i < creditsArrows.length; i++) {

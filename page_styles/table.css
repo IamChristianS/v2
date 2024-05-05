@@ -1,84 +1,91 @@
 img::selection,
 h2::selection {
-	background: var(--selection-bg);
-	color: var(--selection-text);
+    background: var(--selection-bg);
+    color: var(--selection-text);
 }
 
 /* Games Table */
 .title {
-	font-size: 2em;
-	font-weight: 600;
-	color: #000;
-	letter-spacing: 2px;
-	text-align: center;
-	margin-top: 5vh;
+    font-size: 2em;
+    font-weight: 650;
+    color: #000;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 5vh;
 }
 
 #table {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-	margin: 1.5vh 2.5vw;
+    margin: 1.5vh 2.5vw;
 }
 
 .table-tab {
-	border-radius: 1.5vh;
-	display: block;
-	cursor: pointer;
-	text-align: center;
+    border-radius: 1.5vh;
+    display: block;
+    cursor: pointer;
+    text-align: center;
 
-	background: linear-gradient(var(--blue-color-light), var(--blue-color-light));
+    background: linear-gradient(var(--blue-color-light), var(--blue-color-light));
     margin: 1.5vh;
-	padding: 1.5vh;
-	max-width: 225px;
+    padding: 1.5vh;
+    max-width: 225px;
 }
+
 .table-tab:hover {
-	background: linear-gradient(var(--blue-color-selected), var(--blue-color-light));
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(var(--blue-color-selected), var(--blue-color-light));
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.25);
 }
+
 .table-tab img {
-	border-radius: 1.5vh;
-	max-width: 200px;
-	aspect-ratio: 1/1;
+    border-radius: 1.5vh;
+    max-width: 200px;
+    aspect-ratio: 1/1;
 }
+
 .table-tab h2 {
-	font-size: 1.5em;
-	font-weight: 600;
-	color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
 }
 
 /* Proxy */
 .proxy {
-	margin: 2vh;
-	text-align: center;
+    margin: 2vh;
+    text-align: center;
 }
+
 .proxy input {
-	background-color: var(--blue-color-selected);
-	border: 3px solid var(--blue-color-dark);
-	border-radius: 0.5vh;
-	width: 35vw;
-	height: 5.5vh;
-	padding: 1vw;
+    background-color: var(--blue-color-selected);
+    border: 3px solid var(--blue-color-dark);
+    border-radius: 0.5vh;
+    width: 35vw;
+    height: 5.5vh;
+    padding: 1vw;
 
-	color: #fff;
-	font-size: 1.2em;
-	font-weight: 500;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
 }
+
 .proxy input::placeholder {
-	color: #fff;
-	text-align: center;
+    color: #fff;
+    text-align: center;
 }
-.proxy button {
-	background-color: var(--blue-color-selected);
-	border: 3px solid var(--blue-color-dark);
-	border-radius: 0.5vh;
-	width: 10vw;
-	height: 5.5vh;
 
-	color: #fff;
-	font-size: 1.2em;
-	font-weight: 500;
+.proxy button {
+    background-color: var(--blue-color-selected);
+    border: 3px solid var(--blue-color-dark);
+    border-radius: 0.5vh;
+    width: 10vw;
+    height: 5.5vh;
+
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
 }
+
 .proxy button:hover {
-	background-color: #79a7be;
+    background-color: #79a7be;
 }

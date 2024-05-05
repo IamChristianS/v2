@@ -1,8 +1,48 @@
+const reviews = [
+	{
+		name: 'big bananna',
+		quote: 'Best site ever i will physycslly and emotionally attack whoever doesnt like this site',
+		rating: '10',
+		anonymous: false,
+	},
+	{
+		name: 'Christian Santangelo',
+		quote: "Project-Hub is always my number one pick for unblocked gaming whenever I'm feeling bored, and have nothing else to do.",
+		rating: '10',
+		anonymous: false,
+	},
+	{
+		name: 'typicalsneeze',
+		quote: "Project-Hub: A serene digital escape – the calm luh website you've been seeking.",
+		rating: '9',
+		anonymous: false,
+	},
+	{
+		name: 'kai',
+		quote: 'Wsg giggity giggity good gang, yessir W mans fr yea',
+		rating: '10',
+		anonymous: true,
+	},
+    {
+        name: "Zachary",
+        quote: "could use more games but amazing nevertheless. this game helped me while i was sick and i think its amazing",
+        rating: "9",
+        anonymous: false,
+    },
+	/* Template File
+    {
+        name: "userName1",
+        quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis luctus fermentum.",
+        rating: "__",
+        anonymous": true,
+    },
+    */
+];
+
 async function addReviews() {
 	try {
-		const reviews = await (await fetch('reviews.json')).json();
+		// const reviews = await (await fetch('reviews.json')).json();
 		var index = 1;
-
 		for (const review of reviews) {
 			const slide = document.createElement('div');
 			slide.className = 'reviews-slides';
@@ -17,7 +57,7 @@ async function addReviews() {
 
 			slide.innerHTML = `
                 <img src="img/reviews/${image}.png" alt="Unloaded Picture" />
-                <div class="reviews-slides-text">
+                <div>
                     <h2>${review.name}</h2>
                     <p>- "${review.quote}" ${review.rating}/10</p>
                 </div>

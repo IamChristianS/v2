@@ -14,7 +14,7 @@ var footer = `
             <br><hr><br>
             <div class="footer-disclaimer">
                 <p>This site should not be used in environments where it is disallowed. By using this site, you agree that you are in a location that allows its usage, and any discretion is up to the user.</p>
-                <p>Christian Santangelo ©</p>
+                <p>Christian Santangelo © 2024</p>
             </div>
         </footer>`;
 document.addEventListener('DOMContentLoaded', function () {

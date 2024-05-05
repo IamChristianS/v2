@@ -1,8 +1,8 @@
 // ty to a random github user for some of the code on this one
 // in case yall cant tell, my ass is NOT fluent in JS
+const cdn = 'https://iamchristians.github.io/assets/';
 async function addRandomGames() {
 	try {
-		const cdn = 'https://IamChristianS.github.io/assets/';
 		const games = await (await fetch(cdn + 'list_games.json')).json();
 		games.sort((a, b) => a.gameName.localeCompare(b.gameName));
 
@@ -34,7 +34,6 @@ async function addRandomGames() {
 
 async function addGames() {
 	try {
-		const cdn = 'https://IamChristianS.github.io/assets/';
 		const games = await (await fetch(cdn + 'list_games.json')).json();
 		games.sort((a, b) => a.gameName.localeCompare(b.gameName));
 
@@ -60,7 +59,6 @@ async function addGames() {
 
 async function addApps() {
 	try {
-		const cdn = 'https://IamChristianS.github.io/assets/';
 		const apps = await (await fetch(cdn + 'list_apps.json')).json();
 		apps.sort((a, b) => a.appName.localeCompare(b.appName));
 
