@@ -1,5 +1,5 @@
 /* Player */
-.playerFrame {
+.player-frame {
     margin: 5vh auto;
 
     background: linear-gradient(var(--blue-color-light), var(--blue-color-dark));
@@ -25,7 +25,7 @@
 }
 
 /* Player Buttons */
-.playerFrame button {
+.player-frame button {
     position: absolute;
     right: 0;
     bottom: 0;

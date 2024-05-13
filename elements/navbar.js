@@ -1,6 +1,16 @@
 var navbar = `
         <header class="nav">
             <a href="index.html" class="nav-title">Project-<span>Hub</span></a>
+            <p style="
+            background-color: #f00;
+            border-radius: .75vh;
+            padding: .75vh;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            font-size: .75em;
+            position: absolute;
+            transform: translate(150px,10px) rotate(-15deg);
+            ">ALPHA</p>
 
             <div class="nav-links">
                 <a class="animate__animated animate__fadeInDown"
@@ -84,7 +94,7 @@ var navbar = `
                     <div class="presets-btn" data-name="Inbox - Gmail" data-favicon="https://i.ibb.co/g7fpQkC/gmail-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/gmail.png" alt="">
                         <p>Gmail</p>
-                    </div>
+                    </div>0
                     <div class="presets-btn" data-name="Google Drive" data-favicon="https://i.ibb.co/SwLGW4x/google-Drive-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/googleDrive.png" alt="">
                         <p>Drive</p>
@@ -128,7 +138,7 @@ var navbar = `
         <!--Contact-->
         <button id="contact-btn" style="aspect-ratio:1/1;" onclick="toggleContact()"><i class="fa-solid fa-paper-plane"></i></button>
         <div id="contact-expand" style="display:none;">
-            <button onclick="window.open('https://forms.gle/aZzEgBhKXLdkXdyx6')" style="transform: translateY(-19.5vh);">Game Request<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+            <button onclick="window.open('https://forms.gle/aZzEgBhKXLdkXdyx6')" style="transform: translateY(-19.5vh);color: var(--blue-color-dark);">Game Request<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
             <button onclick="window.open('https://forms.gle/CMrSGnxrJWjvyBKc9')" style="transform: translateY(-11.5vh);">Contact Form<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
         </div>`;
 document.addEventListener('DOMContentLoaded', function () {

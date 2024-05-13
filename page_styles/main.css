@@ -335,6 +335,7 @@ body {
     font-size: 1em;
     font-weight: 650;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
     color: #4f677d;
 }
 
@@ -453,7 +454,7 @@ body {
     padding: 2vh;
 
     background-color: #efefef;
-    color: #000000;
+    color: var(--blue-color-dark);
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 1px;
@@ -470,7 +471,6 @@ body {
 }
 
 #contact-btn i:hover {
-
     color: var(--blue-color-selected);
 }
 

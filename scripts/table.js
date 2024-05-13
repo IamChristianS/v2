@@ -40,14 +40,30 @@ async function addGames() {
 		for (const game of games) {
 			const tab = document.createElement('div');
 			tab.className = 'table-tab';
-			tab.innerHTML = `
+            tab.innerHTML = `
                 <img src="${cdn}img/games/${game.gameName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}.png" loading="lazy" onerror="this.src='img/placeholder.png'">
                 <h2>${game.gameName}</h2>
             `;
 
+            /*
+            var popular = '${game.popular}';
+            if (popular == "true") {
+                tab.innerHTML = `
+                    <span>HOT</span>
+                    <img src="${cdn}img/games/${game.gameName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}.png" loading="lazy" onerror="this.src='img/placeholder.png'">
+                    <h2>${game.gameName}</h2>
+                `;
+            } else {
+                tab.innerHTML = `
+                    <img src="${cdn}img/games/${game.gameName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}.png" loading="lazy" onerror="this.src='img/placeholder.png'">
+                    <h2>${game.gameName}</h2>
+                `;
+            }
+            */
+
 			tab.addEventListener('click', () => {
 				localStorage.setItem('srcGame', `${cdn}${game.gameIndex}`);
-				window.location.href = 'player.html';
+				window.open('player.html', '_blank');
 			});
 
 			document.getElementById('table').appendChild(tab);
@@ -72,7 +88,7 @@ async function addApps() {
 
 			tab.addEventListener('click', () => {
 				localStorage.setItem('srcApp', `${cdn}${app.appIndex}`);
-				window.location.href = 'player.html';
+				window.open('player.html', '_blank');
 			});
 
 			document.getElementById('table').appendChild(tab);

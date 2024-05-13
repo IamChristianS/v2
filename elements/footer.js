@@ -15,6 +15,7 @@ var footer = `
             <div class="footer-disclaimer">
                 <p>This site should not be used in environments where it is disallowed. By using this site, you agree that you are in a location that allows its usage, and any discretion is up to the user.</p>
                 <p>Christian Santangelo © 2024</p>
+                <p style="font-weight:650;">This site is in an Alpha state. Please report any bugs using the site's contact form in the bottom-right.</p>
             </div>
         </footer>`;
 document.addEventListener('DOMContentLoaded', function () {

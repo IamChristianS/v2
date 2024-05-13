@@ -25,15 +25,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="stylesheet" href="page_styles/main.css" />
-		<link rel="stylesheet" href="page_styles/player.css" />
 		<link rel="stylesheet" href="page_styles/animate.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
-		<script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 
-		<script src="elements/navbar.js"></script>
-		<script src="elements/footer.js"></script>
 		<script src="scripts/panic.js"></script>
-		<script src="scripts/theme.js"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				const srcGame = localStorage.getItem('srcGame');
@@ -45,14 +40,37 @@
 				} else if (srcApp) {
 					document.getElementById('player').src = srcApp;
 					localStorage.removeItem('srcApp');
+				} else {
+					window.location.href = 'index.html';
+				}
+
+				const savedTitle = localStorage.getItem('tabTitle');
+				const savedFaviconUrl = localStorage.getItem('faviconUrl');
+				if (savedTitle) {
+					document.title = savedTitle;
+				}
+
+				if (savedFaviconUrl) {
+					const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
+					favicon.rel = 'icon';
+					favicon.type = 'image/png';
+					favicon.href = savedFaviconUrl;
+					document.head.appendChild(favicon);
 				}
 			});
 		</script>
+		<style>
+			#player {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    border: none;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="playerFrame">
-			<iframe id="player" allowfullscreen></iframe>
-			<button onclick="document.getElementById('player').requestFullscreen()">Fullscreen</button>
-		</div>
+		<iframe id="player"></iframe>
 	</body>
 </html>

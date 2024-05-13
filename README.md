@@ -17,7 +17,7 @@
 -   Unblocked Games
 -   Tab Cloaking
 -   Proxy Services
--   Panic Button (Coming Soon)
+-   Panic Button
 -   Open-Source
 
 # Screenshots 📷

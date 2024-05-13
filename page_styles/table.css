@@ -8,7 +8,7 @@ h2::selection {
 .title {
     font-size: 2em;
     font-weight: 650;
-    color: #000;
+    color: var(--blue-color-dark);
     letter-spacing: 2px;
     text-align: center;
     margin-top: 5vh;
@@ -50,42 +50,23 @@ h2::selection {
     color: #fff;
 }
 
+.table-tab span {
+    position: absolute;
+    transform: translate(65px,-25px);
+
+    background-color: #f10;
+    border-radius: 1vh;
+    padding: .5vh 1vh;
+
+    font-size: 1.25em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
 /* Proxy */
 .proxy {
-    margin: 2vh;
-    text-align: center;
-}
-
-.proxy input {
-    background-color: var(--blue-color-selected);
-    border: 3px solid var(--blue-color-dark);
-    border-radius: 0.5vh;
-    width: 35vw;
-    height: 5.5vh;
-    padding: 1vw;
-
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.proxy input::placeholder {
-    color: #fff;
-    text-align: center;
-}
-
-.proxy button {
-    background-color: var(--blue-color-selected);
-    border: 3px solid var(--blue-color-dark);
-    border-radius: 0.5vh;
-    width: 10vw;
-    height: 5.5vh;
-
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-.proxy button:hover {
-    background-color: #79a7be;
+    background-color: var(--blue-color-light);
+    padding-bottom: 2vh;
+    margin: 2vh 0;
+    margin-bottom: 10vh;
 }
