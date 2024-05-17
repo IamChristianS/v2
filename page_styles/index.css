@@ -1,252 +1,252 @@
 @keyframes fade {
-    from {
-        opacity: 0.5;
-    }
+	from {
+		opacity: 0.5;
+	}
 
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
 
 /* Hero Section */
 .hero {
-    height: 85vh;
-    display: flex;
-    justify-content: center;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
 }
 
 .hero img {
-    margin: 10vh;
-    aspect-ratio: 1/1;
-    border-radius: 2vh;
+	margin: 10vh;
+	aspect-ratio: 1/1;
+	border-radius: 2vh;
 }
 
 .hero-text {
-    margin: auto 2vw;
+	margin: auto 2vw;
 }
 
 .hero-text * {
-    color: var(--blue-color-dark);
-    font-size: 6em;
-    font-weight: 600;
+	color: var(--blue-color-dark);
+	font-size: 6em;
+	font-weight: 600;
 }
 
 .hero-text *::selection {
-    background-color: var(--invert-selection-bg);
-    color: var(--invert-selection-text);
+	background-color: var(--invert-selection-bg);
+	color: var(--invert-selection-text);
 }
 
 .hero-text h3 span {
-    margin: auto 0;
+	margin: auto 0;
 
-    font-size: 1em;
-    font-weight: 1000;
+	font-size: 1em;
+	font-weight: 1000;
 }
 
 .hero-text a * {
-    font-size: 1em;
+	font-size: 1em;
 }
 
 .hero-text a {
-    margin: 2.5vh 0;
-    font-size: 2.5em;
-    cursor: pointer;
-    text-decoration: none;
+	margin: 2.5vh 0;
+	font-size: 2.5em;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .hero-text a span {
-    color: #fff;
-    background-color: var(--blue-color-light);
-    border-radius: 1.5vh;
-    padding: 1vh 1vw;
+	color: #fff;
+	background-color: var(--blue-color-light);
+	border-radius: 1.5vh;
+	padding: 1vh 1vw;
 }
 
 .hero-text a span::selection {
-    background-color: var(--selection-bg);
-    color: var(--selection-text);
+	background-color: var(--selection-bg);
+	color: var(--selection-text);
 }
 
 .hero-text a:hover i {
-    color: var(--blue-color-selected);
-    transform: translateX(0.5vh);
+	color: var(--blue-color-selected);
+	transform: translateX(0.5vh);
 }
 
 .hero-text a:hover span {
-    background-color: var(--blue-color-selected);
+	background-color: var(--blue-color-selected);
 }
 
 /* Reviews */
 #reviews {
-    display: flex;
-    justify-content: space-around;
-    padding: 10vh 5vw;
-    background-color: var(--blue-color-light);
-    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: space-around;
+	padding: 10vh 5vw;
+	background-color: var(--blue-color-light);
+	box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .reviews-info,
 .reviews-slides {
-    width: 40vw;
-    margin: auto 0;
+	width: 40vw;
+	margin: auto 0;
 }
 
 .reviews-info h3 {
-    font-size: 3em;
-    font-weight: 600;
+	font-size: 3em;
+	font-weight: 600;
 }
 
 .reviews-info h3 span {
-    font-size: 1em;
-    font-weight: 800;
+	font-size: 1em;
+	font-weight: 800;
 }
 
 .reviews-info p {
-    font-size: 1.25em;
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 1.5em;
+	font-size: 1.25em;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 1.5em;
 }
 
 .reviews-slides {
-    animation: fade 0.5s;
-    display: none;
-    cursor: default;
+	animation: fade 0.5s;
+	display: none;
+	cursor: default;
 }
 
 .reviews-slides img {
-    height: 7.5em;
-    aspect-ratio: 1/1;
-    margin: 2vh;
-    border-radius: 1.5vh;
+	height: 7.5em;
+	aspect-ratio: 1/1;
+	margin: 2vh;
+	border-radius: 1.5vh;
 }
 
 .reviews-slides h2 {
-    font-weight: 650;
-    font-size: 2em;
+	font-weight: 650;
+	font-size: 2em;
 }
 
 .reviews-slides p {
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 1.5em;
-    letter-spacing: 1px;
+	font-size: 1.5em;
+	font-weight: 500;
+	line-height: 1.5em;
+	letter-spacing: 1px;
 }
 
 /* Mobile Reviews */
 @media only screen and (max-width: 1000px) {
-    #reviews {
-        display: block;
-    }
+	#reviews {
+		display: block;
+	}
 
-    .reviews-info,
-    .reviews-slides {
-        width: 90vw;
-        margin: 0 auto;
-        padding: 5vh 0;
-    }
+	.reviews-info,
+	.reviews-slides {
+		width: 90vw;
+		margin: 0 auto;
+		padding: 5vh 0;
+	}
 
-    .reviews-slides img {
-        height: 6em;
-    }
+	.reviews-slides img {
+		height: 6em;
+	}
 
-    .reviews-slides h2 {
-        font-size: 1.75em;
-    }
+	.reviews-slides h2 {
+		font-size: 1.75em;
+	}
 
-    .reviews-slides p {
-        font-size: 1.5em;
-    }
+	.reviews-slides p {
+		font-size: 1.5em;
+	}
 }
 
 /* Random Games */
 #random {
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
 }
 
 .random-game {
-    width: 20vw;
-    margin: 3vw;
+	width: 20vw;
+	margin: 3vw;
 
-    background: linear-gradient(var(--blue-color-light), var(--blue-color-dark));
-    border-radius: 1.5vh;
-    box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: scale 0.15s;
+	background: linear-gradient(var(--blue-color-light), var(--blue-color-dark));
+	border-radius: 1.5vh;
+	box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: scale 0.15s;
 }
 
 .random-game:hover {
-    background: var(--blue-color-light);
-    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
-    scale: 102%;
+	background: var(--blue-color-light);
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
+	scale: 102%;
 }
 
 .random-game img {
-    width: 20vw;
-    aspect-ratio: 1/1;
-    padding: 2.5vh;
-    border-radius: 4vh;
+	width: 20vw;
+	aspect-ratio: 1/1;
+	padding: 2.5vh;
+	border-radius: 4vh;
 }
 
 .random-game h2 {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 500;
-    margin-bottom: 1.5vh;
-    letter-spacing: 1px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 500;
+	margin-bottom: 1.5vh;
+	letter-spacing: 1px;
 }
 
 /* Mobile Random Games */
 @media only screen and (max-width: 1000px) {
-    #random {
-        width: 100vw;
-        display: block;
-        margin: 5vh 0;
-    }
+	#random {
+		width: 100vw;
+		display: block;
+		margin: 5vh 0;
+	}
 
-    .random-game {
-        width: 60vw;
-        margin: 5vh auto;
-    }
+	.random-game {
+		width: 60vw;
+		margin: 5vh auto;
+	}
 
-    .random-game img {
-        width: 60vw;
-    }
+	.random-game img {
+		width: 60vw;
+	}
 
-    .random-game h2 {
-        font-size: 2.5em;
-        padding-bottom: 2.5vh;
-    }
+	.random-game h2 {
+		font-size: 2.5em;
+		padding-bottom: 2.5vh;
+	}
 }
 
 /* FAQ */
 .faq {
-    background: var(--blue-color-light);
-    padding: 5vh;
-    margin: 1.5vh 0;
+	background: var(--blue-color-light);
+	padding: 5vh;
+	margin: 1.5vh 0;
 }
 
 .faq h2 {
-    font-size: 2.5em;
-    font-weight: 650;
-    margin: 0 2.5vw;
+	font-size: 2.5em;
+	font-weight: 650;
+	margin: 0 2.5vw;
 }
 
 .faq-segment {
-    margin: 5vh 2.5vw;
-    cursor: pointer;
+	margin: 5vh 2.5vw;
+	cursor: pointer;
 }
 
 .faq-segment h3 {
-    font-size: 2em;
-    font-weight: 600;
+	font-size: 2em;
+	font-weight: 600;
 }
 
 .faq-answer {
-    font-size: 1.5em;
-    font-weight: 500;
-    letter-spacing: 1px;
+	font-size: 1.5em;
+	font-weight: 500;
+	letter-spacing: 1px;
 }

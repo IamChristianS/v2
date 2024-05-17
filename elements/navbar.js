@@ -1,16 +1,7 @@
 var navbar = `
         <header class="nav">
             <a href="index.html" class="nav-title">Project-<span>Hub</span></a>
-            <p style="
-            background-color: #f00;
-            border-radius: .75vh;
-            padding: .75vh;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            font-size: .75em;
-            position: absolute;
-            transform: translate(150px,10px) rotate(-15deg);
-            ">ALPHA</p>
+            <p id="nav-alpha">ALPHA</p>
 
             <div class="nav-links">
                 <a class="animate__animated animate__fadeInDown"
@@ -94,7 +85,7 @@ var navbar = `
                     <div class="presets-btn" data-name="Inbox - Gmail" data-favicon="https://i.ibb.co/g7fpQkC/gmail-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/gmail.png" alt="">
                         <p>Gmail</p>
-                    </div>0
+                    </div>
                     <div class="presets-btn" data-name="Google Drive" data-favicon="https://i.ibb.co/SwLGW4x/google-Drive-Favicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/googleDrive.png" alt="">
                         <p>Drive</p>

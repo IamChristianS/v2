@@ -23,12 +23,12 @@ const reviews = [
 		rating: '10',
 		anonymous: true,
 	},
-    {
-        name: "Zachary",
-        quote: "could use more games but amazing nevertheless. this game helped me while i was sick and i think its amazing",
-        rating: "9",
-        anonymous: false,
-    },
+	{
+		name: 'Zachary',
+		quote: 'could use more games but amazing nevertheless. this game helped me while i was sick and i think its amazing',
+		rating: '9',
+		anonymous: false,
+	},
 	/* Template File
     {
         name: "userName1",
