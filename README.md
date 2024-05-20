@@ -47,7 +47,6 @@ Special thanks to the following projects and libraries:
 -   [IodineGBA](https://github.com/taisel/IodineGBA) - Game Boy Advance Emulator
 -   [Desmond](https://github.com/js-emulators/desmond) - Nintendo DS Emulator
 -   [Animate.CSS](https://github.com/animate-css/animate.css) - Animation Library
--   [Hover.CSS](https://github.com/IanLunn/Hover) - Animation Library
 -   [3kh0](https://github.com/3kh0) - Game Ports & Inspiration (amazing person btw)
 
 ---
