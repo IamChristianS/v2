@@ -74,23 +74,23 @@ var navbar = `
 
                 <h3>Tab Presets:</h3>
                 <div class="settings-presets">
-                    <div class="presets-btn" data-name="Dashboard" data-favicon="https://i.ibb.co/c8DTXVm/canvas-Favicon.png" onclick="applyPreset(this)">
+                    <div class="presets-btn" data-name="Dashboard" data-favicon="https://iamchristians.github.io/assets/favicons/canvasFavicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/canvas.png" alt="">
                         <p>Canvas</p>
                     </div>
-                    <div class="presets-btn" data-name="Google" data-favicon="https://i.ibb.co/zHRG2fB/google-Favicon.png" onclick="applyPreset(this)">
+                    <div class="presets-btn" data-name="Google" data-favicon="https://iamchristians.github.io/assets/favicons/googleFavicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/google.png" alt="">
                         <p>Google</p>
                     </div>
-                    <div class="presets-btn" data-name="Inbox - Gmail" data-favicon="https://i.ibb.co/g7fpQkC/gmail-Favicon.png" onclick="applyPreset(this)">
+                    <div class="presets-btn" data-name="Inbox - Gmail" data-favicon="https://iamchristians.github.io/assets/favicons/gmailFavicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/gmail.png" alt="">
                         <p>Gmail</p>
                     </div>
-                    <div class="presets-btn" data-name="Google Drive" data-favicon="https://i.ibb.co/SwLGW4x/google-Drive-Favicon.png" onclick="applyPreset(this)">
+                    <div class="presets-btn" data-name="Google Drive" data-favicon="https://iamchristians.github.io/assets/favicons/googleDriveFavicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/googleDrive.png" alt="">
                         <p>Drive</p>
                     </div>
-                    <div class="presets-btn" data-name="TurnItIn" data-favicon="https://i.ibb.co/T0Lwytc/turnitin-Favicon.png" onclick="applyPreset(this)">
+                    <div class="presets-btn" data-name="TurnItIn" data-favicon="https://iamchristians.github.io/assets/favicons/turnitinFavicon.png" onclick="applyPreset(this)">
                         <img src="img/presets/turnitin.png" alt="">
                         <p>TurnItIn</p>
                     </div>
