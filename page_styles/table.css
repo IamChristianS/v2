@@ -62,11 +62,3 @@ h2::selection {
 	font-weight: 800;
 	letter-spacing: 2px;
 }
-
-/* Proxy */
-.proxy {
-	background-color: var(--blue-color-light);
-	padding-bottom: 2vh;
-	margin: 2vh 0;
-	margin-bottom: 10vh;
-}
