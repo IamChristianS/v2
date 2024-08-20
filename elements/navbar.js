@@ -101,14 +101,12 @@ var navbar = `
                 </div><hr>
 
                 <h3>About:Blank Cloaking</h3>
-                <button class="white-btn" style="margin:.5vh auto;width:30%;" onclick="toggleABCloak('https://IamChristianS.github.io/v1')">Enable</button><hr>
+                <button class="white-btn" style="margin:.5vh auto;width:30%;" onclick="toggleABCloak('../index.html')">Enable</button><hr>
 
-                <!--This is being temporarily removed until I can re-fix this.
                 <h3>Panic Button</h3>
                 <button id="recordPanic" class="white-btn" style="width:30%;display:block;margin:1.5vh auto;">Press to Record Key...</button>
                 <button id="resetPanic" class="white-btn" style="width:30%;display:block;margin:1.5vh auto;">Reset</button>
                 <p class="panic-key-display">Current Panic Key: Not Set</p><hr>
-                -->
 
                 <button class="white-btn" style="width:30%;" onclick="toggleCredits()"><i class="fa-solid fa-angles-down"></i>Credits<i class="fa-solid fa-angles-down"></i></button>
                 <div class="credits-expand" id="credits-expand">
