@@ -38,18 +38,63 @@
 		<script src="scripts/table.js"></script>
 
 		<style>
+			/*
 			.proxy {
 				background-color: var(--blue-color-light);
 				padding-bottom: 2vh;
 				margin: 2vh 0;
 				margin-bottom: 10vh;
 			}
+
+			.player-frame {
+				margin: 5vh auto;
+
+				background: linear-gradient(var(--blue-color-light), var(--blue-color-dark));
+				border-radius: 1.5vh;
+
+				position: relative;
+				padding-bottom: 40%;
+				height: 0;
+				width: 60%;
+				position: relative;
+			}
+
+			#player {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+				padding: 1vh;
+				border: none;
+				border-radius: 2vh;
+			}
+
+			.player-frame button {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				margin: 3vh 4vh;
+
+				padding: 1vh 1.5vh;
+				color: #356080;
+				font-weight: 600;
+				letter-spacing: 2px;
+				border: none;
+				border-radius: 1.5vh;
+				background-color: rgba(255, 255, 255, 0.75);
+				box-shadow: 0px 0 15px rgba(0, 0, 0, 0.3) inset;
+				box-shadow: 0px 0 10px rgba(0, 0, 0, 0.3);
+			}
+            */
 		</style>
 	</head>
 	<body onload="addApps()">
 		<h2 class="title">Apps</h2>
 		<div id="table"></div>
 
+		<!-- WIP
 		<div class="proxy">
 			<h2 class="title" style="color: #fff; padding: 2vh">Proxy</h2>
 			<div style="text-align: center">
@@ -61,5 +106,5 @@
 				<button onclick="document.getElementById('player').requestFullscreen()">Fullscreen</button>
 			</div>
 		</div>
-	</body>
+    --></body>
 </html>

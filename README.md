@@ -31,6 +31,18 @@
     <img src="img/readme/slope.png" alt="Slope" width="300">
 </div>
 
+# Roadmap
+
+- Fix CraftMine
+- Fix Friday Night Funkin'
+- Fix FNAF 1/4
+- Replace Dune
+- Replace Flappy Bird
+- Add FNAF 2/3
+- Add WAFlash
+- Add NDS Emulator
+- Add Proxy
+
 # Contributing
 
 Contributions are welcome! If you have any bug reports, feature requests, or suggestions, please open an issue or submit a pull request. My e-mail is also available at [project.hub.games@gmail.com](https://mail.google.com/mail/u/1/?view=cm&fs=1&to=project.hub.games@gmail.com&tf=1).

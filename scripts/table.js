@@ -39,26 +39,26 @@ async function addGames() {
 
 		for (const game of games) {
 			const tab = document.createElement('div');
+
 			tab.className = 'table-tab';
 			tab.innerHTML = `
                 <img src="${cdn}img/games/${game.gameName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}.png" loading="lazy" onerror="this.src='img/placeholder.png'">
                 <h2>${game.gameName}</h2>
             `;
-
 			/*
-            var popular = '${game.popular}';
-            if (popular == "true") {
-                tab.innerHTML = `
+			let popular = '${game.popular}';
+			if (popular == 'true') {
+				tab.innerHTML = `
                     <span>HOT</span>
                     <img src="${cdn}img/games/${game.gameName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}.png" loading="lazy" onerror="this.src='img/placeholder.png'">
                     <h2>${game.gameName}</h2>
                 `;
-            } else {
-                tab.innerHTML = `
+			} else {
+				tab.innerHTML = `
                     <img src="${cdn}img/games/${game.gameName.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}.png" loading="lazy" onerror="this.src='img/placeholder.png'">
                     <h2>${game.gameName}</h2>
                 `;
-            }
+			}
             */
 
 			tab.addEventListener('click', () => {
