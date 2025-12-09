@@ -17,7 +17,7 @@ var navbar = `
 				<!--
                 <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
                 -->
-				<a><img src="img/icons/plane.svg" height="24" onclick="window.location.href='https://forms.gle/CMrSGnxrJWjvyBKc9'" /></a>
+				<a target="_blank" href="https://forms.gle/fefB5etRUg5jtmZD8"><img src="img/icons/plane.svg" height="24" /></a>
 				<a><img src="img/icons/gear.svg" height="24" onclick="toggleSettings()" /></a>
 			</div>
 		</header>
